@@ -1,0 +1,38 @@
+.detail-contact {
+  padding: 20px;
+
+  &_header {
+    display: flex;
+    justify-content: space-between;
+
+    & button {
+      height: 100%;
+    }
+  }
+
+  table {
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th {
+    font-weight: 500;
+  }
+
+  th,
+  td {
+    padding: 5px;
+    text-align: left;
+  }
+
+  .text-center {
+    text-align: center;
+  }
+}

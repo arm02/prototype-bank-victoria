@@ -1,0 +1,381 @@
+<div class="investor-trust__create-media">
+  <h2>{{ labelForm }}</h2>
+  <div class="investor-trust__create-media__form">
+    <mat-form-field
+      *ngIf="labelForm === 'Create Media'"
+      class="investor-trust__create-media__form-fullwidth specific-border-media"
+      appearance="outline"
+    >
+      <mat-label>URL</mat-label>
+      <input
+        matInput
+        name="linkPost"
+        [(ngModel)]="news.linkPost"
+        type="text"
+        (ngModelChange)="generateURL(news.linkPost)"
+      />
+    </mat-form-field>
+    <mat-form-field
+      class="investor-trust__create-media__form-fullwidth"
+      appearance="outline"
+    >
+      <mat-label>Title</mat-label>
+      <input
+        matInput
+        name="titlePost"
+        [(ngModel)]="news.titlePost"
+        (ngModelChange)="generateURL(news.titlePost)"
+        type="text"
+      />
+    </mat-form-field>
+    <mat-form-field
+      class="investor-trust__create-media__form-fullwidth"
+      appearance="outline"
+    >
+      <mat-label>Meta Description</mat-label>
+      <input matInput name="metaDesc" [(ngModel)]="news.metaDesc" type="text" />
+    </mat-form-field>
+    <mat-form-field
+      class="investor-trust__create-media__form-fullwidth"
+      appearance="outline"
+    >
+      <mat-label>Meta Keyword</mat-label>
+      <input
+        matInput
+        name="metaKeyword"
+        [(ngModel)]="news.metaKeyword"
+        type="text"
+      />
+    </mat-form-field>
+    <mat-form-field
+      class="investor-trust__create-media__form-fullwidth"
+      appearance="outline"
+      *ngIf="!environment"
+    >
+      <mat-label>Meta Topic</mat-label>
+      <input
+        matInput
+        name="metaTopic"
+        [(ngModel)]="news.metaTopic"
+        type="text"
+      />
+    </mat-form-field>
+
+    <mat-form-field
+      appearance="outline"
+      class="investor-trust__create-media__form-fullwidth"
+    >
+      <mat-label>Sites</mat-label>
+      <mat-select [(ngModel)]="news.site_id">
+        <mat-option *ngFor="let opt of sites" [value]="opt.uuid">
+          {{ opt.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="investor-trust__create-media__form-flex">
+      <mat-form-field
+        appearance="outline"
+        class="investor-trust__create-media__form-fullwidth"
+      >
+        <mat-label>Type News</mat-label>
+        <mat-select [(ngModel)]="news.type">
+          <mat-option *ngFor="let opt of newsTypeData" [value]="opt.value">
+            {{ opt.label }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+      <mat-form-field
+        appearance="outline"
+        class="investor-trust__create-media__form-fullwidth"
+        style="margin-right: 0"
+      >
+        <mat-label>Choose Channel</mat-label>
+        <mat-select [(ngModel)]="news.pageId">
+          <mat-option *ngFor="let opt of channels" [value]="opt.page_id">
+            {{ opt.pageName }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+
+    <mat-form-field appearance="outline" style="width: 100%">
+      <mat-label>Choose Editor</mat-label>
+      <mat-select [multiple]="true" [(ngModel)]="news.writerId">
+        <mat-option>
+          <ngx-mat-select-search
+            [(ngModel)]="querySearchWriter"
+            placeholderLabel="Search Writer ..."
+            (ngModelChange)="querySearch(querySearchWriter)"
+          ></ngx-mat-select-search>
+        </mat-option>
+        <mat-option
+          *ngFor="let opt of writers"
+          [value]="opt.writer_id"
+          [disabled]="isOptionDisabled(opt.writer_id, news.writerId)"
+        >
+          {{ opt.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field appearance="outline" style="width: 100%">
+      <mat-label>Choose Reporter</mat-label>
+      <mat-select [multiple]="true" [(ngModel)]="news.reporters">
+        <mat-option>
+          <ngx-mat-select-search
+            [(ngModel)]="querySearchWriter"
+            placeholderLabel="Search Writer ..."
+            (ngModelChange)="querySearch(querySearchWriter)"
+          ></ngx-mat-select-search>
+        </mat-option>
+        <mat-option
+          *ngFor="let opt of writers"
+          [value]="opt.writer_id"
+          [disabled]="isOptionDisabled(opt.writer_id, news.reporters)"
+        >
+          {{ opt.name }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <div class="investor-trust__create-media__form-flex">
+      <mat-form-field
+        appearance="outline"
+        style="width: 100%; margin-right: 10px"
+      >
+        <mat-label>Choose a date</mat-label>
+        <input
+          [disabled]="!changeDate"
+          matInput
+          [(ngModel)]="date"
+          [matDatepicker]="picker"
+        />
+        <mat-datepicker-toggle
+          matIconSuffix
+          [for]="picker"
+        ></mat-datepicker-toggle>
+        <mat-datepicker #picker></mat-datepicker>
+      </mat-form-field>
+      <mat-form-field appearance="outline" style="width: 100%">
+        <mat-label>Time</mat-label>
+        <input
+          matInput
+          [(ngModel)]="currentDatetime"
+          type="time"
+          value="{{ currentDatetime }}"
+          [disabled]="!changeDate"
+        />
+      </mat-form-field>
+      <button
+        class="btn-primary investor-trust__create-media__button"
+        style="height: 100%; margin-left: 20px; margin-bottom: 20px"
+        (click)="getDateTimeAppoch()"
+      >
+        {{ changeDate ? "Save" : "Change Date" }}
+      </button>
+    </div>
+    <mat-form-field
+      class="investor-trust__create-media__form-fullwidth"
+      appearance="outline"
+    >
+      <mat-label>Hashtag</mat-label>
+      <mat-chip-grid #chipGrid aria-label="Enter keywords">
+        <mat-chip-row
+          *ngFor="let keyword of news.hashtag"
+          (removed)="removeKeyword(keyword)"
+        >
+          {{ keyword }}
+          <button matChipRemove aria-label="'remove ' + keyword">
+            <mat-icon>cancel</mat-icon>
+          </button>
+        </mat-chip-row>
+      </mat-chip-grid>
+      <input
+        id="hashtagInput"
+        placeholder="Tambah Hashtag..."
+        [matChipInputFor]="chipGrid"
+        (matChipInputTokenEnd)="add($event)"
+      />
+      <button
+        (click)="addHashtagFromInputField()"
+        matSuffix
+        mat-icon-button
+        aria-label="Add Hashtag"
+      >
+        <mat-icon>add</mat-icon>
+      </button>
+    </mat-form-field>
+    <editor
+      id="editorMedia"
+      apiKey="me89m9kl0wux6z5y0fnusps608nw4j4dv7uacy6fpo4uguen"
+      [init]="tinyMceConfig"
+      [(ngModel)]="news.content"
+    ></editor>
+    <div
+      class="investor-trust__create-media__form-flex"
+      style="margin-block: 20px; align-items: center"
+    >
+      <div
+        (click)="addThumbnail()"
+        class="investor-trust__create-media__form-thumbnail"
+      >
+        <span *ngIf="!news.thumbnail">Select Image Thumbnail</span>
+        <img
+          class="investor-trust__create-media__form-thumbnail__image"
+          *ngIf="news.thumbnail"
+          [src]="news.thumbnail"
+        />
+      </div>
+      <div class="investor-trust__create-media__form-row">
+        <div class="investor-trust__create-media__form-flex">
+          <mat-form-field
+            class="investor-trust__create-media__form-fullwidth"
+            appearance="outline"
+          >
+            <mat-label>Text Thumbnail</mat-label>
+            <input
+              matInput
+              name="textThumbnail"
+              [(ngModel)]="news.textThumbnail"
+              type="text"
+            />
+          </mat-form-field>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="ads-form"
+      [ngClass]="{ padding: !news.ads_article }"
+      (click)="addAdsArticle()"
+    >
+      <span
+        >{{
+          news.selected_ads_article ? "Iklan ditambahkan" : "Tambahkan Iklan"
+        }}
+        <span *ngIf="news.selected_ads_article" class="mr-10">:</span>
+        <i>{{ news.selected_ads_article }}</i></span
+      >
+      <button
+        *ngIf="news.ads_article"
+        (click)="removeAdsArticle($event)"
+        matSuffix
+        mat-icon-button
+        aria-label="Add Hashtag"
+      >
+        <mat-icon>close</mat-icon>
+      </button>
+    </div>
+    <h2 style="margin-top: 20px">Media List</h2>
+    <div class="investor-trust__create-media-database-list">
+      <ng-container
+        class="investor-trust__create-media-database-list-flex-scroll"
+        *ngIf="mediaList.length > 0"
+      >
+        <div
+          *ngFor="let media of mediaList; let i = index"
+          class="investor-trust__create-media-database-list-thumbnail"
+        >
+          <img
+            class="investor-trust__create-media-database-list-thumbnail__image"
+            *ngIf="media.type === 'image'"
+            [src]="media.url"
+            [alt]="media.caption"
+          />
+          <video
+            *ngIf="media.type === 'video'"
+            [src]="media.url"
+            controls
+            class="investor-trust__create-media-database-list-thumbnail__image"
+          ></video>
+          <div
+            style="position: absolute; top: 5px; right: 5px; color: white"
+            (click)="removeMediaList(i)"
+          >
+            <i class="fa fa-times-circle" aria-hidden="true"></i>
+          </div>
+          <div
+            style="
+              overflow: hidden;
+              text-overflow: ellipsis;
+              padding: 5px;
+              white-space: nowrap;
+            "
+          >
+            <span>{{ media.caption }}</span>
+          </div>
+        </div>
+      </ng-container>
+      <div
+        (click)="addMedia()"
+        class="investor-trust__create-media-database-list-thumbnail-text"
+      >
+        <span
+          class="investor-trust__create-media-database-list-thumbnail-text__text"
+          >Add Media List</span
+        >
+      </div>
+    </div>
+    <div class="investor-trust__create-media__action">
+      <mat-checkbox
+        [(ngModel)]="news.generative_ads"
+        style="margin-right: 20px"
+      >
+        Enable Generative Ads
+      </mat-checkbox>
+      <mat-checkbox
+        [(ngModel)]="listedOnChannel"
+        (change)="listedChange($event.checked)"
+        style="margin-right: 20px"
+      >
+        Listed on Channel
+      </mat-checkbox>
+      <button
+        (click)="cancel()"
+        style="width: 15%"
+        class="btn-secondary investor-trust__create-media__button investor-trust__create-media__button-right"
+      >
+        Cancel
+      </button>
+      <button
+        (click)="createNews('draft')"
+        style="width: 15%"
+        class="btn-secondary investor-trust__create-media__button investor-trust__create-media__button-right"
+      >
+        Draft
+      </button>
+      <button
+        (click)="createNews('publish')"
+        class="btn-primary investor-trust__create-media__button"
+      >
+        Post
+      </button>
+    </div>
+  </div>
+  <div
+    #openToImagesBucket
+    style="display: none"
+    (click)="addPhoto(editor)"
+  ></div>
+  <div #openToReadTo style="display: none" (click)="addReadTo(editor)"></div>
+  <div #openToWidget style="display: none" (click)="addToWidget(editor)"></div>
+  <div
+    #openToPoinPenting
+    style="display: none"
+    (click)="addToPoinPenting(editor)"
+  ></div>
+  <div
+    #openToEmbedLink
+    style="display: none"
+    (click)="addToEmbedLink(editor)"
+  ></div>
+  <div
+    #openToTradingView
+    style="display: none"
+    (click)="addToTradingView(editor)"
+  ></div>
+  <div
+    #openDataWrapper
+    style="display: none"
+    (click)="addToDataWrapper(editor)"
+  ></div>
+</div>

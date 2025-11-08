@@ -1,0 +1,17 @@
+.investor-trust__create-writer {
+  padding: 20px;
+  overflow-y: auto;
+  max-height: 90vh;
+
+  &__action {
+    display: flex;
+  }
+
+  &__button {
+    &-right {
+      margin-right: 5px;
+    }
+
+    width: 100%;
+  }
+}

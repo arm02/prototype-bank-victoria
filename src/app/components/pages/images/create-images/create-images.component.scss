@@ -1,0 +1,13 @@
+.investor-trust__create-images {
+    padding: 20px;
+
+    &__action {
+        display: flex;
+    }
+    &__button {
+        &-right {
+            margin-right: 5px;
+        }
+        width: 100%;
+    }
+}

@@ -1,0 +1,15 @@
+.investor-trust__create-ads {
+  padding: 20px;
+
+  &__action {
+    display: flex;
+  }
+
+  &__button {
+    &-right {
+      margin-right: 5px;
+    }
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="investor-trust__user-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllUser()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllUser()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <button (click)="createUser()" class="btn-primary btn-add">
+    Add New Data
+  </button>
+</div>
+<app-table
+  [sourceData]="users"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (editEvent)="editUser($event)"
+  (deleteEvent)="deleteUser($event)"
+></app-table>

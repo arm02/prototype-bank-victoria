@@ -1,0 +1,84 @@
+<div class="investor-trust__create-ads">
+  <h2>Form Ads</h2>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput type="text" name="name" [(ngModel)]="ads.name" required />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Type</mat-label>
+    <mat-select [(ngModel)]="ads.type">
+      <mat-option *ngFor="let opt of adsType" [value]="opt.value" required>
+        {{ opt.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>View Type</mat-label>
+    <mat-select
+      [multiple]="true"
+      [(ngModel)]="ads.view_type"
+      style="text-transform: capitalize"
+    >
+      <mat-option
+        *ngFor="let opt of adsViewType"
+        [value]="opt"
+        style="text-transform: capitalize"
+      >
+        {{ opt }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>View Channel</mat-label>
+    <mat-select
+      [multiple]="true"
+      [(ngModel)]="ads.view_channel"
+      style="text-transform: capitalize"
+    >
+      <mat-option
+        *ngFor="let opt of channels"
+        [value]="opt.pageName"
+        style="text-transform: capitalize"
+      >
+        {{ opt.pageName }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Link</mat-label>
+    <input matInput type="text" name="link" [(ngModel)]="ads.link" required />
+  </mat-form-field>
+  <ngx-dropzone
+    [multiple]="false"
+    style="justify-content: center; margin-bottom: 10px"
+    (change)="onSelect($event)"
+  >
+    <ngx-dropzone-label>
+      <div>
+        <h3>Select Image ...</h3>
+      </div>
+    </ngx-dropzone-label>
+    <ngx-dropzone-image-preview
+      ngProjectAs="ngx-dropzone-preview"
+      *ngFor="let f of files"
+      [file]="f"
+      [removable]="true"
+      (removed)="onRemove(f)"
+    >
+    </ngx-dropzone-image-preview>
+  </ngx-dropzone>
+  <div class="investor-trust__create-ads__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-ads__button investor-trust__create-ads__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__create-ads__button"
+    >
+      Save
+    </button>
+  </div>
+</div>

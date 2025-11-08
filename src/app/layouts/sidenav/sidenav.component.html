@@ -1,0 +1,110 @@
+<nav
+  class="main-menu"
+  [ngClass]="{ collapsed: isCollapsed, expanded: !isCollapsed || isHovered }"
+  (mouseenter)="onSidebarMouseEnter()"
+  (mouseleave)="onSidebarMouseLeave()"
+>
+  <div style="padding: 20px">
+    <div class="header">
+      <img class="header__image" src="assets/svg/horizontal-logo.svg" />
+    </div>
+    <ul>
+      <!-- Regular navigation items -->
+      <ng-container *ngFor="let nav of navigation">
+        <li
+          *ngIf="
+            nav.role === 'all' ||
+            nav.role === userCheckData.role ||
+            userCheckData.role === 'admin'
+          "
+          [ngClass]="{ active: nav.route === activeRoute }"
+        >
+          <a [routerLink]="nav.path">
+            <i [class]="nav.icon"></i>
+            <span class="nav-text" [ngClass]="{ hidden: !shouldShowLabels }">
+              {{ nav.title }}
+            </span>
+          </a>
+        </li>
+      </ng-container>
+
+      <!-- Grouped navigation items -->
+      <ng-container *ngFor="let group of navigationGroups">
+        <li
+          class="nav-group"
+          *ngIf="hasVisibleItems(group)"
+          [ngClass]="{
+            'child-hovered': expandedGroups[group.groupTitle + '_child_hover']
+          }"
+        >
+          <a (click)="toggleGroup(group.groupTitle)" class="group-header">
+            <i [class]="group.icon + ' fa-2x'"></i>
+            <span class="nav-text" [ngClass]="{ hidden: !shouldShowLabels }">
+              {{ group.groupTitle }}
+            </span>
+            <i
+              class="fa fa-chevron-right group-arrow"
+              [ngClass]="{
+                expanded: isGroupExpanded(group.groupTitle),
+                hidden: !shouldShowLabels
+              }"
+            ></i>
+          </a>
+          <ul
+            class="sub-menu"
+            [ngClass]="{ expanded: isGroupExpanded(group.groupTitle) }"
+          >
+            <ng-container *ngFor="let item of group.items">
+              <li
+                *ngIf="
+                  item.role === 'all' ||
+                  item.role === userCheckData.role ||
+                  userCheckData.role === 'admin'
+                "
+                [ngClass]="{ active: item.route === activeRoute }"
+                (mouseenter)="setChildHover(group.groupTitle, true)"
+                (mouseleave)="setChildHover(group.groupTitle, false)"
+              >
+                <a [routerLink]="item.path">
+                  <i [class]="item.icon"></i>
+                  <span
+                    class="nav-text"
+                    [ngClass]="{ hidden: !shouldShowLabels }"
+                  >
+                    {{ item.title }}
+                  </span>
+                </a>
+              </li>
+            </ng-container>
+          </ul>
+        </li>
+      </ng-container>
+    </ul>
+    <ul class="logout">
+      <li>
+        <a href="https://wa.me/6287872753959" target="_blank">
+          <i class="fa fa-info fa-2x"></i>
+          <span class="nav-text" [ngClass]="{ hidden: !shouldShowLabels }">
+            Help
+          </span>
+        </a>
+      </li>
+      <li>
+        <a (click)="changePassword()">
+          <i class="fa fa-key fa-2x"></i>
+          <span class="nav-text" [ngClass]="{ hidden: !shouldShowLabels }">
+            Change Password
+          </span>
+        </a>
+      </li>
+      <li>
+        <a (click)="logout()">
+          <i class="fa fa-power-off fa-2x"></i>
+          <span class="nav-text" [ngClass]="{ hidden: !shouldShowLabels }">
+            Logout
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</nav>

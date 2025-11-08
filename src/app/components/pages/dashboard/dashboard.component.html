@@ -1,0 +1,94 @@
+<div class="investor-trust__dashboard">
+  <mat-card class="investor-trust__image">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ pageCount }}</mat-card-title>
+        <mat-card-subtitle>Total Channel</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/images/channel.png" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content></mat-card-content>
+  </mat-card>
+  <mat-card class="investor-trust__image">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ postCount }}</mat-card-title>
+        <mat-card-subtitle>Total News</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/images/news.png" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content></mat-card-content>
+  </mat-card>
+  <mat-card class="investor-trust__image">
+    <mat-card-header>
+      <mat-card-title-group>
+        <mat-card-title>{{ writerCount }}</mat-card-title>
+        <mat-card-subtitle>Total Writers</mat-card-subtitle>
+        <img mat-card-sm-image src="assets/images/writer.png" />
+      </mat-card-title-group>
+    </mat-card-header>
+    <mat-card-content></mat-card-content>
+  </mat-card>
+</div>
+
+<div style="padding: 10px; display: flex; flex-direction: column; gap: 10px">
+  <app-changelogs [role]="userData.role">
+    <button class="btn-primary" (click)="syncDataFromYoutube()">
+      Sync From Youtube
+    </button>
+  </app-changelogs>
+</div>
+
+<div
+  *ngIf="userData.email === 'admin@investortrust.id'"
+  style="
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  "
+>
+  <h1>Feedback CMS List</h1>
+  <div class="investor-trust__changelogs-header">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getFeedbackAll()"
+        [(ngModel)]="queryFeedback"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getFeedbackAll()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+  </div>
+  <app-table
+    [sourceData]="feedback"
+    [rowCount]="rowCountFeedback"
+    [pageSize]="limitFeedback"
+    [displayedColumns]="displayedColumnsFeedback"
+    (paginateEvent)="paginateFeedbackEvent($event)"
+  ></app-table>
+</div>
+<!-- <div style="padding: 10px">
+  <h2>List Pembaruan Website</h2>
+  <app-table
+    [sourceData]="updateData"
+    [rowCount]="updateData?.length"
+    [pageSize]="updateData?.length"
+    [displayedColumns]="displayedColumns"
+  ></app-table>
+</div>
+
+<div style="padding: 10px">
+  <h2>List Pembaruan CMS</h2>
+  <app-table
+    [sourceData]="updateCMSData"
+    [rowCount]="updateCMSData?.length"
+    [pageSize]="updateCMSData?.length"
+    [displayedColumns]="displayedColumns"
+  ></app-table>
+</div> -->

@@ -1,0 +1,139 @@
+<nav
+  class="investortrust-sidebar"
+  [ngClass]="{ collapsed: isExpanded }"
+  [@sidebarAnimation]="isExpanded ? 'collapsed' : 'expanded'"
+>
+  <div class="investortrust-sidebar_header">
+    <img
+      src="assets/svg/{{ isExpanded ? 'logo.svg' : 'horizontal-logo.svg' }}"
+    />
+    <div class="toggle" (click)="updateBodyClass()">
+      <img
+        class="arrow"
+        src="assets/svg/arrow-{{ isExpanded ? 'right' : 'left' }}.svg"
+      />
+    </div>
+    <div class="investortrust-sidebar_divider" *ngIf="!isExpanded"></div>
+  </div>
+  <div class="investortrust-sidebar_body" [ngClass]="{ collapsed: isExpanded }">
+    <span>Menu</span>
+    <div
+      class="investortrust-sidebar_group"
+      *ngFor="let group of navigationGroups"
+    >
+      <div
+        *ngIf="hasVisibleItems(group)"
+        class="investortrust-sidebar_group_parent"
+        (mouseenter)="onParentEnter(group.groupTitle)"
+        (mouseleave)="scheduleClose()"
+        (click)="toggleGroup(group.groupTitle)"
+        [ngClass]="{
+          collapsed: isExpanded
+        }"
+        [@groupToggle]="
+          isGroupExpanded(group.groupTitle) ? 'expanded' : 'collapsed'
+        "
+      >
+        <div
+          class="investortrust-sidebar_group_title"
+          [ngClass]="{
+            active: isGroupExpanded(group.groupTitle),
+          }"
+        >
+          <img
+            class="arrow"
+            src="assets/svg/sidebar/{{ group.icon }}{{
+              isGroupExpanded(group.groupTitle) ||
+              shouldShowChildren(group.groupTitle)
+                ? '-active'
+                : ''
+            }}.svg"
+          />
+          <span *ngIf="!isExpanded">{{ group.groupTitle }}</span>
+        </div>
+        <img
+          *ngIf="group.groupTitle !== 'Beranda' && !isExpanded"
+          class="arrow"
+          src="assets/svg/{{
+            isGroupExpanded(group.groupTitle)
+              ? 'arrow-up-blue'
+              : 'arrow-down-gray'
+          }}.svg"
+        />
+      </div>
+      <div
+        class="investortrust-sidebar_group_children"
+        [ngClass]="{ collapsed: isExpanded }"
+        *ngIf="
+          shouldShowChildren(group.groupTitle) && group.groupTitle !== 'Beranda'
+        "
+        (mouseenter)="cancelClose()"
+        (mouseleave)="scheduleClose()"
+        [@slideInOut]="shouldShowChildren(group.groupTitle) ? 'in' : 'out'"
+      >
+        <div class="children-group">
+          <ng-container *ngFor="let item of group.items">
+            <a
+              *ngIf="
+                item.role === 'all' ||
+                item.role === userCheckData.role ||
+                userCheckData.role === 'admin'
+              "
+              class="investortrust-sidebar_group_children_item"
+              (click)="isExpanded ? toggleGroup(group.groupTitle) : null"
+              [ngClass]="{
+                active: item.route === activeRoute && !isExpanded,
+                collapsed: isExpanded
+              }"
+              [routerLink]="item.path"
+              >{{ item.title }}</a
+            >
+          </ng-container>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="investortrust-sidebar_footer"
+    [ngClass]="{ collapsed: isExpanded }"
+  >
+    <span>Pengaturan</span>
+    <div
+      (mouseenter)="hoveredItem = 'change_password'"
+      (mouseleave)="hoveredItem = null"
+      (click)="changePassword()"
+      class="investortrust-sidebar_footer_title"
+    >
+      <img
+        class="arrow"
+        src="assets/svg/sidebar/settings{{
+          hoveredItem === 'change_password' ? '-active' : ''
+        }}.svg"
+      />
+      <span *ngIf="!isExpanded">Ganti Kata Sandi</span>
+    </div>
+    <div
+      (click)="logout()"
+      (mouseenter)="hoveredItem = 'logout'"
+      (mouseleave)="hoveredItem = null"
+      class="investortrust-sidebar_footer_title"
+    >
+      <img
+        class="arrow"
+        src="assets/svg/sidebar/logout{{
+          hoveredItem === 'logout' ? '-active' : ''
+        }}.svg"
+      />
+      <span *ngIf="!isExpanded">Keluar</span>
+    </div>
+    <div class="investortrust-sidebar_divider"></div>
+    <div
+      (click)="help()"
+      class="investortrust-sidebar_footer_help"
+      [ngClass]="{ collapsed: isExpanded }"
+    >
+      <img src="assets/svg/sidebar/whatapps.svg" />
+      <ng-container *ngIf="!isExpanded">Saya Butuh Bantuan</ng-container>
+    </div>
+  </div>
+</nav>

@@ -1,0 +1,27 @@
+.investor-trust__news {
+  padding: 30px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media only screen and (max-width: 768px) {
+      display: block;
+
+      .btn-add {
+        width: 100%;
+      }
+    }
+  }
+
+  &-filter {
+    display: flex;
+    gap: 10px;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+}

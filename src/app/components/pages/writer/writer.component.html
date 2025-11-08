@@ -1,0 +1,27 @@
+<div class="investor-trust__writer-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllWriter()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllWriter()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <button (click)="createWriter()" class="btn-primary btn-add">
+    Add New Data
+  </button>
+</div>
+<app-table
+  [sourceData]="writers"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (editEvent)="editWriter($event)"
+  (deleteEvent)="deleteWriter($event)"
+></app-table>

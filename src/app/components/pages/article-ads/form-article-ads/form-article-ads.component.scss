@@ -1,0 +1,20 @@
+.investor-trust__create-ads {
+  padding: 20px;
+
+  &__action {
+    display: flex;
+    margin-top: 10px;
+  }
+
+  &__button {
+    &-right {
+      margin-right: 5px;
+    }
+    &:disabled {
+      background-color: #08131f4d;
+      cursor: not-allowed;
+    }
+
+    width: 100%;
+  }
+}

@@ -1,0 +1,27 @@
+<div class="investor-trust__create-channel">
+  <h2>Create New Channel</h2>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Channel Name</mat-label>
+    <input
+      matInput
+      type="text"
+      name="pageName"
+      [(ngModel)]="channel.pageName"
+      required
+    />
+  </mat-form-field>
+  <div class="investor-trust__create-channel__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-channel__button investor-trust__create-channel__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__create-channel__button"
+    >
+      Save
+    </button>
+  </div>
+</div>

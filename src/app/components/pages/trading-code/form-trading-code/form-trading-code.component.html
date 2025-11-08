@@ -1,0 +1,37 @@
+<div class="investor-trust__create-trading-code">
+  <h2>Form Trading Code</h2>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Symbol</mat-label>
+    <input
+      matInput
+      type="text"
+      name="name"
+      [(ngModel)]="tradingCode.symbol"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Company Name</mat-label>
+    <input
+      matInput
+      type="text"
+      name="name"
+      [(ngModel)]="tradingCode.company_name"
+      required
+    />
+  </mat-form-field>
+  <div class="investor-trust__create-trading-code__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-trading-code__button investor-trust__create-trading-code__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__create-trading-code__button"
+    >
+      Save
+    </button>
+  </div>
+</div>

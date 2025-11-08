@@ -1,0 +1,20 @@
+.investor-trust__create-trading-code {
+  padding: 20px;
+
+  &__action {
+    display: flex;
+  }
+  &__button {
+    &-right {
+      margin-right: 5px;
+    }
+    width: 100%;
+  }
+  & > ngx-dropzone {
+    margin-bottom: 10px;
+    & > ngx-dropzone-preview {
+      width: 100% !important;
+      max-width: 100% !important;
+    }
+  }
+}

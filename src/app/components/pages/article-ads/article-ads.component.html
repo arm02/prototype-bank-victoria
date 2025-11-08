@@ -1,0 +1,30 @@
+<div [ngClass]="{ 'p-20': params === 'from-news' }">
+  <div class="investor-trust__ads-header">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getAllAds()"
+        [(ngModel)]="query"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getAllAds()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <button (click)="createAds()" class="btn-primary btn-add">
+      Add New Data
+    </button>
+  </div>
+  <app-table
+    [sourceData]="ads"
+    [rowCount]="rowCount"
+    [pageSize]="limit"
+    [displayedColumns]="displayedColumns"
+    (paginateEvent)="paginateEvent($event)"
+    (editEvent)="editAds($event)"
+    (deleteEvent)="deleteAds($event)"
+    (selectImageEvent)="dialogRef.close($event)"
+  ></app-table>
+</div>

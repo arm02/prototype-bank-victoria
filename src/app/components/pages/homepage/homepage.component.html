@@ -1,0 +1,237 @@
+<h2>Homepage Configuration</h2>
+<div class="investor-trust__homepage" *ngIf="headline">
+  <mat-card class="investor-trust__homepage-headline">
+    <mat-card-header class="investor-trust__homepage-headline-header">
+      <mat-card-subtitle>Headline</mat-card-subtitle>
+      <div class="investor-trust__homepage-headline-header-items">
+        <mat-card-title>{{ headline[0]?.titleHeadline }}</mat-card-title>
+        <button
+          mat-button
+          (click)="editHeadline(headline[0]?.headline_id, 'main')"
+        >
+          EDIT
+        </button>
+      </div>
+    </mat-card-header>
+    <mat-card-content>
+      <img
+        [src]="headline[0]?.image"
+        [alt]="headline[0]?.image"
+        class="investor-trust__homepage-headline-image"
+      />
+    </mat-card-content>
+  </mat-card>
+  <div class="investor-trust__homepage-subheadline">
+    <mat-card class="investor-trust__homepage-subheadline-items">
+      <mat-card-header>
+        <mat-card-subtitle>Sub Headline 1</mat-card-subtitle>
+        <button
+          mat-button
+          (click)="editHeadline(headline[1]?.headline_id, 'sub')"
+        >
+          EDIT
+        </button>
+        <mat-card-title>{{ headline[1]?.titleHeadline }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <img
+          [src]="headline[1]?.image"
+          [alt]="headline[1]?.image"
+          class="investor-trust__homepage-subheadline-image"
+        />
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="investor-trust__homepage-subheadline-items">
+      <mat-card-header>
+        <mat-card-subtitle>Sub Headline 2</mat-card-subtitle>
+        <button
+          mat-button
+          (click)="editHeadline(headline[2]?.headline_id, 'sub')"
+        >
+          EDIT
+        </button>
+        <mat-card-title>{{ headline[2]?.titleHeadline }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <img
+          [src]="headline[2]?.image"
+          [alt]="headline[2]?.image"
+          class="investor-trust__homepage-subheadline-image"
+        />
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="investor-trust__homepage-subheadline-items">
+      <mat-card-header>
+        <mat-card-subtitle>Sub Headline 3</mat-card-subtitle>
+        <button
+          mat-button
+          (click)="editHeadline(headline[3]?.headline_id, 'sub')"
+        >
+          EDIT
+        </button>
+        <mat-card-title>{{ headline[3]?.titleHeadline }}</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <img
+          [src]="headline[3]?.image"
+          [alt]="headline[3]?.image"
+          class="investor-trust__homepage-subheadline-image"
+        />
+      </mat-card-content>
+    </mat-card>
+  </div>
+</div>
+<!-- <div class="investor-trust__homepage">
+  <mat-card class="investor-trust__homepage-trend">
+    <mat-card-header>
+      <mat-card-title>Trend</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card
+        *ngFor="let trd of trend"
+        class="investor-trust__homepage-trend-items"
+      >
+        <mat-card-header class="investor-trust__homepage-trend-items-header">
+          <mat-card-subtitle>{{ trd.rank }}. {{ trd.title }}</mat-card-subtitle>
+          <button mat-button (click)="editTrend(trd.rank)">EDIT</button>
+        </mat-card-header>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+  </mat-card>
+  <mat-card class="investor-trust__homepage-quicklink">
+    <mat-card-header class="investor-trust__homepage-quicklink-header">
+      <mat-card-title>Quick Link</mat-card-title>
+      <button class="btn-primary" (click)="createQuickLink()">Add New</button>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-card
+        *ngFor="let ql of quickLink; let i = index"
+        class="investor-trust__homepage-trend-items"
+      >
+        <mat-card-header class="investor-trust__homepage-trend-items-header">
+          <mat-card-title>{{ i + 1 }}. {{ ql.keyword }}</mat-card-title>
+          <div>
+            <button mat-button (click)="editQuickLink(ql.id, ql.keyword)">
+              EDIT
+            </button>
+            <button mat-button color="warn" (click)="deleteQuicklink(ql.id)">
+              DELETE
+            </button>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <mat-card-subtitle>{{ ql.title }}</mat-card-subtitle>
+        </mat-card-content>
+      </mat-card>
+      <mat-divider></mat-divider>
+    </mat-card-content>
+  </mat-card>
+</div> -->
+<!-- <div class="investor-trust__homepage">
+  <mat-card class="investor-trust__homepage-ads">
+    <mat-card-content class="investor-trust__homepage-ads-content">
+      <div style="display: flex; justify-content: space-between">
+        <mat-card-title>Main Ads</mat-card-title>
+        <button
+          class="btn-primary btn-add"
+          (click)="formAds('main-ad', 'Create')"
+        >
+          Add Main Ads
+        </button>
+      </div>
+      <app-table
+        [sourceData]="mainAds"
+        [rowCount]="mainAds?.length"
+        [pageSize]="10"
+        [displayedColumns]="mainAdsDisplayedColumns"
+        (editEvent)="formAds('main-ad', 'Update', $event)"
+        (deleteEvent)="deleteAds($event)"
+      ></app-table>
+
+      <div style="display: flex; justify-content: space-between">
+        <mat-card-title>Second Ads</mat-card-title>
+        <button
+          class="btn-primary btn-add"
+          (click)="formAds('second-ad', 'Create')"
+        >
+          Add Second Ads
+        </button>
+      </div>
+      <app-table
+        [sourceData]="secondAds"
+        [rowCount]="secondAds?.length"
+        [pageSize]="10"
+        [displayedColumns]="mainAdsDisplayedColumns"
+        (editEvent)="formAds('second-ad', 'Update', $event)"
+        (deleteEvent)="deleteAds($event)"
+      ></app-table>
+
+      <div style="display: flex; justify-content: space-between">
+        <mat-card-title>Third Ads</mat-card-title>
+        <button
+          class="btn-primary btn-add"
+          (click)="formAds('third-ad', 'Create')"
+        >
+          Add Third Ads
+        </button>
+      </div>
+      <app-table
+        [sourceData]="thirdAds"
+        [rowCount]="thirdAds?.length"
+        [pageSize]="10"
+        [displayedColumns]="mainAdsDisplayedColumns"
+        (editEvent)="formAds('third-ad', 'Update', $event)"
+        (deleteEvent)="deleteAds($event)"
+      ></app-table>
+
+      <div style="display: flex; justify-content: space-between">
+        <mat-card-title>Fourth Ads</mat-card-title>
+        <button
+          class="btn-primary btn-add"
+          (click)="formAds('ufourth-ad', 'Create')"
+        >
+          Add Fourth Ads
+        </button>
+      </div>
+      <app-table
+        [sourceData]="fourthAds"
+        [rowCount]="fourthAds?.length"
+        [pageSize]="10"
+        [displayedColumns]="mainAdsDisplayedColumns"
+        (editEvent)="formAds('ufourth-ad', 'Update', $event)"
+        (deleteEvent)="deleteAds($event)"
+      ></app-table>
+      <!-- <mat-card
+        *ngFor="let ad of ads; let i = index"
+        class="investor-trust__homepage-ads-items"
+      >
+        <mat-card-header class="investor-trust__homepage-ads-items-header">
+          <mat-card-title
+            >{{ i + 1 }}.
+            {{
+              ad.typeAd === "main-ad"
+                ? "Main Ads"
+                : ad.typeAd === "second-ad"
+                ? "Second Ads"
+                : ad.typeAd === "third-ad"
+                ? "Third Ads"
+                : "Fourth Ads"
+            }}</mat-card-title
+          >
+          <button mat-button (click)="editAds(ad.typeAd)">EDIT</button>
+        </mat-card-header>
+        <mat-card-content>
+          <img
+            class="investor-trust__homepage-ads-image"
+            [src]="ad.img"
+            [alt]="ad.img"
+          />
+          <mat-card-subtitle>Alt Text : {{ ad.altText }}</mat-card-subtitle>
+          <mat-card-subtitle>Link : {{ ad.link }}</mat-card-subtitle>
+        </mat-card-content>
+      </mat-card> -->
+      <!-- <mat-divider></mat-divider>
+    </mat-card-content>
+  </mat-card> -->
+<!-- </div>  -->

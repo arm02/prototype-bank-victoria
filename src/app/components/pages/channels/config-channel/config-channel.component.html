@@ -1,0 +1,196 @@
+<ng-container>
+  <div class="investor-trust__config-channel-header">
+    <h2>Channel Configuration ({{ channel?.pageName }})</h2>
+  </div>
+  <div class="investor-trust__config-channel">
+    <div class="main-headline">
+      <mat-card>
+        <mat-card-header style="display: block; margin-bottom: 10px">
+          <mat-card-subtitle>Headline</mat-card-subtitle>
+          <div class="main-headline-header">
+            <mat-card-title>{{
+              channelHeadline?.titleHeadline
+            }}</mat-card-title>
+            <button
+              mat-button
+              (click)="updateHeadline('main', channelHeadline?.headline_id)"
+            >
+              EDIT
+            </button>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <img
+            [src]="channelHeadline?.image"
+            [alt]="channelHeadline?.image"
+            style="width: 100%"
+          />
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="sub-headline">
+      <mat-card
+        class="sub-headline-items"
+        *ngFor="let subHead of channelSubHeadline; let i = index"
+      >
+        <mat-card-header style="display: block; margin-bottom: 10px">
+          <mat-card-subtitle>Sub Headline {{ i + 1 }}</mat-card-subtitle>
+          <div class="sub-headline-header">
+            <mat-card-title class="sub-headline-title">{{
+              subHead.titleHeadline
+            }}</mat-card-title>
+            <div>
+              <button
+                mat-button
+                (click)="updateHeadline('sub', subHead?.headline_id)"
+              >
+                EDIT
+              </button>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <img
+            [src]="subHead.image"
+            [alt]="subHead.image"
+            style="width: 100%"
+          />
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+  <!-- <div class="investor-trust__config-channel">
+    <mat-card class="investor-trust__config-channel-trend">
+      <mat-card-header>
+        <mat-card-title>Trend</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-card
+          *ngFor="let trd of trend"
+          class="investor-trust__config-channel-trend-items"
+        >
+          <mat-card-header
+            class="investor-trust__config-channel-trend-items-header"
+          >
+            <mat-card-subtitle
+              >{{ trd.rank }}. {{ trd.title }}</mat-card-subtitle
+            >
+            <button mat-button (click)="editTrend(trd.rank)">EDIT</button>
+          </mat-card-header>
+        </mat-card>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+    </mat-card>
+    <mat-card class="investor-trust__config-channel-quicklink">
+      <mat-card-header class="investor-trust__config-channel-quicklink-header">
+        <mat-card-title>Quick Link</mat-card-title>
+        <button class="btn-primary" (click)="createQuickLink()">Add New</button>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-card
+          *ngFor="let ql of quickLink; let i = index"
+          class="investor-trust__config-channel-trend-items"
+        >
+          <mat-card-header
+            class="investor-trust__config-channel-trend-items-header"
+          >
+            <mat-card-title>{{ i + 1 }}. {{ ql.keyword }}</mat-card-title>
+            <div>
+              <button mat-button (click)="editQuickLink(ql?.id, ql?.keyword)">
+                EDIT
+              </button>
+              <button mat-button color="warn" (click)="deleteQuicklink(ql.id)">
+                DELETE
+              </button>
+            </div>
+          </mat-card-header>
+          <mat-card-content>
+            <mat-card-subtitle>{{ ql.title }}</mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+    </mat-card>
+  </div> -->
+  <!-- <div class="investor-trust__config-channel">
+    <mat-card class="investor-trust__config-channel-ads">
+      <mat-card-header style="margin-bottom: 10px">
+        <mat-card-title>Ads Configuration</mat-card-title>
+      </mat-card-header>
+      <mat-card-content class="investor-trust__homepage-ads-content">
+        <div style="display: flex; justify-content: space-between">
+          <mat-card-title>Main Ads</mat-card-title>
+          <button
+            class="btn-primary btn-add"
+            (click)="formAds('main-ad', 'Create')"
+          >
+            Add Main Ads
+          </button>
+        </div>
+        <span *ngIf="mainAds?.length === 0">No Data</span>
+        <app-table
+          [sourceData]="mainAds"
+          [rowCount]="mainAds?.length"
+          [pageSize]="10"
+          [displayedColumns]="mainAdsDisplayedColumns"
+          (editEvent)="formAds('main-ad', 'Update', $event)"
+          (deleteEvent)="deleteAds($event)"
+        ></app-table>
+
+        <div style="display: flex; justify-content: space-between; margin-top: 20px;">
+          <mat-card-title>Second Ads</mat-card-title>
+          <button
+            class="btn-primary btn-add"
+            (click)="formAds('second-ad', 'Create')"
+          >
+            Add Second Ads
+          </button>
+        </div>
+        <span *ngIf="secondAds?.length === 0">No Data</span>
+        <app-table
+          [sourceData]="secondAds"
+          [rowCount]="secondAds?.length"
+          [pageSize]="10"
+          [displayedColumns]="mainAdsDisplayedColumns"
+          (editEvent)="formAds('second-ad', 'Update', $event)"
+          (deleteEvent)="deleteAds($event)"
+        ></app-table>
+        <mat-divider style="margin-top: 20px;"></mat-divider>
+      </mat-card-content>
+      <!-- <mat-card-content class="investor-trust__config-channel-ads-content">
+        <mat-card
+          *ngFor="let ad of ads; let i = index"
+          class="investor-trust__config-channel-ads-items"
+        >
+          <mat-card-header
+            class="investor-trust__config-channel-ads-items-header"
+          >
+            <mat-card-title
+              >{{ i + 1 }}.
+              {{
+                ad.typeAd === "main-ad"
+                  ? "Main Ads"
+                  : ad.typeAd === "second-ad"
+                  ? "Second Ads"
+                  : ad.typeAd === "third-ad"
+                  ? "Third Ads"
+                  : "Not set"
+              }}</mat-card-title
+            >
+            <button mat-button (click)="editAds(ad.typeAd)">EDIT</button>
+          </mat-card-header>
+          <mat-card-content>
+            <img
+              class="investor-trust__config-channel-ads-image"
+              [src]="ad.img"
+              [alt]="ad.img"
+            />
+            <mat-card-subtitle>Alt Text : {{ ad.altText }}</mat-card-subtitle>
+            <mat-card-subtitle>Link : {{ ad.link }}</mat-card-subtitle>
+          </mat-card-content>
+        </mat-card>
+        <mat-divider></mat-divider>
+      </mat-card-content> -->
+  <!-- </mat-card>
+  </div> -->
+</ng-container>

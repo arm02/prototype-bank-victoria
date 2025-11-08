@@ -1,0 +1,125 @@
+.investor-trust__homepage {
+    display: flex;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &-headline {
+        width: 69%;
+        margin-right: 20px;
+        max-height: 600px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &-image {
+            width: 100%;
+            height: 450px;
+
+            @media only screen and (max-width: 768px) {
+                height: 100%;
+            }
+        }
+
+        &-header {
+            display: grid;
+
+            &-items {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+        }
+    }
+
+    &-subheadline {
+        width: 30%;
+        display: block;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &-items {
+            margin-bottom: 10px;
+        }
+
+        &-image {
+            width: 100%;
+            height: 150px;
+
+            @media only screen and (max-width: 768px) {
+                height: 100%;
+            }
+        }
+    }
+
+    &-trend {
+        width: 50%;
+        margin-right: 10px;
+        margin-top: 10px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &-items {
+            width: 100%;
+            margin-top: 10px;
+
+            &-header {
+                padding: 10px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+        }
+    }
+
+    &-quicklink {
+        width: 50%;
+        max-height: 600px;
+        overflow: auto;
+        margin-top: 10px;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        &-header {
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+
+    &-ads {
+        margin-top: 10px;
+        width: 100%;
+        overflow: auto;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        &-items {
+            width: 100%;
+            margin-right: 10px;
+
+            &-header {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        &-image {
+            width: 100%;
+            height: 250px;
+        }
+    }
+}

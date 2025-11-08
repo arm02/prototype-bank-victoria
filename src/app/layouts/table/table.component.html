@@ -1,0 +1,244 @@
+<div class="investortrust-container mat-elevation-z8" *ngIf="rowCount != 0">
+  <div class="investortrust-table-container">
+    <table mat-table [dataSource]="sourceData" class="investortrust-table">
+      <ng-container
+        *ngFor="let column of displayedColumns; let i = index"
+        matColumnDef="{{ column.value }}"
+      >
+        <th mat-header-cell [style.width]="column.width" *matHeaderCellDef>
+          {{ column.title }}
+        </th>
+        <td mat-cell *matCellDef="let row">
+          <ng-container *ngIf="column.type === 'date'">
+            {{ row[column.value] | date : "dd MMMM yyyy HH:mm" }}
+          </ng-container>
+          <ng-container *ngIf="column.type === 'image'">
+            <img
+              *ngIf="
+                row[column.value]?.includes('investortrust-bucket/images/')
+              "
+              [src]="row[column.value]"
+              [alt]="row[column.value]"
+              class="investortrust-container-image"
+            />
+            <img
+              *ngIf="
+                !row[column.value]?.includes('investortrust-bucket/images/') &&
+                !row[column.value]?.includes('investortrust-bucket/videos/')
+              "
+              [src]="row[column.value]"
+              [alt]="row[column.value]"
+              class="investortrust-container-image"
+              style="object-fit: cover"
+            />
+            <video
+              *ngIf="
+                row[column.value]?.includes('investortrust-bucket/videos/')
+              "
+              [src]="row[column.value]"
+              controls
+              class="investortrust-container-image"
+            ></video>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'image-small'">
+            <img
+              *ngIf="
+                row[column.value]?.includes('investortrust-bucket/images/')
+              "
+              [src]="row[column.value]"
+              [alt]="row[column.value]"
+              style="width: 100% !important"
+              class="investortrust-container-image"
+            />
+            <video
+              *ngIf="
+                row[column.value]?.includes('investortrust-bucket/videos/')
+              "
+              [src]="row[column.value]"
+              controls
+              class="investortrust-container-image"
+            ></video>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'image-profile'">
+            <img
+              [src]="row[column.value]"
+              [alt]="row[column.value]"
+              class="investortrust-container-image-profile"
+            />
+          </ng-container>
+          <ng-container *ngIf="column.type === 'string'">
+            {{ row[column.value] }}
+          </ng-container>
+          <ng-container *ngIf="column.type === 'html'">
+            <div [innerHTML]="row[column.value]"></div>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'jsonparse'">
+            <div *ngFor="let json of row[column.value]">
+              <li>{{ json }}</li>
+            </div>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'string-capitalize'">
+            <span style="text-transform: capitalize">
+              {{ row[column.value]?.replace("-", " ") }}</span
+            >
+          </ng-container>
+          <ng-container *ngIf="column.type === 'array'">
+            <ul style="text-align: left; padding: 0" *ngIf="row[column.value]">
+              <li *ngFor="let col of row[column.value]">
+                {{ col[column.key] }}
+              </li>
+            </ul>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'array-value'">
+            <ul style="text-align: left; padding: 0" *ngIf="row[column.value]">
+              <li
+                *ngFor="let col of row[column.value]"
+                style="text-transform: capitalize"
+              >
+                {{ col }}
+              </li>
+            </ul>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'array-string'">
+            <ul style="text-align: left; padding: 0" *ngIf="row[column.value]">
+              <li
+                *ngFor="let col of row[column.value]?.split(',')"
+                style="text-transform: capitalize"
+              >
+                {{ col }}
+              </li>
+            </ul>
+          </ng-container>
+          <ng-container *ngIf="column.type === 'phone-number'">
+            +62 {{ row[column.value] }}
+          </ng-container>
+          <ng-container *ngIf="column.type === 'pageview'">
+            {{ row[column.value] ? row[column.value] : 0 }}
+            <!-- <div
+              *ngIf="!row[column.value] && row[column.value] !== 0"
+              class="lds-ring"
+            >
+              <div></div>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div> -->
+          </ng-container>
+          <!-- Action -->
+          <ng-container *ngIf="column.type === 'action'">
+            <ng-container *ngFor="let action of column.actions">
+              <a
+                *ngIf="action === 'copy'"
+                class="investor-trust__action-edit"
+                data-toggle="tooltip"
+                title="Copy"
+                (click)="handleCopyEvent(row)"
+                ><i class="fa fa-clipboard" aria-hidden="true"></i
+              ></a>
+              <a
+                *ngIf="action === 'open-link'"
+                class="investor-trust__action-open-link"
+                data-toggle="tooltip"
+                title="Open Link"
+                (click)="handleOpenLinkEvent(row)"
+                ><i class="fa fa-external-link" aria-hidden="true"></i
+              ></a>
+              <a
+                *ngIf="action === 'config-channel'"
+                class="investor-trust__action-config"
+                data-toggle="tooltip"
+                title="Config Channel"
+                (click)="handleConfigChannel(row)"
+                ><i class="fa fa-gear" aria-hidden="true"></i
+              ></a>
+              <a
+                *ngIf="action === 'edit'"
+                class="investor-trust__action-edit"
+                data-toggle="tooltip"
+                title="Edit"
+                (click)="handleEditEvent(row)"
+                ><i class="fa fa-pencil-square-o" aria-hidden="true"></i
+              ></a>
+              <a
+                *ngIf="action === 'delete'"
+                class="investor-trust__action-delete"
+                data-toggle="tooltip"
+                title="Delete"
+                (click)="handleDeleteEvent(row)"
+                ><i class="fa fa-trash-o" aria-hidden="true"></i
+              ></a>
+              <a
+                *ngIf="action === 'select-image'"
+                class="btn-primary"
+                data-toggle="tooltip"
+                title="Delete"
+                (click)="handleSelectImageEvent(row)"
+                >Choose Image</a
+              >
+              <a
+                *ngIf="action === 'recover'"
+                class="btn-primary btn-download mr-10"
+                style="width: auto;"
+                (click)="handleRecoverEvent(row)"
+                >Pulihkan</a
+              >
+              <a
+                *ngIf="action === 'permanent-delete'"
+                class="btn-danger"
+                (click)="handlePermanentDeleteEvent(row)"
+                >Hapus Permanen</a
+              >
+              <a
+                *ngIf="action === 'select-news'"
+                class="btn-primary"
+                data-toggle="tooltip"
+                title="Delete"
+                (click)="handleSelectImageEvent(row)"
+                >Choose News</a
+              >
+              <a
+                *ngIf="action === 'select-wrapper'"
+                class="btn-primary"
+                data-toggle="tooltip"
+                style="font-size: 12px; padding: 5px 10px"
+                title="Delete"
+                (click)="handleSelectImageEvent(row)"
+                >Choose Data</a
+              >
+              <a
+                *ngIf="action === 'detail'"
+                class="btn-primary"
+                data-toggle="tooltip"
+                title="Delete"
+                (click)="handleDetailEvent(row)"
+                >See Detail</a
+              >
+              <a
+                *ngIf="action === 'detail-eye'"
+                class="investor-trust__action-open-link ml-10"
+                data-toggle="tooltip"
+                title="Delete"
+                (click)="handleDetailEvent(row)"
+                ><i class="fa fa-eye" aria-hidden="true"></i
+              ></a>
+            </ng-container>
+          </ng-container>
+        </td>
+      </ng-container>
+
+      <tr
+        mat-header-row
+        *matHeaderRowDef="headerDisplatedColumn; sticky: true"
+      ></tr>
+      <tr mat-row *matRowDef="let row; columns: headerDisplatedColumn"></tr>
+    </table>
+  </div>
+
+  <mat-paginator
+    [length]="rowCount"
+    [pageSizeOptions]="[5, 10, 50]"
+    [pageSize]="pageSize"
+    (page)="handlePage($event)"
+    aria-label="Select page of GitHub search results"
+  ></mat-paginator>
+</div>

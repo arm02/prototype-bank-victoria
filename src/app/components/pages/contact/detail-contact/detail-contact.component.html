@@ -1,0 +1,37 @@
+<div class="detail-contact">
+  <div class="detail-contact_header">
+    <h2>Detail Contact</h2>
+    <button
+      (click)="dialogRef.close(true)"
+      class="btn-primary investor-trust__create-writer__button"
+    >
+      Close
+    </button>
+  </div>
+  <table>
+    <tr>
+      <th>Name</th>
+      <td>{{ data.name }}</td>
+    </tr>
+    <tr>
+      <th>Email</th>
+      <td>{{ data.email }}</td>
+    </tr>
+    <tr>
+      <th>Phone Number</th>
+      <td>{{ data.phoneNumber }}</td>
+    </tr>
+    <tr>
+      <th>Date</th>
+      <td>{{ data.date | date : "dd MMMM yyyy HH:mm" }}</td>
+    </tr>
+    <tr>
+      <th>Subject</th>
+      <td>{{ data.subject }}</td>
+    </tr>
+    <tr>
+      <th>Message</th>
+      <td>{{ data.message }}</td>
+    </tr>
+  </table>
+</div>

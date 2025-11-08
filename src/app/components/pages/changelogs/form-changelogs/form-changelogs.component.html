@@ -1,0 +1,46 @@
+<div class="investor-trust__change-logs" *ngIf="data?.type !== 'detail'">
+  <h2>Form Change Logs</h2>
+
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Title</mat-label>
+    <input
+      matInput
+      type="text"
+      name="name"
+      [(ngModel)]="changeLogs.title"
+      required
+    />
+  </mat-form-field>
+  <editor
+    apiKey="me89m9kl0wux6z5y0fnusps608nw4j4dv7uacy6fpo4uguen"
+    [init]="tinyMceConfig"
+    [(ngModel)]="changeLogs.content"
+  ></editor>
+  <div class="investor-trust__change-logs__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__change-logs__button investor-trust__change-logs__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__change-logs__button"
+    >
+      Save
+    </button>
+  </div>
+</div>
+
+<div class="investor-trust__change-logs" *ngIf="data?.type === 'detail'">
+  <h2>{{ data?.title }}</h2>
+  <div [innerHTML]="data?.content"></div>
+  <div class="investor-trust__change-logs__action">
+    <button
+      mat-dialog-close
+      class="btn-primary investor-trust__change-logs__button"
+    >
+      Close
+    </button>
+  </div>
+</div>

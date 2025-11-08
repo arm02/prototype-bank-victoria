@@ -1,0 +1,32 @@
+<div [ngClass]="{'p-20': embedNews === 'from-news'}">
+  <div class="investor-trust__data-wrapper-header">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getAllDataWrapper()"
+        [(ngModel)]="query"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getAllDataWrapper()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <div class="investor-trust__data-wrapper-header-action">
+      <button (click)="createDataWrapper()" class="btn-primary btn-add">
+        Add New Data
+      </button>
+    </div>
+  </div>
+  <app-table
+    [sourceData]="dataWrappers"
+    [rowCount]="rowCount"
+    [pageSize]="limit"
+    [displayedColumns]="displayedColumns"
+    (paginateEvent)="paginateEvent($event)"
+    (deleteEvent)="deleteDataWrapper($event)"
+    (editEvent)="editDataWrapper($event)"
+    (selectImageEvent)="dialogRef.close($event)"
+  ></app-table>
+</div>

@@ -1,0 +1,35 @@
+<div class="investor-trust__changelogs-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getChangeLogsData()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getChangeLogsData()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="investor-trust__changelogs-header-action">
+    <button
+      *ngIf="role === 'admin'"
+      (click)="createChangeLogs()"
+      class="btn-primary btn-add"
+    >
+      Add Change Logs
+    </button>
+    <ng-content></ng-content>
+  </div>
+</div>
+<app-table
+  [sourceData]="changeLogs"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (editEvent)="editChangeLogs($event)"
+  (deleteEvent)="deleteChangeLogs($event)"
+  (detailEvent)="detailChangeLogs($event)"
+></app-table>

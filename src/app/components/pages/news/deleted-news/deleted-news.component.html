@@ -1,0 +1,27 @@
+<div class="investor-trust__news">
+  <div class="investor-trust__news-header">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getData()"
+        [(ngModel)]="query"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getData()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+    </div>
+    <button class="btn-secondary" (click)="onCancel()">Cancel</button>
+  </div>
+  <app-table
+    [sourceData]="news"
+    [rowCount]="rowCount"
+    [pageSize]="limit"
+    [displayedColumns]="displayedColumns"
+    (paginateEvent)="paginateEvent($event)"
+    (recoverEvent)="recoverNews($event)"
+    (permanentDeleteEvent)="deletePermanent($event)"
+  ></app-table>
+</div>

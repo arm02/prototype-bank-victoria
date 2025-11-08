@@ -1,0 +1,49 @@
+<div class="investor-trust__create-user">
+  <h2>Create New User</h2>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Name</mat-label>
+    <input matInput type="text" name="name" [(ngModel)]="user.name" required />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Email</mat-label>
+    <input
+      matInput
+      type="email"
+      name="email"
+      [(ngModel)]="user.email"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Password</mat-label>
+    <input
+      matInput
+      type="password"
+      name="password"
+      [(ngModel)]="user.password"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field appearance="outline" style="width: 100%">
+    <mat-label>Choose Role</mat-label>
+    <mat-select [(ngModel)]="user.role">
+      <mat-option *ngFor="let opt of roleData" [value]="opt.value">
+        {{ opt.label }}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
+  <div class="investor-trust__create-user__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-user__button investor-trust__create-user__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__create-user__button"
+    >
+      Save
+    </button>
+  </div>
+</div>

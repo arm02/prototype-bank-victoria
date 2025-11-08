@@ -1,0 +1,23 @@
+<div class="investor-trust__writer-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllContact()"
+      [(ngModel)]="query"
+      placeholder="Search By Name Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllContact()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+</div>
+<app-table
+  [sourceData]="contacts"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (detailEvent)="detailContact($event)"
+></app-table>

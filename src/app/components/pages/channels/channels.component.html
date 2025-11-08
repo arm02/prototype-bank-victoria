@@ -1,0 +1,32 @@
+<div class="investor-trust__channel-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllChannel()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllChannel()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <button
+    (click)="createChannel()"
+    *ngIf="userData.role === 'admin'"
+    class="btn-primary btn-add"
+  >
+    Add New Data
+  </button>
+</div>
+<app-table
+  [sourceData]="channels"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (deleteEvent)="deleteChannel($event)"
+  (configChannelEvent)="configChannel($event)"
+  (editEvent)="editChannel($event)"
+></app-table>

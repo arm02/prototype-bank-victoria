@@ -1,0 +1,47 @@
+<div class="investor-trust__create-images__bucket">
+  <div class="lds-roller" *ngIf="isLoading">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <div class="investor-trust__create-images__bucket-header" *ngIf="!isLoading">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getAllImage()"
+        [(ngModel)]="query"
+        name="query"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getAllImage()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+      <button class="btn-secondary" style="margin-left: 10px" mat-dialog-close>
+        Cancel
+      </button>
+
+      <button
+        class="btn-primary"
+        style="margin-left: 10px; width: 100%;"
+        (click)="createImage()"
+      >
+        Upload New Image
+      </button>
+    </div>
+  </div>
+  <app-table
+    [sourceData]="images"
+    [rowCount]="rowCount"
+    [pageSize]="limit"
+    [displayedColumns]="displayedColumns"
+    (paginateEvent)="paginateEvent($event)"
+    (selectImageEvent)="selectImage($event)"
+  ></app-table>
+</div>

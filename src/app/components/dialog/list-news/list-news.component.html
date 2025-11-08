@@ -1,0 +1,37 @@
+<div class="investor-trust__news">
+  <div class="investor-trust__news-header">
+    <div class="search-box">
+      <input
+        type="text"
+        class="form-control"
+        (keyup.enter)="getAllNews()"
+        [(ngModel)]="query"
+        placeholder="Search Here ..."
+        id="search"
+      />
+      <button class="btn-primary" (click)="getAllNews()">
+        <i class="fa fa-search" aria-hidden="true"></i>
+      </button>
+      <button class="btn-secondary" style="margin-left: 10px" mat-dialog-close>
+        Cancel
+      </button>
+      <input
+        *ngIf="data?.type === 'quicklink'"
+        style="position: absolute; width: 350px; right: 15px"
+        type="text"
+        class="form-control"
+        [(ngModel)]="quicklinkKeyword"
+        placeholder="Keyword Name for Quick Link"
+        id="search"
+      />
+    </div>
+  </div>
+  <app-table
+    [sourceData]="news"
+    [rowCount]="rowCount"
+    [pageSize]="limit"
+    [displayedColumns]="displayedColumns"
+    (paginateEvent)="paginateEvent($event)"
+    (selectImageEvent)="onSelect($event)"
+  ></app-table>
+</div>

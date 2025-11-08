@@ -1,0 +1,135 @@
+<div class="investor-trust__create-writer">
+  <h2>
+    {{
+      data?.from === "login"
+        ? "Please Fill Your Profile Writer"
+        : "Create New Writer"
+    }}
+  </h2>
+  <ngx-dropzone
+    [multiple]="false"
+    style="justify-content: center; margin-bottom: 10px"
+    (change)="onSelect($event)"
+  >
+    <ngx-dropzone-label>
+      <div>
+        <h3>Select Writer Photo Profile ...</h3>
+      </div>
+    </ngx-dropzone-label>
+    <ngx-dropzone-image-preview
+      ngProjectAs="ngx-dropzone-preview"
+      *ngFor="let f of files"
+      [file]="f"
+      [removable]="true"
+      (removed)="onRemove(f)"
+    >
+    </ngx-dropzone-image-preview>
+  </ngx-dropzone>
+  <div style="display: flex; gap: 10px">
+    <mat-form-field style="width: 100%" appearance="outline">
+      <mat-label>Writer Name</mat-label>
+      <input
+        matInput
+        type="text"
+        name="name"
+        [(ngModel)]="writer.name"
+        required
+      />
+    </mat-form-field>
+    <mat-form-field style="width: 100%" appearance="outline">
+      <mat-label>Role</mat-label>
+      <input
+        matInput
+        type="text"
+        name="name"
+        [(ngModel)]="writer.role"
+        required
+      />
+    </mat-form-field>
+  </div>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Expertise</mat-label>
+    <input
+      matInput
+      type="text"
+      name="name"
+      [(ngModel)]="writer.expertise"
+      required
+    />
+  </mat-form-field>
+  <button
+    *ngIf="!writer?.summaries || writer?.summaries?.length === 0"
+    class="btn-primary"
+    style="width: 100%; height: 100%; margin-bottom: 10px"
+    (click)="firstSummary()"
+  >
+    Add Summary
+  </button>
+  <div
+    *ngFor="let summary of writer.summaries; let i = index; trackBy: trackByFn"
+    style="display: flex; gap: 10px; justify-content: flex-end; align-items: baseline;"
+  >
+    <mat-form-field style="width: 75%" appearance="outline">
+      <mat-label>Summaries</mat-label>
+      <input
+        matInput
+        type="text"
+        [name]="i + 'name'"
+        [(ngModel)]="writer.summaries[i]"
+        required
+      />
+    </mat-form-field>
+    <button
+      *ngIf="i === 0"
+      class="btn-primary"
+      style="width: 25%; height: 100%"
+      (click)="addSummary()"
+    >
+      Add Another Summary
+    </button>
+    <a
+      *ngIf="i !== 0"
+      (click)="removeSummary(i)"
+      style="width: 25%; color: red; font-size: 30px; cursor: pointer; text-align: right;"
+      ><i class="fa fa-trash-o" aria-hidden="true"></i
+    ></a>
+  </div>
+  <editor
+    apiKey="me89m9kl0wux6z5y0fnusps608nw4j4dv7uacy6fpo4uguen"
+    [init]="tinyMceConfig"
+    [(ngModel)]="writer.experience"
+  ></editor>
+  <mat-form-field style="width: 100%; margin-top: 10px" appearance="outline">
+    <mat-label>URL LinkedIn</mat-label>
+    <input
+      matInput
+      type="text"
+      name="name"
+      [(ngModel)]="writer.linkedin"
+      required
+    />
+  </mat-form-field>
+  <div class="investor-trust__create-writer__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-writer__button investor-trust__create-writer__button-right"
+    >
+      {{ data?.from === "login" ? "Fill Later" : "Cancel" }}
+    </button>
+    <button
+      (click)="onSaved()"
+      class="btn-primary investor-trust__create-writer__button"
+    >
+      Save
+    </button>
+  </div>
+</div>
+
+<div #openToImagesBucket style="display: none" (click)="addPhoto(editor)"></div>
+<div #openToReadTo style="display: none" (click)="addReadTo(editor)"></div>
+<div #openToWidget style="display: none" (click)="addToWidget(editor)"></div>
+<div
+  #openToPoinPenting
+  style="display: none"
+  (click)="addToPoinPenting(editor)"
+></div>

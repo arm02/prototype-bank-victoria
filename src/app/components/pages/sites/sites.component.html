@@ -1,0 +1,32 @@
+<div class="investor-trust__sites-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllSites()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllSites()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <button
+    (click)="createSites()"
+    *ngIf="userData.role === 'admin'"
+    class="btn-primary btn-add"
+  >
+    Add New Data
+  </button>
+</div>
+<app-table
+  [sourceData]="sites"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (deleteEvent)="deleteSites($event)"
+  (configChannelEvent)="configSites($event)"
+  (editEvent)="editSites($event)"
+></app-table>

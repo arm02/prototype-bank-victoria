@@ -1,0 +1,7 @@
+<app-table
+  [sourceData]="newsLatter"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+></app-table>

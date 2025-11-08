@@ -1,0 +1,14 @@
+.investor-trust__sites {
+  &-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      @media only screen and (max-width: 768px) {
+          display: block;
+          .btn-add {
+              width: 100%;
+          }
+      }
+  }
+}

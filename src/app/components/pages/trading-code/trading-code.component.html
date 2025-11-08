@@ -1,0 +1,30 @@
+<div class="investor-trust__trading-header">
+  <div class="search-box">
+    <input
+      type="text"
+      class="form-control"
+      (keyup.enter)="getAllTradingCode()"
+      [(ngModel)]="query"
+      placeholder="Search Here ..."
+      id="search"
+    />
+    <button class="btn-primary" (click)="getAllTradingCode()">
+      <i class="fa fa-search" aria-hidden="true"></i>
+    </button>
+  </div>
+  <div class="investor-trust__trading-header-action">
+    <button (click)="importTradingCode()" class="btn-primary btn-download">Import Data</button>
+    <button (click)="createTradingCode()" class="btn-primary btn-add">
+      Add New Data
+    </button>
+  </div>
+</div>
+<app-table
+  [sourceData]="tradingView"
+  [rowCount]="rowCount"
+  [pageSize]="limit"
+  [displayedColumns]="displayedColumns"
+  (paginateEvent)="paginateEvent($event)"
+  (deleteEvent)="deleteTradingCode($event)"
+  (editEvent)="editTradingCode($event)"
+></app-table>

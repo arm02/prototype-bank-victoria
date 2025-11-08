@@ -1,0 +1,77 @@
+<div class="investor-trust__create-ads">
+  <h2>Form Article Ads</h2>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Judul</mat-label>
+    <input matInput type="text" name="title" [(ngModel)]="ads.title" required />
+  </mat-form-field>
+  <div style="display: flex; gap: 10px">
+    <ngx-dropzone
+      [multiple]="false"
+      style="justify-content: center; margin-bottom: 10px; width: 50%"
+      (change)="onSelect($event, 'image_mobile')"
+    >
+      <ngx-dropzone-label>
+        <div>
+          <h3>Select Image Mobile ...</h3>
+        </div>
+      </ngx-dropzone-label>
+      <ngx-dropzone-image-preview
+        ngProjectAs="ngx-dropzone-preview"
+        *ngFor="let f of filesMobile"
+        [file]="f"
+        [removable]="true"
+        (removed)="onRemove(f, 'image_mobile')"
+      >
+      </ngx-dropzone-image-preview>
+    </ngx-dropzone>
+    <ngx-dropzone
+      [multiple]="false"
+      style="justify-content: center; margin-bottom: 10px; width: 50%"
+      (change)="onSelect($event, 'image_desktop')"
+    >
+      <ngx-dropzone-label>
+        <div>
+          <h3>Select Image Desktop...</h3>
+        </div>
+      </ngx-dropzone-label>
+      <ngx-dropzone-image-preview
+        ngProjectAs="ngx-dropzone-preview"
+        *ngFor="let f of filesDesktop"
+        [file]="f"
+        [removable]="true"
+        (removed)="onRemove(f, 'image_desktop')"
+      >
+      </ngx-dropzone-image-preview>
+    </ngx-dropzone>
+  </div>
+
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Link</mat-label>
+    <input
+      matInput
+      type="text"
+      name="link"
+      [(ngModel)]="ads.link"
+      #linkCtrl="ngModel"
+      pattern="https?://.+"
+    />
+    <mat-error *ngIf="linkCtrl.hasError('pattern')">
+      Harus berupa URL yang valid (contoh: https://example.com)
+    </mat-error>
+  </mat-form-field>
+  <div class="investor-trust__create-ads__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-ads__button investor-trust__create-ads__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="onSaved()"
+      [disabled]="linkCtrl.hasError('pattern')"
+      class="btn-primary investor-trust__create-ads__button"
+    >
+      Save
+    </button>
+  </div>
+</div>

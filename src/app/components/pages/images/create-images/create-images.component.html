@@ -1,0 +1,116 @@
+<div class="investor-trust__create-images">
+  <h2>Upload New Image</h2>
+  <ngx-dropzone
+    [multiple]="false"
+    style="justify-content: center; margin-bottom: 10px"
+    (change)="onSelect($event)"
+  >
+    <ngx-dropzone-label>
+      <div>
+        <h3>Drag and Drop your files here...</h3>
+      </div>
+    </ngx-dropzone-label>
+    <ng-container *ngIf="files[0]?.type?.includes('image')">
+      <ngx-dropzone-image-preview
+        ngProjectAs="ngx-dropzone-preview"
+        *ngFor="let f of files"
+        [file]="f"
+        [removable]="true"
+        (removed)="onRemove(f)"
+      >
+      </ngx-dropzone-image-preview>
+    </ng-container>
+    <ng-container *ngIf="files[0]?.type?.includes('video')">
+      <ngx-dropzone-video-preview
+        ngProjectAs="ngx-dropzone-preview"
+        *ngFor="let f of files"
+        [file]="f"
+        [removable]="true"
+        (removed)="onRemove(f)"
+      >
+      </ngx-dropzone-video-preview>
+    </ng-container>
+  </ngx-dropzone>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Title</mat-label>
+    <input
+      matInput
+      type="text"
+      name="title"
+      [(ngModel)]="images.title"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Image Caption</mat-label>
+    <input
+      matInput
+      type="text"
+      name="imageDesc"
+      [(ngModel)]="images.imageDesc"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Source</mat-label>
+    <input
+      matInput
+      type="text"
+      name="source"
+      [(ngModel)]="images.source"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Photographer</mat-label>
+    <input
+      matInput
+      type="text"
+      name="photographer"
+      [(ngModel)]="images.photographer"
+      required
+    />
+  </mat-form-field>
+  <mat-form-field style="width: 100%" appearance="outline">
+    <mat-label>Hashtag</mat-label>
+    <mat-chip-grid #chipGrid aria-label="Enter keywords">
+      <mat-chip-row
+        *ngFor="let keyword of images.tag"
+        (removed)="removeKeyword(keyword)"
+      >
+        {{ keyword }}
+        <button matChipRemove aria-label="'remove ' + keyword">
+          <mat-icon>cancel</mat-icon>
+        </button>
+      </mat-chip-row>
+    </mat-chip-grid>
+    <input
+      id="hashtagInput"
+      placeholder="Tambah Hashtag..."
+      [matChipInputFor]="chipGrid"
+      (matChipInputTokenEnd)="add($event)"
+    />
+    <button
+      (click)="addHashtagFromInputField()"
+      matSuffix
+      mat-icon-button
+      aria-label="Add Hashtag"
+    >
+      <mat-icon>add</mat-icon>
+    </button>
+  </mat-form-field>
+  <div class="investor-trust__create-images__action">
+    <button
+      mat-dialog-close
+      class="btn-secondary investor-trust__create-images__button investor-trust__create-images__button-right"
+    >
+      Cancel
+    </button>
+    <button
+      (click)="uploadImage()"
+      class="btn-primary investor-trust__create-images__button"
+    >
+      Upload
+    </button>
+  </div>
+</div>

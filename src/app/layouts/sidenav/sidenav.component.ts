@@ -1,0 +1,215 @@
+import { Component, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import {
+  Navigation,
+  NavigationData,
+  NavigationGroup,
+  NavigationGroupData,
+} from './collection/nav.collection';
+import { NavigationEnd, Router } from '@angular/router';
+import { AuthService } from 'src/app/auth/auth.service';
+import { AuthCheckRequestCollection } from 'src/app/collection/auth.collection';
+import { MatDialog } from '@angular/material/dialog';
+import { ForgotPasswordComponent } from 'src/app/auth/change-password/change-password.component';
+import {
+  trigger,
+  state,
+  style,
+  transition,
+  animate,
+} from '@angular/animations';
+
+@Component({
+  selector: 'app-sidenav',
+  templateUrl: './sidenav-new.component.html',
+  styleUrls: ['./sidenav-new.component.scss'],
+  animations: [
+    trigger('sidebarAnimation', [
+      state(
+        'expanded',
+        style({
+          width: '280px',
+          minWidth: '280px',
+        })
+      ),
+      state(
+        'collapsed',
+        style({
+          width: '80px',
+          minWidth: '80px',
+        })
+      ),
+      transition(
+        'expanded <=> collapsed',
+        animate('150ms cubic-bezier(0.4, 0.0, 0.2, 1)')
+      ),
+    ]),
+    trigger('groupToggle', [
+      state(
+        'collapsed',
+        style({
+          transform: 'rotateX(0deg)',
+          opacity: 1,
+        })
+      ),
+      state(
+        'expanded',
+        style({
+          transform: 'rotateX(0deg)',
+          opacity: 1,
+        })
+      ),
+      transition('collapsed <=> expanded', animate('100ms ease-in-out')),
+    ]),
+    trigger('slideInOut', [
+      transition(':enter', [
+        style({
+          height: '0px',
+          opacity: 0,
+          overflow: 'hidden',
+        }),
+        animate(
+          '300ms ease-out',
+          style({
+            height: '*',
+            opacity: 1,
+          })
+        ),
+      ]),
+      transition(':leave', [
+        animate(
+          '250ms ease-in',
+          style({
+            height: '0px',
+            opacity: 0,
+            overflow: 'hidden',
+          })
+        ),
+      ]),
+    ]),
+  ],
+})
+export class SidenavComponent {
+  navigation: Navigation[] = NavigationData;
+  navigationGroups: NavigationGroup[] = NavigationGroupData;
+  activeRoute = '';
+  userCheckData: AuthCheckRequestCollection = new AuthCheckRequestCollection();
+  expandedGroups: { [key: string]: boolean } = {};
+  isExpanded = true;
+  hoveredItem: string | null = null;
+  hoveredGroup: string | null = null;
+  private closeTimer: any = null;
+  constructor(
+    private router: Router,
+    private authService: AuthService,
+    private dialog: MatDialog
+  ) {
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.activeRoute = event.url.split('/')[2];
+      }
+    });
+    this.authService
+      .authCheck()
+      .subscribe((data: AuthCheckRequestCollection) => {
+        this.userCheckData = data;
+      });
+
+    // Initialize body class
+    this.updateBodyClass();
+  }
+
+  logout() {
+    this.authService.logout().subscribe();
+  }
+
+  help() {
+    window.open('https://wa.me/6287872753959', '_blank');
+  }
+
+  changePassword() {
+    const dialogRef = this.dialog.open(ForgotPasswordComponent, {
+      disableClose: true,
+      width: '400px',
+    });
+    dialogRef.afterClosed().subscribe();
+  }
+
+  toggleGroup(groupTitle: string) {
+    if (groupTitle === 'Beranda') {
+      this.router.navigate(['/']);
+    }
+    const isExpanded = this.expandedGroups[groupTitle];
+    Object.keys(this.expandedGroups).forEach((key) => {
+      this.expandedGroups[key] = false;
+    });
+    this.expandedGroups[groupTitle] = !isExpanded;
+  }
+
+  isGroupExpanded(groupTitle: string): boolean {
+    return this.expandedGroups[groupTitle] || false;
+  }
+
+  hasVisibleItems(group: NavigationGroup): boolean {
+    if (group.groupTitle === 'Beranda') return true;
+    return group.items.some(
+      (item) =>
+        item.role === 'all' ||
+        item.role === this.userCheckData.role ||
+        this.userCheckData.role === 'admin'
+    );
+  }
+
+  // collapsedSidebar() {
+  //   this.isCollapsed = !this.isCollapsed;
+  // }
+
+  // setChildHover(groupTitle: string, isHovered: boolean) {
+  //   this.expandedGroups[groupTitle + '_child_hover'] = isHovered;
+  // }
+
+  // onSidebarMouseEnter() {
+  //   this.isHovered = false;
+  //   this.updateBodyClass();
+  // }
+
+  // onSidebarMouseLeave() {
+  //   this.isHovered = true;
+  //   this.updateBodyClass();
+  // }
+
+  updateBodyClass() {
+    this.isExpanded = !this.isExpanded;
+    const body = document.body;
+    if (this.isExpanded) {
+      body.classList.add('sidebar-collapsed');
+      body.classList.remove('sidebar-expanded');
+    } else {
+      body.classList.add('sidebar-expanded');
+      body.classList.remove('sidebar-collapsed');
+    }
+  }
+
+  onParentEnter(title: string) {
+    this.cancelClose();
+    if (this.isExpanded) this.hoveredGroup = title;
+  }
+
+  scheduleClose(delay = 150) {
+    this.cancelClose();
+    this.closeTimer = setTimeout(() => {
+      this.hoveredGroup = null;
+    }, delay);
+  }
+
+  cancelClose() {
+    if (this.closeTimer) {
+      clearTimeout(this.closeTimer);
+      this.closeTimer = null;
+    }
+  }
+
+  shouldShowChildren(title: string): boolean {
+    if (!this.isExpanded) return this.isGroupExpanded(title);
+    return this.hoveredGroup === title;
+  }
+}

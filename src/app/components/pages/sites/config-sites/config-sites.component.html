@@ -1,0 +1,57 @@
+<ng-container>
+  <div class="investor-trust__config-sites-header">
+    <h2>Sites Configuration ({{ site?.name }})</h2>
+  </div>
+  <div class="investor-trust__config-sites">
+    <div class="main-headline">
+      <mat-card>
+        <mat-card-header style="display: block; margin-bottom: 10px">
+          <mat-card-subtitle>Headline</mat-card-subtitle>
+          <div class="main-headline-header">
+            <mat-card-title>{{ siteHeadline?.post?.titlePost }}</mat-card-title>
+            <button
+              mat-button
+              (click)="updateHeadline('main', siteHeadline?.uuid)"
+            >
+              EDIT
+            </button>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <img
+            [src]="siteHeadline?.post?.thumbnail"
+            [alt]="siteHeadline?.post?.thumbnail"
+            style="width: 100%"
+          />
+        </mat-card-content>
+      </mat-card>
+    </div>
+    <div class="sub-headline">
+      <mat-card
+        class="sub-headline-items"
+        *ngFor="let subHead of siteSubHeadline; let i = index"
+      >
+        <mat-card-header style="display: block; margin-bottom: 10px">
+          <mat-card-subtitle>Sub Headline {{ i + 1 }}</mat-card-subtitle>
+          <div class="sub-headline-header">
+            <mat-card-title class="sub-headline-title">{{
+              subHead?.post?.titlePost
+            }}</mat-card-title>
+            <div>
+              <button mat-button (click)="updateHeadline('sub', subHead?.uuid)">
+                EDIT
+              </button>
+            </div>
+          </div>
+        </mat-card-header>
+        <mat-card-content>
+          <img
+            [src]="subHead?.post?.thumbnail"
+            [alt]="subHead?.post?.thumbnail"
+            style="width: 100%"
+          />
+        </mat-card-content>
+      </mat-card>
+    </div>
+  </div>
+</ng-container>
