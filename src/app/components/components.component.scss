@@ -1,31 +1,38 @@
 .container {
   position: static;
   background: transparent;
-  margin-left: 288px;
-  width: calc(100% - 308px); // 288px sidebar + 20px padding compensation
-  padding: 20px;
+  margin-left: 273px;
+  width: calc(100% - 273px);
+  padding: 0;
   top: 0;
   transition: margin-left 0.3s ease, width 0.3s ease;
   box-sizing: border-box;
   max-width: 100vw;
   overflow-x: hidden;
 
+  .body-content {
+    padding: 20px;
+  }
   @media only screen and (max-width: 768px) {
-    margin-left: 80px;
-    width: calc(100% - 80px); // 80px sidebar + 20px padding compensation
+    margin-left: 73px;
+    width: calc(100% - 73px); // 73px sidebar + 20px padding compensation
   }
 }
 
 // When body has sidebar-collapsed class
 :host-context(body.sidebar-collapsed) .container {
-  margin-left: 80px;
-  width: calc(100% - 80px);
+  @media only screen and (min-width: 500px) {
+    margin-left: 73px;
+    width: calc(100% - 73px); // 73px sidebar + 20px padding compensation
+  }
 }
 
 // When body has sidebar-expanded class
 :host-context(body.sidebar-expanded) .container {
-  margin-left: 288px;
-  width: calc(100% - 308px); // 288px sidebar + 20px padding compensation
+  @media only screen and (min-width: 500px) {
+    margin-left: 273px;
+    width: calc(100% - 273px);
+  }
 }
 
 .feedback {

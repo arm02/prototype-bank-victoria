@@ -12,9 +12,10 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
+import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
-  declarations: [SidenavComponent, TableComponent, ForgotPasswordComponent],
+  declarations: [SidenavComponent, TableComponent, ForgotPasswordComponent, NavbarComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -27,7 +28,7 @@ import { MatIconModule } from '@angular/material/icon';
     FormsModule,
     MatIconModule
   ],
-  exports: [SidenavComponent, TableComponent],
+  exports: [SidenavComponent, TableComponent, NavbarComponent],
   providers: [],
 })
 export class LayoutsModule {}
