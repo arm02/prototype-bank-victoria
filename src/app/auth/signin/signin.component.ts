@@ -30,23 +30,23 @@ export class SigninComponent implements OnInit {
     this.meta.addTags([
       {
         name: 'description',
-        content: 'CMS Investor Trust',
+        content: 'LMS | PT. Bank Victoria International, Tbk',
       },
       {
         name: 'keywords',
-        content: 'cms, investor trust',
+        content: 'lmg, Bank Victoria International',
       },
     ]);
   }
 
   checkLogin() {
-    this.authService
-      .authCheck('login_page')
-      .subscribe((data: AuthCheckRequestCollection) => {
-        if (data) {
-          this.router.navigate(['/']);
-        }
-      });
+    // this.authService
+    //   .authCheck('login_page')
+    //   .subscribe((data: AuthCheckRequestCollection) => {
+    //     if (data) {
+    //       this.router.navigate(['/']);
+    //     }
+    //   });
   }
 
   inputChange() {

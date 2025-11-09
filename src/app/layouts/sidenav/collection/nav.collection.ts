@@ -11,6 +11,7 @@ export interface NavigationGroup {
   icon: string;
   path: string;
   items: Navigation[];
+  isVisible?: boolean;
 }
 
 export const NavigationData: Navigation[] = [
@@ -31,6 +32,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
     items: [],
     route: undefined,
     role: 'all',
+    isVisible: true,
   },
   {
     groupTitle: 'Konfigurasi Halaman',
@@ -58,6 +60,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'all',
       },
     ],
+    isVisible: true,
   },
   {
     groupTitle: 'Kelola Berita',
@@ -78,6 +81,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'all',
       },
     ],
+    isVisible: true,
   },
   {
     groupTitle: 'Kelola Media / Widget',
@@ -105,6 +109,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'all',
       },
     ],
+    isVisible: true,
   },
   {
     groupTitle: 'Kelola Pengguna',
@@ -125,6 +130,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'admin',
       },
     ],
+    isVisible: true,
   },
   {
     groupTitle: 'Pengiklanan',
@@ -145,6 +151,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'all',
       },
     ],
+    isVisible: true,
   },
   {
     groupTitle: 'Kontak',
@@ -165,5 +172,37 @@ export const NavigationGroupData: NavigationGroup[] | any = [
         role: 'admin',
       },
     ],
+    isVisible: true,
+  },
+];
+
+// BANK VICTORIA
+export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
+  {
+    groupTitle: 'Beranda',
+    icon: 'beranda',
+    path: '/',
+    items: [],
+    route: undefined,
+    role: 'all',
+    isVisible: true,
+  },
+  {
+    groupTitle: 'Program',
+    icon: 'berita',
+    path: '/program',
+    items: [],
+    route: undefined,
+    role: 'all',
+    isVisible: true,
+  },
+  {
+    groupTitle: 'Jadwal Pelatihan',
+    icon: 'users',
+    path: '/jadwal',
+    items: [],
+    route: undefined,
+    role: 'all',
+    isVisible: true,
   },
 ];

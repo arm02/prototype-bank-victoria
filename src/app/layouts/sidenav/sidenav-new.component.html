@@ -5,7 +5,7 @@
 >
   <div class="investortrust-sidebar_header">
     <img
-      src="assets/svg/{{ isExpanded ? 'logo.svg' : 'horizontal-logo.svg' }}"
+      src="assets/bank-victoria/{{ isExpanded ? 'images/favicon.jpg' : 'images/logo-horizontal.png' }}"
     />
     <div class="toggle" (click)="updateBodyClass()">
       <img
@@ -26,25 +26,25 @@
         class="investortrust-sidebar_group_parent"
         (mouseenter)="onParentEnter(group.groupTitle)"
         (mouseleave)="scheduleClose()"
-        (click)="toggleGroup(group.groupTitle)"
+        (click)="toggleGroup(group)"
         [ngClass]="{
           collapsed: isExpanded
         }"
         [@groupToggle]="
-          isGroupExpanded(group.groupTitle) ? 'expanded' : 'collapsed'
+          isGroupExpanded(group) ? 'expanded' : 'collapsed'
         "
       >
         <div
           class="investortrust-sidebar_group_title"
           [ngClass]="{
-            active: isGroupExpanded(group.groupTitle),
+            active: isGroupExpanded(group),
           }"
         >
           <img
             class="arrow"
-            src="assets/svg/sidebar/{{ group.icon }}{{
-              isGroupExpanded(group.groupTitle) ||
-              shouldShowChildren(group.groupTitle)
+            src="assets/bank-victoria/svg/sidebar/{{ group.icon }}{{
+              isGroupExpanded(group) ||
+              shouldShowChildren(group)
                 ? '-active'
                 : ''
             }}.svg"
@@ -52,10 +52,10 @@
           <span *ngIf="!isExpanded">{{ group.groupTitle }}</span>
         </div>
         <img
-          *ngIf="group.groupTitle !== 'Beranda' && !isExpanded"
+          *ngIf="group.items.length !== 0 && !isExpanded"
           class="arrow"
           src="assets/svg/{{
-            isGroupExpanded(group.groupTitle)
+            isGroupExpanded(group)
               ? 'arrow-up-blue'
               : 'arrow-down-gray'
           }}.svg"
@@ -65,11 +65,11 @@
         class="investortrust-sidebar_group_children"
         [ngClass]="{ collapsed: isExpanded }"
         *ngIf="
-          shouldShowChildren(group.groupTitle) && group.groupTitle !== 'Beranda'
+          shouldShowChildren(group) && group.items.length !== 0
         "
         (mouseenter)="cancelClose()"
         (mouseleave)="scheduleClose()"
-        [@slideInOut]="shouldShowChildren(group.groupTitle) ? 'in' : 'out'"
+        [@slideInOut]="shouldShowChildren(group) ? 'in' : 'out'"
       >
         <div class="children-group">
           <ng-container *ngFor="let item of group.items">
@@ -80,7 +80,7 @@
                 userCheckData.role === 'admin'
               "
               class="investortrust-sidebar_group_children_item"
-              (click)="isExpanded ? toggleGroup(group.groupTitle) : null"
+              (click)="isExpanded ? toggleGroup(group) : null"
               [ngClass]="{
                 active: item.route === activeRoute && !isExpanded,
                 collapsed: isExpanded
@@ -106,7 +106,7 @@
     >
       <img
         class="arrow"
-        src="assets/svg/sidebar/settings{{
+        src="assets/bank-victoria/svg/sidebar/settings{{
           hoveredItem === 'change_password' ? '-active' : ''
         }}.svg"
       />
@@ -120,7 +120,7 @@
     >
       <img
         class="arrow"
-        src="assets/svg/sidebar/logout{{
+        src="assets/bank-victoria/svg/sidebar/logout{{
           hoveredItem === 'logout' ? '-active' : ''
         }}.svg"
       />
@@ -132,7 +132,7 @@
       class="investortrust-sidebar_footer_help"
       [ngClass]="{ collapsed: isExpanded }"
     >
-      <img src="assets/svg/sidebar/whatapps.svg" />
+      <img src="assets/bank-victoria/svg/sidebar/whatapps.svg" />
       <ng-container *ngIf="!isExpanded">Saya Butuh Bantuan</ng-container>
     </div>
   </div>

@@ -3,7 +3,7 @@ import {
   Navigation,
   NavigationData,
   NavigationGroup,
-  NavigationGroupData,
+  VictoriaNavigationGroupData,
 } from './collection/nav.collection';
 import { NavigationEnd, Router } from '@angular/router';
 import { AuthService } from 'src/app/auth/auth.service';
@@ -90,7 +90,7 @@ import {
 })
 export class SidenavComponent {
   navigation: Navigation[] = NavigationData;
-  navigationGroups: NavigationGroup[] = NavigationGroupData;
+  navigationGroups: NavigationGroup[] = VictoriaNavigationGroupData;
   activeRoute = '';
   userCheckData: AuthCheckRequestCollection = new AuthCheckRequestCollection();
   expandedGroups: { [key: string]: boolean } = {};
@@ -134,9 +134,10 @@ export class SidenavComponent {
     dialogRef.afterClosed().subscribe();
   }
 
-  toggleGroup(groupTitle: string) {
-    if (groupTitle === 'Beranda') {
-      this.router.navigate(['/']);
+  toggleGroup(group: NavigationGroup) {
+    const groupTitle = group.groupTitle;
+    if (group.items.length === 0) {
+      this.router.navigate([group.path || '/']);
     }
     const isExpanded = this.expandedGroups[groupTitle];
     Object.keys(this.expandedGroups).forEach((key) => {
@@ -145,12 +146,19 @@ export class SidenavComponent {
     this.expandedGroups[groupTitle] = !isExpanded;
   }
 
-  isGroupExpanded(groupTitle: string): boolean {
-    return this.expandedGroups[groupTitle] || false;
+  isGroupExpanded(group: NavigationGroup): boolean {
+    const groupTitle = group.groupTitle;
+    if (group.items.length !== 0) {
+      return this.expandedGroups[groupTitle] || false;
+    } else if (group.path === this.router.url) {
+      return true;
+    }
+
+    return false;
   }
 
   hasVisibleItems(group: NavigationGroup): boolean {
-    if (group.groupTitle === 'Beranda') return true;
+    if (group.isVisible) return true;
     return group.items.some(
       (item) =>
         item.role === 'all' ||
@@ -208,8 +216,9 @@ export class SidenavComponent {
     }
   }
 
-  shouldShowChildren(title: string): boolean {
-    if (!this.isExpanded) return this.isGroupExpanded(title);
+  shouldShowChildren(group: NavigationGroup): boolean {
+    const title = group.groupTitle;
+    if (!this.isExpanded) return this.isGroupExpanded(group);
     return this.hoveredGroup === title;
   }
 }

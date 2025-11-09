@@ -27,7 +27,7 @@
           <p *ngIf="isErrorMessage && !emailModel.errors && !loginSuccess">
             {{ isErrorMessage }}
           </p>
-          <p *ngIf="loginSuccess">Selamat datang di CMS Investor Trust!</p>
+          <p *ngIf="loginSuccess">Selamat datang di LMS Bank Victoria!</p>
           <p *ngIf="emailModel.errors && emailModel.errors.pattern">
             Email tidak valid.
           </p>
@@ -43,7 +43,7 @@
             #emailModel="ngModel"
             [(ngModel)]="loginCollection.email"
             (ngModelChange)="inputChange()"
-            placeholder="email@investortrust.id"
+            placeholder="email@bankvictoria.id"
             required
             pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
           />
@@ -77,17 +77,17 @@
         >
           {{ isLoading || loginSuccess ? "Memproses..." : "Masuk" }}
         </button>
-        <div class="investortrust-login-register">
+        <!-- <div class="investortrust-login-register">
           Ingin mendaftar akun?
           <a target="_blank" href="https://forms.gle/NVaZgRTFTwbTcpDy5"
             >Isi Form</a
           >
-        </div>
+        </div> -->
       </form>
     </div>
   </div>
   <div class="investortrust-login-right-panel">
-    <img src="assets/svg/white-logo.svg" alt="Logo" />
+    <img src="assets/bank-victoria/images/logo-2.png" alt="Logo" />
   </div>
 </div>
 
