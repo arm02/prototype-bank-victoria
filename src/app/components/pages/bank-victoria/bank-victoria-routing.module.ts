@@ -1,0 +1,61 @@
+import { NgModule, Injectable } from '@angular/core';
+import {
+  RouterModule,
+  RouterStateSnapshot,
+  Routes,
+  TitleStrategy,
+} from '@angular/router';
+import { AuthGuard } from 'src/app/auth/auth.guards';
+import { Title } from '@angular/platform-browser';
+import { ProgramComponent } from './program/program.component';
+import { BankVictoriaComponent } from './bank-victoria.component';
+import { ScheduleComponent } from './schedule/schedule.component';
+@Injectable({ providedIn: 'root' })
+export class TemplatePageTitleStrategy extends TitleStrategy {
+  constructor(private readonly title: Title) {
+    super();
+  }
+
+  override updateTitle(routerState: RouterStateSnapshot) {
+    const title = this.buildTitle(routerState);
+    if (title !== undefined) {
+      this.title.setTitle(title);
+    }
+  }
+}
+const routes: Routes = [
+  {
+    path: '',
+    component: BankVictoriaComponent,
+    children: [
+      {
+        path: 'program',
+        title: 'LMS Program | PT. Bank Victoria International, Tbk',
+        component: ProgramComponent,
+        canActivate: [AuthGuard],
+        data: {
+          role: 'all',
+        },
+      },
+      {
+        path: 'jadwal-pelatihan',
+        title: 'LMS Jadwal Pelatihan | PT. Bank Victoria International, Tbk',
+        component: ScheduleComponent,
+        canActivate: [AuthGuard],
+        data: {
+          role: 'all',
+        },
+      },
+    ]
+  },
+];
+
+@NgModule({
+  imports: [RouterModule.forChild(routes)],
+  exports: [RouterModule],
+  providers: [
+    AuthGuard,
+    { provide: TitleStrategy, useClass: TemplatePageTitleStrategy },
+  ],
+})
+export class BankVictoriaPagesRoutingModule { }

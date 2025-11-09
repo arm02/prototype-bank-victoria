@@ -28,6 +28,7 @@ import { ConfigSitesComponent } from './sites/config-sites/config-sites.componen
 import { TradingCodeComponent } from './trading-code/trading-code.component';
 import { DataWrapperComponent } from './data-wrapper/data-wrapper.component';
 import { AdsArticleComponent } from './article-ads/article-ads.component';
+import { BankVictoriaComponent } from './bank-victoria/bank-victoria.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -239,6 +240,12 @@ const routes: Routes = [
       },
     ],
   },
+  {
+    path: 'lms',
+    component: BankVictoriaComponent,
+    loadChildren: () =>
+      import('./bank-victoria/bank-victoria.module').then((m) => m.BankVictoriaPagesModule),
+  },
 ];
 
 @NgModule({
@@ -249,4 +256,4 @@ const routes: Routes = [
     { provide: TitleStrategy, useClass: TemplatePageTitleStrategy },
   ],
 })
-export class PagesRoutingModule {}
+export class PagesRoutingModule { }
