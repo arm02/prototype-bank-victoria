@@ -8,7 +8,6 @@
     padding: 10px;
     border-radius: 10px;
     background-color: white;
-
     &-event {
         &-content {
             padding: 10px;
@@ -17,21 +16,38 @@
 }
 
 :host ::ng-deep {
-    .fc .fc-button-primary:not(:disabled).fc-button-active, .fc .fc-button-primary:not(:disabled):active {
+
+    .fc .fc-button-primary:not(:disabled).fc-button-active,
+    .fc .fc-button-primary:not(:disabled):active {
         background-color: #348AF7 !important;
         color: white;
         border-color: #D9D9D9;
-        padding: 15px 30px;
+        padding: 10px 20px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 8px;
+        }
     }
-    
+
     .fc .fc-button-primary {
         background-color: transparent;
         border-color: #D9D9D9;
         color: black;
-        padding: 15px 30px;
+        padding: 10px 20px;
+
+        @media only screen and (max-width: 768px) {
+            padding: 8px;
+        }
     }
 
     .fc .fc-daygrid-event {
         cursor: pointer;
+    }
+
+    .fc .fc-toolbar-title {
+        font-size: 20px;
+        @media only screen and (max-width: 768px) {
+            font-size: 14px;
+        }
     }
 }
