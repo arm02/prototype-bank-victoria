@@ -13,6 +13,7 @@ export interface NavigationGroup {
   path: string;
   items: Navigation[];
   isVisible?: boolean;
+  active?: string;
 }
 
 export const NavigationData: Navigation[] = [
@@ -184,6 +185,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
     groupTitleMobile: 'Beranda',
     icon: 'home',
     path: '/',
+    active: 'article',
     items: [],
     route: undefined,
     role: 'all',
@@ -194,6 +196,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
     groupTitleMobile: 'Program',
     icon: 'box-search',
     path: '/lms/program',
+    active: 'program',
     items: [],
     route: undefined,
     role: 'all',
@@ -203,6 +206,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
     groupTitle: 'Jadwal Pelatihan',
     groupTitleMobile: 'Jadwal',
     icon: 'calendar',
+    active: 'jadwal-pelatihan',
     path: '/lms/jadwal-pelatihan',
     items: [],
     route: undefined,

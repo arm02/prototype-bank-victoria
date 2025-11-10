@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { COURSES_LIST } from './program.collection';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-program',
@@ -7,6 +8,7 @@ import { COURSES_LIST } from './program.collection';
   styleUrls: ['./program.component.scss'],
 })
 export class ProgramComponent {
+  constructor(private router: Router) {}
   openMenus: { [key: string]: boolean } = {
     dashboard: true,
     sitePages: true,
@@ -34,5 +36,9 @@ export class ProgramComponent {
 
   isOpen(menu: string): boolean {
     return !!this.openMenus[menu];
+  }
+
+  toDetail() {
+    this.router.navigate(['/lms/program/detail']);
   }
 }
