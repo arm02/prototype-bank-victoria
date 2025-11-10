@@ -66,12 +66,17 @@
     padding-top: 10px;
     &_title {
       display: flex;
+      align-items: center;
       gap: 15px;
       font-size: 14px;
       font-weight: 550;
       color: #08131f;
+      width: 100%;
+      padding: 10px;
+      border-radius: 10px;
       &.active {
-        color: #ed1a21;
+        background: #ed1a21;
+        color: white;
       }
       & > a {
         text-decoration: none;
@@ -86,7 +91,6 @@
       justify-content: space-between;
       align-items: center;
       // padding: 8px 5px 8px 5px;
-      padding: 10px;
       cursor: pointer;
       position: relative;
       &.collapsed {

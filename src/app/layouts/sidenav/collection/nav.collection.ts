@@ -180,7 +180,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
 export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   {
     groupTitle: 'Beranda',
-    icon: 'beranda',
+    icon: 'home',
     path: '/',
     items: [],
     route: undefined,
@@ -189,7 +189,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   },
   {
     groupTitle: 'Program',
-    icon: 'berita',
+    icon: 'box-search',
     path: '/lms/program',
     items: [],
     route: undefined,
@@ -198,7 +198,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   },
   {
     groupTitle: 'Jadwal Pelatihan',
-    icon: 'users',
+    icon: 'calendar',
     path: '/lms/jadwal-pelatihan',
     items: [],
     route: undefined,
