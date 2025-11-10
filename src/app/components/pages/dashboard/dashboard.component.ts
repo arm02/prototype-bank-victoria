@@ -86,11 +86,11 @@ export class DashboardComponent implements OnInit {
         content: 'Dashboard CMS Investor Trust',
       },
     ]);
-    this.authService
-      .authCheck()
-      .subscribe((data: AuthCheckRequestCollection) => {
-        this.userData = data;
-      });
+    // this.authService
+    //   .authCheck()
+    //   .subscribe((data: AuthCheckRequestCollection) => {
+    //     this.userData = data;
+    //   });
   }
 
   getCountData() {

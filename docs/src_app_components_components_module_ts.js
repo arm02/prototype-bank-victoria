@@ -2784,9 +2784,11 @@ class SidenavComponent {
         this.activeRoute = event.url.split('/')[2];
       }
     });
-    this.authService.authCheck().subscribe(data => {
-      this.userCheckData = data;
-    });
+    // this.authService
+    //   .authCheck()
+    //   .subscribe((data: AuthCheckRequestCollection) => {
+    //     this.userCheckData = data;
+    //   });
     // Initialize body class
     this.updateBodyClass();
   }

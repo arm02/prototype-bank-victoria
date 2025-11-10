@@ -3330,10 +3330,13 @@ class DashboardComponent {
       name: 'description',
       content: 'Dashboard CMS Investor Trust'
     }]);
-    this.authService.authCheck().subscribe(data => {
-      this.userData = data;
-    });
+    // this.authService
+    //   .authCheck()
+    //   .subscribe((data: AuthCheckRequestCollection) => {
+    //     this.userData = data;
+    //   });
   }
+
   getCountData() {
     this.dashboardService.getCountDataDashboard().subscribe(res => {
       this.postCount = res.postCount;

@@ -208,7 +208,6 @@ class AuthGuard {
           }
         });
       }
-      console.log(status);
       return status;
     })();
   }
@@ -233,21 +232,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   AuthService: () => (/* binding */ AuthService)
 /* harmony export */ });
-/* harmony import */ var _Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 2513);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 8071);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 274);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ 9736);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 2389);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ 6290);
-/* harmony import */ var src_environments_environments__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! src/environments/environments */ 9413);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/core */ 1699);
-/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/common/http */ 4860);
-/* harmony import */ var _components_services_http_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../components/services/http.service */ 2929);
-/* harmony import */ var _layouts_layouts_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../layouts/layouts.service */ 8098);
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/router */ 7947);
-/* harmony import */ var _components_services_state_service__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ../components/services/state.service */ 8605);
-
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 2513);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 8071);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 274);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! rxjs */ 9736);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs */ 2389);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 6290);
+/* harmony import */ var src_environments_environments__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/environments/environments */ 9413);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/common/http */ 4860);
+/* harmony import */ var _components_services_http_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../components/services/http.service */ 2929);
+/* harmony import */ var _layouts_layouts_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../layouts/layouts.service */ 8098);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var _components_services_state_service__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../components/services/state.service */ 8605);
 
 
 
@@ -264,39 +261,36 @@ class AuthService {
     this.route = route;
     this.router = router;
     this.stateService = stateService;
-    this.unsubcribed = new rxjs__WEBPACK_IMPORTED_MODULE_5__.Subject();
-    this.isAuthenticated = new rxjs__WEBPACK_IMPORTED_MODULE_6__.BehaviorSubject(false);
-    this.user = new rxjs__WEBPACK_IMPORTED_MODULE_6__.BehaviorSubject(null);
+    this.unsubcribed = new rxjs__WEBPACK_IMPORTED_MODULE_4__.Subject();
+    this.isAuthenticated = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(false);
+    this.user = new rxjs__WEBPACK_IMPORTED_MODULE_5__.BehaviorSubject(null);
   }
-  getAuthStatus() {
-    var _this = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
-      yield _this.authCheck().subscribe(data => {
-        if (data) {
-          _this.isAuthenticated.next(true);
-        }
-      });
-      return false;
-    })();
-  }
+  // async getAuthStatus(): Promise<any> {
+  //   await this.authCheck().subscribe((data: any) => {
+  //     if (data) {
+  //       this.isAuthenticated.next(true);
+  //     }
+  //   });
+  //   return false;
+  // }
   authCheck(params) {
-    return this.httpClient.get(src_environments_environments__WEBPACK_IMPORTED_MODULE_1__.environment.config.apiUrl + 'users/check', {
+    return this.httpClient.get(src_environments_environments__WEBPACK_IMPORTED_MODULE_0__.environment.config.apiUrl + 'users/check', {
       withCredentials: true
-    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.map)(response => {
+    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_6__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.map)(response => {
       return response.users;
-    }), (0,rxjs__WEBPACK_IMPORTED_MODULE_9__.catchError)(error => {
+    }), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.catchError)(error => {
       this.router.navigate(['/auth/login']);
       if (!params) {
         this.layoutService.handleError(error);
       }
-      return rxjs__WEBPACK_IMPORTED_MODULE_10__.EMPTY;
+      return rxjs__WEBPACK_IMPORTED_MODULE_9__.EMPTY;
     }));
   }
   login(body) {
     this.isAuthenticated.next(true);
-    return this.httpClient.post(src_environments_environments__WEBPACK_IMPORTED_MODULE_1__.environment.config.apiUrl + 'users/login', body, {
+    return this.httpClient.post(src_environments_environments__WEBPACK_IMPORTED_MODULE_0__.environment.config.apiUrl + 'users/login', body, {
       withCredentials: true
-    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.map)(response => {
+    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_6__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.map)(response => {
       if (response) {
         localStorage.setItem('user-investor-trust', JSON.stringify(response.user));
         if (response.writer) {
@@ -313,16 +307,16 @@ class AuthService {
   }
   logout() {
     this.isAuthenticated.next(true);
-    return this.httpClient.post(src_environments_environments__WEBPACK_IMPORTED_MODULE_1__.environment.config.apiUrl + 'users/logout', {}, {
+    return this.httpClient.post(src_environments_environments__WEBPACK_IMPORTED_MODULE_0__.environment.config.apiUrl + 'users/logout', {}, {
       withCredentials: true
-    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_7__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.map)(response => {
+    }).pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_6__.takeUntil)(this.unsubcribed), (0,rxjs__WEBPACK_IMPORTED_MODULE_7__.map)(response => {
       if (response) {
         localStorage.clear();
         this.router.navigate(['/auth/login']);
       }
-    }), (0,rxjs__WEBPACK_IMPORTED_MODULE_9__.catchError)(error => {
+    }), (0,rxjs__WEBPACK_IMPORTED_MODULE_8__.catchError)(error => {
       this.layoutService.handleError(error);
-      return rxjs__WEBPACK_IMPORTED_MODULE_10__.EMPTY;
+      return rxjs__WEBPACK_IMPORTED_MODULE_9__.EMPTY;
     }));
   }
   getUserData() {
@@ -333,9 +327,9 @@ class AuthService {
   }
 }
 AuthService.ɵfac = function AuthService_Factory(t) {
-  return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_12__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_components_services_http_service__WEBPACK_IMPORTED_MODULE_2__.HttpService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_layouts_layouts_service__WEBPACK_IMPORTED_MODULE_3__.LayoutsService), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_13__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵinject"](_components_services_state_service__WEBPACK_IMPORTED_MODULE_4__.StateService));
+  return new (t || AuthService)(_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_11__.HttpClient), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_components_services_http_service__WEBPACK_IMPORTED_MODULE_1__.HttpService), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_layouts_layouts_service__WEBPACK_IMPORTED_MODULE_2__.LayoutsService), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_12__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_angular_router__WEBPACK_IMPORTED_MODULE_12__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵinject"](_components_services_state_service__WEBPACK_IMPORTED_MODULE_3__.StateService));
 };
-AuthService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_11__["ɵɵdefineInjectable"]({
+AuthService.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_10__["ɵɵdefineInjectable"]({
   token: AuthService,
   factory: AuthService.ɵfac,
   providedIn: 'root'

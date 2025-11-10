@@ -36,14 +36,14 @@ export class AuthService {
     private stateService: StateService
   ) {}
 
-  async getAuthStatus(): Promise<any> {
-    await this.authCheck().subscribe((data: any) => {
-      if (data) {
-        this.isAuthenticated.next(true);
-      }
-    });
-    return false;
-  }
+  // async getAuthStatus(): Promise<any> {
+  //   await this.authCheck().subscribe((data: any) => {
+  //     if (data) {
+  //       this.isAuthenticated.next(true);
+  //     }
+  //   });
+  //   return false;
+  // }
 
   authCheck(params?: string) {
     return this.httpClient
