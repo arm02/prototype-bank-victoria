@@ -95,7 +95,7 @@
 
             <div class="article-related-items">
                 <div class="article-related-item" *ngFor="let article of relatedArticle; let i = index">
-                    <app-related-article [imgUrl]="article.img" [title]="article.title"></app-related-article>
+                    <app-related-article (click)="goToDetailArticle()" [imgUrl]="article.img" [title]="article.title"></app-related-article>
                     <div *ngIf="i + 1 !== relatedArticle.length" class="article-related-item-divider"></div>
                 </div>
             </div>

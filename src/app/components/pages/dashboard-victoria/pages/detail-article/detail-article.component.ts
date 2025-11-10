@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { ANOTHER_ARTICLE, RELATED_ARTICLE } from '../../collection/article.collection';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-detail-article',
@@ -9,4 +10,10 @@ import { ANOTHER_ARTICLE, RELATED_ARTICLE } from '../../collection/article.colle
 export class DetailArticleComponent {
   anotherArticle = structuredClone(ANOTHER_ARTICLE);
   relatedArticle = structuredClone(RELATED_ARTICLE);
+
+  constructor(private router: Router) { }
+
+  goToDetailArticle() {
+    this.router.navigate(['/lms/article/detail-article']);
+  }
 }
