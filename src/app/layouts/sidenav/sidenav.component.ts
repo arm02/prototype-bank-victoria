@@ -17,6 +17,7 @@ import {
   transition,
   animate,
 } from '@angular/animations';
+import { LayoutsService } from '../layouts.service';
 
 @Component({
   selector: 'app-sidenav',
@@ -101,7 +102,8 @@ export class SidenavComponent {
   constructor(
     private router: Router,
     private authService: AuthService,
-    private dialog: MatDialog
+    private dialog: MatDialog,
+    private layoutService: LayoutsService,
   ) {
     router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
@@ -188,6 +190,7 @@ export class SidenavComponent {
 
   updateBodyClass() {
     this.isExpanded = !this.isExpanded;
+    this.layoutService.setIsExpanded(this.isExpanded);
     const body = document.body;
     if (this.isExpanded) {
       body.classList.add('sidebar-collapsed');

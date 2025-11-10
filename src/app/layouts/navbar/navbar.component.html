@@ -1,4 +1,4 @@
-<nav class="navbar">
+<nav class="navbar" [ngClass]="{ 'expanded' : isExpanded }">
   <div class="items-container">
     <div class="title">{{ navTitle }}{{ route.snapshot.data["navTitle"] }}</div>
     <div class="right">

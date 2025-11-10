@@ -9,6 +9,7 @@ import Swal from 'sweetalert2';
 })
 export class LayoutsService {
   isLoading = new Subject<boolean>();
+  isExpanded = new Subject<boolean>();
 
   constructor(private http: HttpClient, private router: Router) {}
 
@@ -18,6 +19,10 @@ export class LayoutsService {
 
   hide() {
     this.isLoading.next(false);
+  }
+
+  setIsExpanded(value: boolean) {
+    this.isExpanded.next(value);
   }
 
   successMessageDialog(message: string) {

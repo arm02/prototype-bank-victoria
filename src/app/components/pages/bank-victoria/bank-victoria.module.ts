@@ -6,7 +6,7 @@ import { ProgramComponent } from './program/program.component';
 import { BankVictoriaComponent } from './bank-victoria.component';
 import { RouterModule } from '@angular/router';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
 @NgModule({
   declarations: [
     ProgramComponent,
@@ -19,7 +19,8 @@ import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-artic
   imports: [
     CommonModule,
     BankVictoriaPagesRoutingModule,
-    RouterModule
+    RouterModule,
+    FullCalendarModule
   ],
   providers: [
   ],

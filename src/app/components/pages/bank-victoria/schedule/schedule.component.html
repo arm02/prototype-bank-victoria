@@ -1,1 +1,24 @@
-<p>Jadwal Pelatihan coming soon!</p>
+<div class="schedule">
+    <full-calendar [options]="calendarOptions">
+        <!-- <ng-template #eventContent let-arg>
+            <div class="schedule-event-content">
+                <ng-container *ngIf="getEventTimeFormat(arg.event) === 'time'">
+                    <div *ngIf="arg.event.start && arg.event.end" class="event-time">
+                        {{ arg.event.start | date:'hh:mm a' }} - {{ arg.event.end | date:'hh:mm a' }}
+                    </div>
+                </ng-container>
+
+                <ng-container *ngIf="getEventTimeFormat(arg.event) === 'dateRange'">
+                    <div class="event-time">
+                        {{ arg.event.start | date:'MMM d' }} - {{ arg.event.end | date:'MMM d' }}
+                    </div>
+                </ng-container>
+
+                <div class="event-title">
+                    {{ arg.event.title }}
+                </div>
+            </div>
+        </ng-template> -->
+    </full-calendar>
+
+</div>
