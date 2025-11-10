@@ -12,6 +12,10 @@
         width: calc(100% - 140px);
     }
 
+    @media only screen and (max-width: 768px) {
+        width: calc(100% - 60px);
+    }
+
     .items-container {
         display: flex;
         align-items: center;
@@ -24,27 +28,10 @@
             margin-left: 20px;
         }
 
-        @media only screen and (max-width: 768px) {
-            width: calc(100% - 60px);
-        }
-
-        .items-container {
-            width: 100%;
+        .right {
             display: flex;
             align-items: center;
-            justify-content: space-between;
             gap: 18px;
-
-            .title {
-                font-weight: 500;
-                font-size: 20px;
-            }
-
-            .right {
-                display: flex;
-                align-items: center;
-                gap: 18px;
-            }
 
             .item {
                 .profile-user {
