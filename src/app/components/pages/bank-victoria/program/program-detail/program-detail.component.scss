@@ -1,0 +1,166 @@
+.container {
+  display: flex;
+  gap: 28px;
+  padding: 20px;
+
+  .courses {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      padding: 10px;
+    }
+
+    .detail {
+      background: #FFFFFF;
+      border: 1px solid #E6E4E4;
+      padding: 18px 35px;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+
+      .title {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: normal;
+      }
+    }
+
+    .header {
+      background: #FFFFFF;
+      border: 1px solid #E6E4E4;
+      padding: 18px 12px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 10px;
+
+      .progress {
+        display: flex;
+        flex-direction: column;
+        font-weight: 400;
+        font-size: 12px;
+        color: #949494;
+        width: 30%;
+      }
+
+      .article-search-container {
+        &-select {
+          position: relative;
+          color: #949494;
+          background-color: #F5F7FB;
+          border: none;
+          border-radius: 10px;
+          padding: 10px 50px 10px 20px;
+
+          appearance: none; // hilangkan panah bawaan browser
+          -webkit-appearance: none;
+          -moz-appearance: none;
+          background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg width='10' height='6' viewBox='0 0 10 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23999' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+          background-repeat: no-repeat;
+          background-position: right 14px center;
+          background-size: 12px;
+          cursor: pointer;
+          width: 40%;
+
+          @media only screen and (max-width: 768px) {
+            width: 60%;
+          }
+
+          &:focus-visible {
+            outline: none;
+          }
+        }
+
+      }
+    }
+  }
+
+  .navigation {
+    width: 30%;
+
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 100%;
+  height: 12px;
+  border-radius: 10px;
+  /* radius untuk container */
+  background-color: #e0e0e0;
+  /* warna background track */
+  overflow: hidden;
+  /* supaya rounded terlihat */
+  border: 0.5px solid #E6E4E499;
+  vertical-align: top;
+  margin-top: 2px;
+  /* optional border */
+}
+
+/* Track di Chrome/Safari */
+progress[value]::-webkit-progress-bar {
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* Fill/indicator di Chrome/Safari */
+progress[value]::-webkit-progress-value {
+  background-color: #65D226;
+  /* ganti warna fill */
+  border-radius: 10px;
+}
+
+.session {
+  display: flex;
+  gap: 10px;
+
+  @media only screen and (max-width: 768px) {
+    overflow: auto;
+
+    &::-webkit-scrollbar {
+      width: 20px;
+      height: 0;
+    }
+  }
+}
+
+
+
+.button-clear {
+  cursor: pointer;
+  border: none;
+  display: block;
+  padding: 10px;
+  background-color: #FFFFFF;
+  border: 1px solid #E6E4E4;
+  border-radius: 5px;
+  color: #E6E4E4;
+  font-size: 15px;
+  font-weight: 500;
+  text-align: center;
+
+  @media only screen and (max-width: 768px) {
+    min-width: 70px;
+  }
+}
+
+.button {
+  cursor: pointer;
+  border: none;
+  display: block;
+  padding: 10px;
+  background-color: #E34243;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  text-align: center;
+}

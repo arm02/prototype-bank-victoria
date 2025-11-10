@@ -1,0 +1,83 @@
+<nav class="sidebar">
+  <h3 class="sidebar-title">Navigation</h3>
+  <hr class="sidebar-divider" />
+
+  <ul class="menu">
+    <li>
+      <button class="menu-item" (click)="toggleMenu('dashboard')">
+        <span class="arrow" [class.open]="isOpen('dashboard')"
+          ><img
+            class="arrow"
+            src="assets/bank-victoria/svg/sidebar/arrow-down.svg"
+        /></span>
+        Dashboard
+      </button>
+
+      <ul class="submenu" *ngIf="isOpen('dashboard')">
+        <li>
+          <button class="menu-item inner">
+            <img
+              class="arrow"
+              src="assets/bank-victoria/svg/sidebar/home.svg"
+              width="15px"
+            />
+            Site Home
+          </button>
+        </li>
+
+        <li>
+          <button class="menu-item inner" (click)="toggleMenu('sitePages')">
+            <span class="arrow" [class.open]="isOpen('sitePages')"
+              ><img
+                class="arrow"
+                src="assets/bank-victoria/svg/sidebar/arrow-down.svg"
+            /></span>
+            Site Pages
+          </button>
+          <ul class="submenu" *ngIf="isOpen('sitePages')">
+            <li>
+              <span class="menu-link">
+                <img
+                  class="arrow"
+                  src="assets/bank-victoria/svg/sidebar/arrow-right.svg"
+                />Page 1</span
+              >
+            </li>
+            <li>
+              <span class="menu-link">
+                <img
+                  class="arrow"
+                  src="assets/bank-victoria/svg/sidebar/arrow-right.svg"
+                />Page 2</span
+              >
+            </li>
+          </ul>
+        </li>
+
+        <li>
+          <button
+            class="menu-item inner highlight"
+            (click)="toggleMenu('myCourses')"
+          >
+            <span class="arrow" [class.open]="isOpen('myCourses')"
+              ><img
+                class="arrow"
+                src="assets/bank-victoria/svg/sidebar/arrow-down.svg"
+            /></span>
+            My Courses
+          </button>
+          <ul class="submenu" *ngIf="isOpen('myCourses')">
+            <li *ngFor="let course of courses">
+              <span class="menu-link"
+                ><img
+                  class="arrow"
+                  src="assets/bank-victoria/svg/sidebar/arrow-right.svg"
+                />{{ course }}</span
+              >
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</nav>
