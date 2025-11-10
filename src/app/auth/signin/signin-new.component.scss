@@ -240,7 +240,7 @@
     &>span {
         position: absolute;
         right: -10px;
-        top: 42px;
+        top: 38px;
         cursor: pointer;
     }
 }
@@ -280,7 +280,7 @@
 .copyright-container {
     position: absolute;
     right: 20px;
-    bottom: 50px;
+    bottom: 30px;
 
     @media only screen and (max-width: 768px) {
         position: absolute;
