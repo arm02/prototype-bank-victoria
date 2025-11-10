@@ -30,6 +30,8 @@
     "@fullcalendar/core": "^6.1.19",
     "@fullcalendar/daygrid": "^6.1.19",
     "@fullcalendar/interaction": "^6.1.19",
+    "@fullcalendar/list": "^6.1.19",
+    "@fullcalendar/timegrid": "^6.1.19",
     "@sweetalert2/ngx-sweetalert2": "^12.2.0",
     "@syncfusion/ej2-material-theme": "~22.2.5",
     "@tinymce/tinymce-angular": "^7.0.0",
