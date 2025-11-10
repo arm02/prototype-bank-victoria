@@ -1,32 +1,23 @@
-<nav class="navbar">
-  <div class="items-container">
-    <div class="title">{{ navTitle }}</div>
-    <div class="right">
-      <div class="item">
-        <img
-          src="./assets/bank-victoria/svg/ic-notification.svg"
-          alt="Notification icon"
-        />
-      </div>
-      <div class="item">
-        <div class="profile-user">
-          <img
-            src="./assets/bank-victoria/images/avatar.png"
-            alt="Avatar Illust"
-          />
-          <div class="profile-user-information">
-            <span class="profile-user-information-name">Administrator</span>
-            <span class="profile-user-information-email">lms@victoria.com</span>
-          </div>
-        </div>
+<nav class="navbar" [ngClass]="{ 'expanded' : isExpanded }">
+    <div class="items-container">
+        <div class="title">{{ navTitle }}</div>
+        <div class="right">
+            <div class="item">
+                <img src="./assets/bank-victoria/svg/ic-notification.svg" alt="Notification icon" />
+            </div>
+            <div class="item">
+                <div class="profile-user">
+                    <img src="./assets/bank-victoria/images/avatar.png" alt="Avatar Illust" />
+                    <div class="profile-user-information">
+                        <span class="profile-user-information-name">Administrator</span>
+                        <span class="profile-user-information-email">lms@victoria.com</span>
+                    </div>
+                </div>
 
-        <div class="profile-user-responsive">
-          <img
-            src="./assets/bank-victoria/svg/burger-menu.svg"
-            alt="Burger menu icon"
-          />
+                <div class="profile-user-responsive">
+                    <img src="./assets/bank-victoria/svg/burger-menu.svg" alt="Burger menu icon" />
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </nav>

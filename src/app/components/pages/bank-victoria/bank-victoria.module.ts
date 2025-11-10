@@ -6,7 +6,7 @@ import { ProgramComponent } from './program/program.component';
 import { BankVictoriaComponent } from './bank-victoria.component';
 import { RouterModule } from '@angular/router';
 import { ScheduleComponent } from './schedule/schedule.component';
-import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
+import { FullCalendarModule } from '@fullcalendar/angular';
 import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
 import { NavigationComponent } from './program/navigation/navigation.component';
 @NgModule({
@@ -23,7 +23,8 @@ import { NavigationComponent } from './program/navigation/navigation.component';
   imports: [
     CommonModule,
     BankVictoriaPagesRoutingModule,
-    RouterModule
+    RouterModule,
+    FullCalendarModule
   ],
   providers: [
   ],
