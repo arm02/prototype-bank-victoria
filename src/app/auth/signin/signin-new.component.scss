@@ -1,345 +1,297 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 :host * {
-  font-family: "Inter", sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .investortrust-login {
-  overflow: hidden;
-  display: flex;
-  height: 100vh;
-  background: #fff;
-  @media only screen and (max-width: 768px) {
-    align-items: flex-start;
-    justify-content: center;
-  }
-  &-container {
-    width: 60%;
+    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    padding: 60px 40px 0 0;
-    position: relative;
+    height: 100vh;
+    background: #fff;
+
     @media only screen and (max-width: 768px) {
-      width: 100%;
+        align-items: flex-start;
+        justify-content: center;
     }
-    & img.logo {
-      width: 180px;
-      margin-bottom: 20px;
-      @media only screen and (max-width: 768px) {
+
+    &-container {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        padding: 60px 40px 0 0;
         position: relative;
-        top: 0;
-        margin-bottom: 80px;
-      }
-    }
-  }
-  .title {
-    font-size: 45px;
-    font-weight: bold;
-    line-height: normal;
-    width: 70%;
-    margin-bottom: 24px;
-  }
-  .subtitle {
-    font-size: 15px;
-    color: #666666;
-    font-weight: normal;
-  }
-  &-box {
-    width: 100%;
-    max-width: 350px;
-  }
-  &-forgot {
-    text-align: right;
-    margin-bottom: 20px;
-    & a {
-      font-size: 13px;
-      font-weight: 700;
-      color: #ed1a21;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  &-register {
-    margin-top: 15px;
-    font-size: 13px;
-    text-align: left;
-    & a {
-      color: #ed1a21;
-      text-decoration: none;
-      font-weight: 800;
-      &:hover {
-        text-decoration: underline;
-      }
-    }
-  }
-  &-right-panel {
-    width: 40%;
-    background: transparent;
-    color: #fff;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-left: 4rem;
-    // gap: 14px;
-    @media only screen and (max-width: 768px) {
-      display: none;
-    }
-    & img {
-      width: 300px;
-      z-index: 1;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+            align-items: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        & img.logo {
+            width: 180px;
+            margin-bottom: 20px;
+
+            @media only screen and (max-width: 768px) {
+                position: relative;
+                margin-bottom: 40px;
+            }
+        }
     }
 
-    & h3 {
-      font-size: 20px;
-      font-weight: bold;
+    .title {
+        font-size: 45px;
+        font-weight: bold;
+        line-height: normal;
+        width: 70%;
+        margin-bottom: 24px;
+
+        @media only screen and (max-width: 768px) {
+            font-size: 24px;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 12px;
+        }
     }
 
-    .asset-illust {
-      &-1 {
-        transform: rotate(-5deg);
-        margin-top: -11rem;
-        opacity: .7;
-      }
+    .subtitle {
+        font-size: 15px;
+        color: #666666;
+        font-weight: normal;
 
-      &-2 {
-        
-      }
-      &-3 {
-        transform: rotate(-15deg);
-        margin-left: 2rem;
-      }
+        @media only screen and (max-width: 768px) {
+            font-size: 12px;
+            text-align: center;
+            width: 100%;
+        }
     }
-    .transform-5 {
-      transform: rotate(-5deg)
-    }
-  }
-  &-btn {
-    width: 100%;
-    padding: 10px 12px;
-    border: none;
-    border-radius: 10px;
-    background: #ed1a21;
-    color: #fff;
-    font-weight: bold;
-    cursor: pointer;
-    &:disabled {
-      background-color: #08131f4d;
-    }
-  }
-  &-error {
-    padding: 16px;
-    border: 1px solid #fecaca;
-    background-color: #fef2f2;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    & > div {
-      & > p {
-        font-size: 12px;
-        color: #b91c1b;
-        font-weight: 400;
-        margin: 0;
-      }
-      & > span {
-        font-size: 12px;
-        color: #991b1b;
-        font-weight: 600;
-      }
-    }
-  }
-  &-success {
-    padding: 16px;
-    border: 1px solid #329113;
-    background-color: #ddffdd;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    border-radius: 12px;
-    margin-bottom: 10px;
-    & > div {
-      & > p {
-        font-size: 12px;
-        color: #000;
-        font-weight: 400;
-        margin: 0;
-      }
-      & > span {
-        font-size: 12px;
-        color: #000;
-        font-weight: 600;
-      }
-    }
-  }
 
-  .asset-blurred {
-    width: 30%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-  }
+    &-box {
+        width: 100%;
+        max-width: 350px;
+
+        @media only screen and (max-width: 768px) {
+            margin-top: 40px;
+        }
+    }
+
+    &-forgot {
+        text-align: right;
+        margin-bottom: 20px;
+
+        & a {
+            font-size: 13px;
+            font-weight: 700;
+            color: #ed1a21;
+            text-decoration: none;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-register {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: left;
+
+        & a {
+            color: #ed1a21;
+            text-decoration: none;
+            font-weight: 800;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &-right-panel {
+        width: 40%;
+        background: transparent;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        flex-direction: column;
+        margin-left: 4rem;
+
+        // gap: 14px;
+        @media only screen and (max-width: 768px) {
+            display: none;
+        }
+
+        & img {
+            width: 300px;
+            z-index: 1;
+        }
+
+        & h3 {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .asset-illust {
+            &-1 {
+                transform: rotate(-5deg);
+                margin-top: -11rem;
+                opacity: .7;
+            }
+
+            &-2 {}
+
+            &-3 {
+                transform: rotate(-15deg);
+                margin-left: 2rem;
+            }
+        }
+
+        .transform-5 {
+            transform: rotate(-5deg)
+        }
+    }
+
+    &-btn {
+        width: 100%;
+        padding: 10px 12px;
+        border: none;
+        border-radius: 10px;
+        background: #ed1a21;
+        color: #fff;
+        font-weight: bold;
+        cursor: pointer;
+
+        &:disabled {
+            background-color: #08131f4d;
+        }
+    }
+
+    &-error {
+        padding: 16px;
+        border: 1px solid #fecaca;
+        background-color: #fef2f2;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+
+        &>div {
+            &>p {
+                font-size: 12px;
+                color: #b91c1b;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            &>span {
+                font-size: 12px;
+                color: #991b1b;
+                font-weight: 600;
+            }
+        }
+    }
+
+    &-success {
+        padding: 16px;
+        border: 1px solid #329113;
+        background-color: #ddffdd;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        border-radius: 12px;
+        margin-bottom: 10px;
+
+        &>div {
+            &>p {
+                font-size: 12px;
+                color: #000;
+                font-weight: 400;
+                margin: 0;
+            }
+
+            &>span {
+                font-size: 12px;
+                color: #000;
+                font-weight: 600;
+            }
+        }
+    }
+
+    .asset-blurred {
+        width: 30%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+    }
 }
 
 .form-group {
-  margin-bottom: 15px;
-  width: 93%;
-  position: relative;
+    margin-bottom: 15px;
+    width: 93%;
+    position: relative;
 
-  & > span {
-    position: absolute;
-    right: -10px;
-    top: 42px;
-    cursor: pointer;
-  }
+    &>span {
+        position: absolute;
+        right: -10px;
+        top: 42px;
+        cursor: pointer;
+    }
 }
 
 .form-group label {
-  display: block;
-  margin-bottom: 4px;
-  font-size: 10px;
-  color: #000000;
-  font-weight: normal;
+    display: block;
+    margin-bottom: 4px;
+    font-size: 10px;
+    color: #000000;
+    font-weight: normal;
 }
 
 .form-group input {
-  width: 100%;
-  padding: 12px;
-  border: 1px solid #ccc;
-  border-radius: 10px;
-  color: #000;
-  outline: none;
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    color: #000;
+    outline: none;
 }
 
 .form-group input:focus {
-  border-color: #2c6bb1;
+    border-color: #2c6bb1;
 }
 
 .check-icon {
-  display: inline-block;
-  color: green;
-  font-size: 20px;
+    display: inline-block;
+    color: green;
+    font-size: 20px;
 }
 
 .check-icon::before {
-  content: "✔"; /* Unicode check mark */
+    content: "✔";
+    /* Unicode check mark */
 }
 
-// .investortrust-login {
-//     width: 360px;
-//     padding: 8% 0 0;
-//     margin: auto;
-// }
+.copyright-container {
+    position: absolute;
+    right: 20px;
+    bottom: 50px;
 
-// .investortrust-login-page {
-//     position: relative;
-//     z-index: 1;
-//     background: #FFFFFF;
-//     max-width: 360px;
-//     margin: 0 auto 100px;
-//     padding: 45px;
-//     text-align: center;
-//     border-radius: 10px;
-//     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+    @media only screen and (max-width: 768px) {
+        position: absolute;
+        bottom: 20px;
+        width: calc(100% - 40px);
+        text-align: center;
+    }
 
-//     .header__image {
-//         width: 50%;
-//         margin-bottom: 20px;
-//     }
-
-// }
-
-// .investortrust-login-page input {
-//     font-family: "Roboto", sans-serif;
-//     outline: 0;
-//     background: #f2f2f2;
-//     width: 100%;
-//     border: 0;
-//     margin: 0 0 15px;
-//     padding: 15px;
-//     box-sizing: border-box;
-//     font-size: 14px;
-//     border-radius: 10px;
-// }
-
-// .investortrust-login-page button {
-//     font-family: "Roboto", sans-serif;
-//     text-transinvestortrust-login-page: uppercase;
-//     outline: 0;
-//     background: #0C5DD1;
-//     width: 100%;
-//     border: 0;
-//     border-radius: 100px;
-//     padding: 15px;
-//     color: #FFFFFF;
-//     font-size: 14px;
-//     -webkit-transition: all 0.3 ease;
-//     transition: all 0.3 ease;
-//     cursor: pointer;
-
-//     &:disabled {
-//         background-color: #b3b3b3;
-//         cursor: not-allowed;
-//     }
-// }
-
-// .investortrust-login-page button:hover,
-// .investortrust-login-page button:active,
-// .investortrust-login-page button:focus {
-//     background: #0C5DD1;
-// }
-
-// .investortrust-login-page .message {
-//     margin: 15px 0 0;
-//     color: #b3b3b3;
-//     font-size: 12px;
-// }
-
-// .investortrust-login-page .message a {
-//     color: #4CAF50;
-//     text-decoration: none;
-// }
-
-// .container {
-//     position: relative;
-//     z-index: 1;
-//     max-width: 300px;
-//     margin: 0 auto;
-// }
-
-// .container:before,
-// .container:after {
-//     content: "";
-//     display: block;
-//     clear: both;
-// }
-
-// .container .info {
-//     margin: 50px auto;
-//     text-align: center;
-// }
-
-// .container .info h1 {
-//     margin: 0 0 15px;
-//     padding: 0;
-//     font-size: 36px;
-//     font-weight: 300;
-//     color: #1a1a1a;
-// }
-
-// .container .info span {
-//     color: #4d4d4d;
-//     font-size: 12px;
-// }
-
-// .container .info span a {
-//     color: #000000;
-//     text-decoration: none;
-// }
-
-// .container .info span .fa {
-//     color: #EF3B3A;
-// }
+    &-text {
+        font-size: 12px;
+        font-weight: 400;
+        color: #666666;
+    }
+}
