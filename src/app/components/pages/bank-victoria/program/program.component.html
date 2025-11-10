@@ -39,7 +39,7 @@
           </div>
           <span class="subtitle">{{ course.progress }}% progressed</span>
           <progress max="100" [value]="course.progress"></progress>
-          <button class="button">Enroll Kursus</button>
+          <button class="button" (click)="toDetail()">Enroll Kursus</button>
         </div>
       </div>
     </div>

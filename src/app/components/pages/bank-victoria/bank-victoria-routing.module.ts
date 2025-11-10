@@ -11,6 +11,7 @@ import { ProgramComponent } from './program/program.component';
 import { BankVictoriaComponent } from './bank-victoria.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
+import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -41,6 +42,16 @@ const routes: Routes = [
         canActivate: [AuthGuard],
         data: {
           navTitle: 'Daftar Program',
+          role: 'all',
+        },
+      },
+      {
+        path: 'program/detail',
+        title: 'Full Course HTML and CSS Courses from Scratch | PT. Bank Victoria International, Tbk',
+        component: ProgramDetailComponent,
+        canActivate: [AuthGuard],
+        data: {
+          navTitle: 'Full Course HTML and CSS Courses from Scratch',
           role: 'all',
         },
       },

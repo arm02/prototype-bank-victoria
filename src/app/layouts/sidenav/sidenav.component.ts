@@ -151,9 +151,12 @@ export class SidenavComponent {
 
   isGroupExpanded(group: NavigationGroup): boolean {
     const groupTitle = group.groupTitle;
+      console.log(this.router.url.split('/')[2]);
     if (group.items.length !== 0) {
       return this.expandedGroups[groupTitle] || false;
-    } else if (group.path === this.router.url) {
+    }else if(this.router.url.split('/')[2] === undefined && group.groupTitle === 'Beranda') {
+      return true;
+    } else if (group.active === this.router.url.split('/')[2]) {
       return true;
     }
 

@@ -7,11 +7,13 @@ import { BankVictoriaComponent } from './bank-victoria.component';
 import { RouterModule } from '@angular/router';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
+import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
 @NgModule({
   declarations: [
     ProgramComponent,
     BankVictoriaComponent,
     ScheduleComponent,
+    ProgramDetailComponent,
   ],
   exports: [
     ProgramComponent,
