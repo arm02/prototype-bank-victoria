@@ -73,6 +73,7 @@ import { AutosaveService } from '../services/autosave.service';
 import { DeletedNewsComponent } from './news/deleted-news/deleted-news.component';
 import { DashboardVictoriaComponent } from './dashboard-victoria/dashboard-victoria.component';
 import { AnotherArticleComponent } from './dashboard-victoria/components/another-article/another-article.component';
+import { RelatedArticleComponent } from './dashboard-victoria/components/related-article/related-article.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -121,6 +122,7 @@ import { AnotherArticleComponent } from './dashboard-victoria/components/another
     DeletedNewsComponent,
     DashboardVictoriaComponent,
     AnotherArticleComponent,
+    RelatedArticleComponent,
   ],
   exports: [
     DashboardComponent,

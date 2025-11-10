@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ARTICLE_RELATED } from './collection/article.collection';
+import { ANOTHER_ARTICLE, RELATED_ARTICLE } from './collection/article.collection';
 
 @Component({
   selector: 'app-dashboard-victoria',
@@ -7,5 +7,6 @@ import { ARTICLE_RELATED } from './collection/article.collection';
   styleUrls: ['./dashboard-victoria.component.scss']
 })
 export class DashboardVictoriaComponent {
-  articleRelated = structuredClone(ARTICLE_RELATED);
+  anotherArticle = structuredClone(ANOTHER_ARTICLE);
+  relatedArticle = structuredClone(RELATED_ARTICLE);
 }

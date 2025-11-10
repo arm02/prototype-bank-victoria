@@ -28,12 +28,38 @@
                 </button>
             </div>
         </div>
-        <div class="article-related">
-            <div class="article-related-item" *ngFor="let article of articleRelated">
+        <div class="article-another">
+            <div class="article-another-item" *ngFor="let article of anotherArticle">
                 <app-another-article [imgUrl]="article.img" [title]="article.title"></app-another-article>
             </div>
         </div>
     </div>
     <div class="dashboard-victoria-right-panel">
+        <div class="article-related-title">
+            Related Article
+        </div>
+        <div class="article-search-container">
+            <div class="article-search-container-title">
+                Cari
+            </div>
+            <div class="article-search-container-form-control">
+                <input name="search-article" class="article-search-container-input" type="text"
+                    placeholder="Cari Artikel" />
+                <img class="ic-search" src="./assets/bank-victoria/svg/ic-search.svg" alt="Search Icon" />
+            </div>
+
+        </div>
+        <div class="article-related">
+            <div class="article-related-title desktop">
+                Related Article
+            </div>
+
+            <div class="article-related-items">
+                <div class="article-related-item" *ngFor="let article of relatedArticle; let i = index">
+                    <app-related-article [imgUrl]="article.img" [title]="article.title"></app-related-article>
+                    <div *ngIf="i + 1 !== relatedArticle.length" class="article-related-item-divider"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
