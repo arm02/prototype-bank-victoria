@@ -1,3 +1,39 @@
 <section class="dashboard-victoria">
-    Dashboard coming soon!
+    <div class="dashboard-victoria-left-panel">
+        <div class="main-article">
+            <img src="./assets/bank-victoria/images/illust-article.png" alt="Illust Article" />
+            <div class="main-article-content">
+                <span class="main-article-content-pill">Tech</span>
+                <div class="main-article-content-title">
+                    Mengapa Web Development Penting di Era Digital?
+                </div>
+                <div class="main-article-content-desc">
+                    Di tengah pesatnya perkembangan teknologi, hampir setiap bisnis, layanan, dan informasi hadir dalam
+                    bentuk website atau aplikasi web. Menguasai pengembangan web (web development) bukan lagi hanya
+                    keterampilan tambahan, melainkan sebuah kompetensi esensial yang membuka pintu karier tak terbatas.
+                </div>
+                <div class="main-article-content-information">
+                    <span class="main-article-content-information-date">
+                        5 November, 2025 10:21 WIB
+                    </span>
+
+                    <div class="main-article-content-information-view">
+                        <img src="./assets/bank-victoria/svg/eye.svg" alt="Eye Icon" />
+                        <span>1,42k</span>
+                    </div>
+                </div>
+
+                <button class="main-article-content-button">
+                    Detail
+                </button>
+            </div>
+        </div>
+        <div class="article-related">
+            <div class="article-related-item" *ngFor="let article of articleRelated">
+                <app-another-article [imgUrl]="article.img" [title]="article.title"></app-another-article>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-victoria-right-panel">
+    </div>
 </section>
