@@ -29,6 +29,7 @@ import { TradingCodeComponent } from './trading-code/trading-code.component';
 import { DataWrapperComponent } from './data-wrapper/data-wrapper.component';
 import { AdsArticleComponent } from './article-ads/article-ads.component';
 import { BankVictoriaComponent } from './bank-victoria/bank-victoria.component';
+import { DashboardVictoriaComponent } from './dashboard-victoria/dashboard-victoria.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -45,7 +46,7 @@ export class TemplatePageTitleStrategy extends TitleStrategy {
 const routes: Routes = [
   {
     path: '',
-    component: DashboardComponent,
+    component: DashboardVictoriaComponent,
   },
   {
     path: 'pages',

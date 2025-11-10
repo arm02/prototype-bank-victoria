@@ -94,9 +94,11 @@
       cursor: pointer;
       position: relative;
       &.collapsed {
+        transition: .2s;
         &:hover {
           border-radius: 3px;
-          background-color: #e2e8ef;
+          background-color: #ed1a21;
+          border-radius: 10px
         }
       }
     }

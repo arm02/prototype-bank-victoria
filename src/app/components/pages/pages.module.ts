@@ -71,6 +71,7 @@ import { AdsArticleComponent } from './article-ads/article-ads.component';
 import { MasterDataFormAdsArctileComponent } from './article-ads/form-article-ads/form-article-ads.component';
 import { AutosaveService } from '../services/autosave.service';
 import { DeletedNewsComponent } from './news/deleted-news/deleted-news.component';
+import { DashboardVictoriaComponent } from './dashboard-victoria/dashboard-victoria.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -117,6 +118,7 @@ import { DeletedNewsComponent } from './news/deleted-news/deleted-news.component
     AdsArticleComponent,
     MasterDataFormAdsArctileComponent,
     DeletedNewsComponent,
+    DashboardVictoriaComponent,
   ],
   exports: [
     DashboardComponent,
