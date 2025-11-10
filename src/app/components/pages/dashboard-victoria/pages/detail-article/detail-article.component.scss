@@ -25,14 +25,16 @@
             background-color: white;
             border: 1px solid #E6E4E4;
             border-radius: 10px;
+
             @media only screen and (max-width: 768px) {
                 padding: 20px;
                 border: none;
             }
+
             &-container {
                 display: flex;
                 flex-direction: column;
-    
+
                 @media only screen and (max-width: 768px) {
                     flex-direction: column;
                 }
@@ -42,6 +44,7 @@
                 width: 100%;
                 border-radius: 10px;
                 margin-bottom: 1rem;
+                object-fit: cover;
 
                 @media only screen and (max-width: 768px) {
                     width: 100%;
@@ -56,6 +59,7 @@
 
                 color: #666666;
                 font-size: 12px;
+
                 &-view {
                     display: flex;
                     align-items: center;
@@ -145,14 +149,20 @@
 
         .article-another {
             cursor: pointer;
-            margin-top: 24px;
             display: flex;
             flex-wrap: wrap;
             align-items: center;
-            gap: 1rem;
+            margin-left: -12px;
+            margin-right: -12px;
+            margin-top: 0;
 
             &-item {
-                width: 32%;
+                flex: 0 0 auto;
+                width: 33.333333%;
+                padding-right: 12px;
+                padding-left: 12px;
+                box-sizing: border-box;
+                margin-top: 10px;
 
                 @media only screen and (max-width: 768px) {
                     width: 100%;
