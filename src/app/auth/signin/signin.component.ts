@@ -9,8 +9,8 @@ import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
-  templateUrl: './signin.component.html',
-  styleUrls: ['./signin.component.scss'],
+  templateUrl: './signin-new.component.html',
+  styleUrls: ['./signin-new.component.scss'],
 })
 export class SigninComponent implements OnInit {
   loginCollection: LoginRequestCollection = new LoginRequestCollection();

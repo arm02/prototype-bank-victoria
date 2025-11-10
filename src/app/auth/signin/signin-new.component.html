@@ -1,0 +1,134 @@
+<div class="investortrust-login">
+  <img class="asset-blurred" src="assets/bank-victoria/svg/blur-logo.svg" alt="Logo" />
+  <div class="investortrust-login-right-panel">
+    <img class="asset-illust-1" src="assets/bank-victoria/svg/illust-course.svg" alt="Logo" />
+    <img class="asset-illust-2" src="assets/bank-victoria/svg/illust-course.svg" alt="Logo" />
+    <img class="asset-illust-3" src="assets/bank-victoria/svg/illust-course.svg" alt="Logo" />
+  </div>
+  <div class="investortrust-login-container">
+    <img
+      src="./assets/bank-victoria/images/logo-horizontal.png"
+      alt="Investortrust"
+      class="logo"
+    />
+    <span class="title">Welcome Back to Your Learning Journey</span>
+    <p class="subtitle">Log in to access your courses, track progress, and achieve your goals.</p>
+    <div class="investortrust-login-box">
+      <div
+        *ngIf="
+          (isSubmitted && emailModel.errors && emailModel.errors.pattern) ||
+          isErrorMessage ||
+          loginSuccess
+        "
+        class="investortrust-login-{{ loginSuccess ? 'success' : 'error' }}"
+      >
+        <span class="check-icon" *ngIf="loginSuccess"></span>
+        <img
+          *ngIf="!loginSuccess"
+          src="assets/svg/error-circle.svg"
+          alt="Error"
+        />
+        <div>
+          <span>{{ loginSuccess ? "Login Berhasil" : "Login Gagal" }}</span>
+          <p *ngIf="isErrorMessage && !emailModel.errors && !loginSuccess">
+            {{ isErrorMessage }}
+          </p>
+          <p *ngIf="loginSuccess">Selamat datang di LMS Bank Victoria!</p>
+          <p *ngIf="emailModel.errors && emailModel.errors.pattern">
+            Email tidak valid.
+          </p>
+        </div>
+      </div>
+      <form>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            #emailModel="ngModel"
+            [(ngModel)]="loginCollection.email"
+            (ngModelChange)="inputChange()"
+            placeholder="email@bankvictoria.id"
+            required
+            pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+          />
+        </div>
+        <div class="form-group">
+          <label for="password">Kata Sandi</label>
+          <input
+            [type]="showPassword ? 'text' : 'password'"
+            id="password"
+            placeholder="Min. 8 karakter"
+            name="password"
+            #passworModel="ngModel"
+            [(ngModel)]="loginCollection.password"
+            (ngModelChange)="inputChange()"
+            required
+          />
+          <span (click)="showPassword = !showPassword">
+            <img src="assets/svg/eye{{ showPassword ? '-closed' : '' }}.svg" />
+          </span>
+        </div>
+        <div class="investortrust-login-forgot">
+          <a target="_blank" href="https://wa.me/6287872753959"
+            >Lupa kata sandi?</a
+          >
+        </div>
+        <button
+          type="submit"
+          class="investortrust-login-btn"
+          [disabled]="isLoading || loginSuccess"
+          (click)="submitLogin()"
+        >
+          {{ isLoading || loginSuccess ? "Memproses..." : "Masuk" }}
+        </button>
+        <!-- <div class="investortrust-login-register">
+          Ingin mendaftar akun?
+          <a target="_blank" href="https://forms.gle/NVaZgRTFTwbTcpDy5"
+            >Isi Form</a
+          >
+        </div> -->
+      </form>
+    </div>
+  </div>
+</div>
+
+<!-- <div class="investortrust-login">
+  <div class="investortrust-login-page">
+    <img class="header__image" src="assets/ico/footer-logo.png" />
+    <form class="login-form">
+      <input
+        type="email"
+        name="email"
+        #emailModel="ngModel"
+        [(ngModel)]="loginCollection.email"
+        placeholder="Email"
+        required
+        pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+      />
+      <input
+        type="password"
+        name="password"
+        #passworModel="ngModel"
+        [(ngModel)]="loginCollection.password"
+        required
+        placeholder="Password"
+      />
+      <button
+        [disabled]="emailModel.errors || passworModel.errors"
+        (click)="submitLogin()"
+      >
+        {{
+          emailModel.errors && emailModel.errors.required
+            ? "Login"
+            : emailModel.errors && emailModel.errors.pattern
+            ? "Email Invalid"
+            : passworModel.errors && passworModel.errors.required
+            ? "Password Required"
+            : "Login"
+        }}
+      </button>
+    </form>
+  </div>
+</div> -->
