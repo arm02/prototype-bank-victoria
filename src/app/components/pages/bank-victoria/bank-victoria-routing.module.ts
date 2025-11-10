@@ -28,6 +28,7 @@ const routes: Routes = [
   {
     path: '',
     component: BankVictoriaComponent,
+    canActivate: [AuthGuard],
     data: {
       navTitle: 'Beranda',
     },

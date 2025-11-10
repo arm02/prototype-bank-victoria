@@ -5,7 +5,7 @@ import {
   LoginRequestCollection,
 } from 'src/app/collection/auth.collection';
 import { Meta } from '@angular/platform-browser';
-import { Router } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-signin',
@@ -22,7 +22,8 @@ export class SigninComponent implements OnInit {
   constructor(
     private authService: AuthService,
     private meta: Meta,
-    private router: Router
+    private router: Router,
+    private route: ActivatedRoute
   ) {}
 
   ngOnInit() {
@@ -40,6 +41,9 @@ export class SigninComponent implements OnInit {
   }
 
   checkLogin() {
+    if (localStorage.getItem('lms-remember-me')) {
+      this.router.navigate(['/']);
+    }
     // this.authService
     //   .authCheck('login_page')
     //   .subscribe((data: AuthCheckRequestCollection) => {
@@ -62,15 +66,21 @@ export class SigninComponent implements OnInit {
       this.isLoading = false;
       return;
     }
-    this.authService.login(this.loginCollection).subscribe({
-      next: () => {
-        this.loginSuccess = true;
+    if (
+      this.loginCollection.email === 'lms@victoria.com' &&
+      this.loginCollection.password === '123'
+    ) {
+      this.loginSuccess = true;
+      localStorage.setItem('lms-remember-me', 'temporary-token');
+      setTimeout(() => {
         this.isLoading = false;
-      },
-      error: (error) => {
-        this.isLoading = false;
-        this.isErrorMessage = error?.error?.message;
-      },
-    });
+        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+        this.router.navigateByUrl(returnUrl);
+      }, 1000);
+      return;
+    } else {
+      this.isLoading = false;
+      this.isErrorMessage = 'Email atau password salah';
+    }
   }
 }
