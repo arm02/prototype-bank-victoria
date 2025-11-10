@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:host * {
+    font-family: "Poppins";
+}
+
+.card-article {
+    padding: 10px;
+    background-color: white;
+    border: 1px solid #E6E4E4;
+    border-radius: 10px;
+    display: flex;
+    gap: 1rem;
+    
+    img {
+        width: 50%;
+        border-radius: 10px;
+    }
+
+    .content {
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+
+        .date {
+            font-weight: 400;
+            color: #666666;
+        }
+    }
+
+}
