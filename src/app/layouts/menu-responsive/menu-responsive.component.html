@@ -1,8 +1,8 @@
 <div class="menu-responsive">
     <div class="menu-responsive-container">
-        <div *ngFor="let menu of menuCollection" 
-            class="menu-responsive-item" 
-            (click)="goToPage(menu.path)" 
+        <div *ngFor="let menu of menuCollection"
+            class="menu-responsive-item"
+            (click)="goToPage(menu.path)"
             [ngClass]="{
                 active: menu.path === activeRoute
             }">
