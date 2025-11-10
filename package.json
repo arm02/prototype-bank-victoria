@@ -12,7 +12,7 @@
     "production": "ng build --output-path=/var/www/html --configuration=production",
     "staging": "ng build --output-path=/var/www/html/staging --configuration=staging --base-href=/staging/",
     "development": "ng build --output-path=/var/www/html/development --configuration=development --base-href=/development/",
-    "victoria": "ng build --output-path=docs --configuration=development --base-href=/prototype-bank-victoria/"
+    "victoria": "ng build --output-path=docs --configuration=development --base-href=/"
   },
   "private": true,
   "dependencies": {
