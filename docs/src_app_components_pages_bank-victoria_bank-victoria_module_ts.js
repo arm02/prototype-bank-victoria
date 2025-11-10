@@ -53,12 +53,13 @@ const routes = [{
   path: '',
   component: _bank_victoria_component__WEBPACK_IMPORTED_MODULE_2__.BankVictoriaComponent,
   canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_0__.AuthGuard],
+  title: 'Beranda | PT. Bank Victoria International, Tbk',
   data: {
     navTitle: 'Beranda'
   },
   children: [{
     path: 'program',
-    title: 'LMS Program | PT. Bank Victoria International, Tbk',
+    title: 'Program | PT. Bank Victoria International, Tbk',
     component: _program_program_component__WEBPACK_IMPORTED_MODULE_1__.ProgramComponent,
     canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_0__.AuthGuard],
     data: {
@@ -67,7 +68,7 @@ const routes = [{
     }
   }, {
     path: 'jadwal-pelatihan',
-    title: 'LMS Jadwal Pelatihan | PT. Bank Victoria International, Tbk',
+    title: 'Jadwal Pelatihan | PT. Bank Victoria International, Tbk',
     component: _schedule_schedule_component__WEBPACK_IMPORTED_MODULE_3__.ScheduleComponent,
     canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_0__.AuthGuard],
     data: {
@@ -76,7 +77,7 @@ const routes = [{
     }
   }, {
     path: 'article/detail-article',
-    title: 'LMS Detail Artikel | PT. Bank Victoria International, Tbk',
+    title: 'Detail Artikel | PT. Bank Victoria International, Tbk',
     component: _dashboard_victoria_pages_detail_article_detail_article_component__WEBPACK_IMPORTED_MODULE_4__.DetailArticleComponent,
     canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_0__.AuthGuard],
     data: {
