@@ -29,13 +29,14 @@ const routes: Routes = [
     path: '',
     component: BankVictoriaComponent,
     canActivate: [AuthGuard],
+    title: 'Beranda | PT. Bank Victoria International, Tbk',
     data: {
       navTitle: 'Beranda',
     },
     children: [
       {
         path: 'program',
-        title: 'LMS Program | PT. Bank Victoria International, Tbk',
+        title: 'Program | PT. Bank Victoria International, Tbk',
         component: ProgramComponent,
         canActivate: [AuthGuard],
         data: {
@@ -45,7 +46,7 @@ const routes: Routes = [
       },
       {
         path: 'jadwal-pelatihan',
-        title: 'LMS Jadwal Pelatihan | PT. Bank Victoria International, Tbk',
+        title: 'Jadwal Pelatihan | PT. Bank Victoria International, Tbk',
         component: ScheduleComponent,
         canActivate: [AuthGuard],
         data: {
@@ -55,7 +56,7 @@ const routes: Routes = [
       },
       {
         path: 'article/detail-article',
-        title: 'LMS Detail Artikel | PT. Bank Victoria International, Tbk',
+        title: 'Detail Artikel | PT. Bank Victoria International, Tbk',
         component: DetailArticleComponent,
         canActivate: [AuthGuard],
         data: {

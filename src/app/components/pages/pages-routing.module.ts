@@ -48,6 +48,7 @@ const routes: Routes = [
     path: '',
     component: DashboardVictoriaComponent,
     canActivate: [AuthGuard],
+    title: 'Beranda | PT. Bank Victoria International, Tbk',
   },
   {
     path: 'pages',
