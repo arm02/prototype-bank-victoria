@@ -29,6 +29,20 @@
         </select>
       </div>
     </div>
+    <div class="list">
+      <div class="item" *ngFor="let course of coursesList">
+        <div class="card-article">
+          <img [src]="course.image" alt="Article Thumbnail" />
+          <div class="title">{{ course.title }}</div>
+          <div class="subtitle" style="margin-bottom: 10px !important">
+            {{ course.subtitle }}
+          </div>
+          <span class="subtitle">{{ course.progress }}% progressed</span>
+          <progress max="100" [value]="course.progress"></progress>
+          <button class="button">Enroll Kursus</button>
+        </div>
+      </div>
+    </div>
   </div>
   <div class="navigation">
     <nav class="sidebar">

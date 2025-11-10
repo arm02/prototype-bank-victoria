@@ -95,7 +95,6 @@
       cursor: pointer;
       position: relative;
       &.collapsed {
-        transition: .2s;
         &:hover {
           border-radius: 3px;
           background-color: #ed1a21;
