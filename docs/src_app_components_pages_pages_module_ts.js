@@ -9258,7 +9258,8 @@ TemplatePageTitleStrategy.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_
 });
 const routes = [{
   path: '',
-  component: _dashboard_victoria_dashboard_victoria_component__WEBPACK_IMPORTED_MODULE_21__.DashboardVictoriaComponent
+  component: _dashboard_victoria_dashboard_victoria_component__WEBPACK_IMPORTED_MODULE_21__.DashboardVictoriaComponent,
+  canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_7__.AuthGuard]
 }, {
   path: 'pages',
   children: [{
@@ -9432,6 +9433,7 @@ const routes = [{
 }, {
   path: 'lms',
   component: _bank_victoria_bank_victoria_component__WEBPACK_IMPORTED_MODULE_20__.BankVictoriaComponent,
+  canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_7__.AuthGuard],
   loadChildren: () => __webpack_require__.e(/*! import() */ "src_app_components_pages_bank-victoria_bank-victoria_module_ts").then(__webpack_require__.bind(__webpack_require__, /*! ./bank-victoria/bank-victoria.module */ 3821)).then(m => m.BankVictoriaPagesModule)
 }];
 class PagesRoutingModule {}

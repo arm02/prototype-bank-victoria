@@ -47,6 +47,7 @@ const routes: Routes = [
   {
     path: '',
     component: DashboardVictoriaComponent,
+    canActivate: [AuthGuard],
   },
   {
     path: 'pages',
@@ -244,8 +245,11 @@ const routes: Routes = [
   {
     path: 'lms',
     component: BankVictoriaComponent,
+    canActivate: [AuthGuard],
     loadChildren: () =>
-      import('./bank-victoria/bank-victoria.module').then((m) => m.BankVictoriaPagesModule),
+      import('./bank-victoria/bank-victoria.module').then(
+        (m) => m.BankVictoriaPagesModule
+      ),
   },
 ];
 
@@ -257,4 +261,4 @@ const routes: Routes = [
     { provide: TitleStrategy, useClass: TemplatePageTitleStrategy },
   ],
 })
-export class PagesRoutingModule { }
+export class PagesRoutingModule {}

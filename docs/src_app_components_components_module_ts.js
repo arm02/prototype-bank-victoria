@@ -2791,7 +2791,8 @@ class SidenavComponent {
     this.updateBodyClass();
   }
   logout() {
-    this.authService.logout().subscribe();
+    localStorage.clear();
+    this.router.navigate(['/auth/login']);
   }
   help() {
     window.open('https://wa.me/6287872753959', '_blank');

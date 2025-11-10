@@ -199,25 +199,17 @@ class AuthGuard {
     var _this = this;
     return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       let status = false;
-      yield _this.authService.authCheck().subscribe(data => {
-        if (data) {
-          _this.authService.isAuthenticated.next(true);
-          if (next.data.role !== 'all' && data.role !== 'admin') {
-            if (next.data.role && next.data.role.indexOf(data.role) === -1) {
-              _this.router.navigate(['/']);
-              return false;
-            }
+      if (localStorage.getItem('lms-remember-me')) {
+        status = true;
+      } else {
+        _this.router.navigate(['/auth/login'], {
+          queryParams: {
+            returnUrl: state.url
           }
-          status = true;
-        } else {
-          _this.router.navigate(['/auth/login'], {
-            queryParams: {
-              returnUrl: state.url
-            }
-          });
-        }
-        return status;
-      });
+        });
+      }
+      console.log(status);
+      return status;
     })();
   }
 }

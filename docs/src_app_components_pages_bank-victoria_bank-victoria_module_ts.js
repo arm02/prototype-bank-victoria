@@ -52,6 +52,7 @@ TemplatePageTitleStrategy.ɵprov = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_
 const routes = [{
   path: '',
   component: _bank_victoria_component__WEBPACK_IMPORTED_MODULE_2__.BankVictoriaComponent,
+  canActivate: [src_app_auth_auth_guards__WEBPACK_IMPORTED_MODULE_0__.AuthGuard],
   data: {
     navTitle: 'Beranda'
   },

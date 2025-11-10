@@ -176,10 +176,11 @@ function SigninComponent_div_13_Template(rf, ctx) {
   }
 }
 class SigninComponent {
-  constructor(authService, meta, router) {
+  constructor(authService, meta, router, route) {
     this.authService = authService;
     this.meta = meta;
     this.router = router;
+    this.route = route;
     this.loginCollection = new src_app_collection_auth_collection__WEBPACK_IMPORTED_MODULE_0__.LoginRequestCollection();
     this.isErrorMessage = '';
     this.isLoading = false;
@@ -198,6 +199,9 @@ class SigninComponent {
     }]);
   }
   checkLogin() {
+    if (localStorage.getItem('lms-remember-me')) {
+      this.router.navigate(['/']);
+    }
     // this.authService
     //   .authCheck('login_page')
     //   .subscribe((data: AuthCheckRequestCollection) => {
@@ -206,6 +210,7 @@ class SigninComponent {
     //     }
     //   });
   }
+
   inputChange() {
     this.isErrorMessage = '';
     this.isSubmitted = false;
@@ -218,20 +223,23 @@ class SigninComponent {
       this.isLoading = false;
       return;
     }
-    this.authService.login(this.loginCollection).subscribe({
-      next: () => {
-        this.loginSuccess = true;
+    if (this.loginCollection.email === 'lms@victoria.com' && this.loginCollection.password === '123') {
+      this.loginSuccess = true;
+      localStorage.setItem('lms-remember-me', 'temporary-token');
+      setTimeout(() => {
         this.isLoading = false;
-      },
-      error: error => {
-        this.isLoading = false;
-        this.isErrorMessage = error?.error?.message;
-      }
-    });
+        const returnUrl = this.route.snapshot.queryParams['returnUrl'] || '/';
+        this.router.navigateByUrl(returnUrl);
+      }, 1000);
+      return;
+    } else {
+      this.isLoading = false;
+      this.isErrorMessage = 'Email atau password salah';
+    }
   }
 }
 SigninComponent.ɵfac = function SigninComponent_Factory(t) {
-  return new (t || SigninComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_auth_service__WEBPACK_IMPORTED_MODULE_1__.AuthService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.Meta), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router));
+  return new (t || SigninComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_auth_service__WEBPACK_IMPORTED_MODULE_1__.AuthService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__.Meta), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.ActivatedRoute));
 };
 SigninComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: SigninComponent,

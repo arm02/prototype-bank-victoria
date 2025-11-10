@@ -119,7 +119,8 @@ export class SidenavComponent {
   }
 
   logout() {
-    this.authService.logout().subscribe();
+    localStorage.clear();
+    this.router.navigate(['/auth/login']);
   }
 
   help() {
