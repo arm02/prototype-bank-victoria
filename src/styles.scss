@@ -2,10 +2,10 @@
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
 /* You can add global styles to this file, and also import other style files */
 @import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
-@import url(https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap);
 
 body {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins";
   background-color: #f2f6fc;
 }
 
@@ -15,7 +15,7 @@ body {
 }
 
 .btn-primary {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins";
   background: #ed1a21;
   border: none;
   border-radius: 5px;
@@ -36,7 +36,7 @@ body {
 }
 
 .btn-secondary {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins";
   background: #f2f6fc;
   border: none;
   border-radius: 5px;
@@ -57,7 +57,7 @@ body {
 }
 
 .btn-filter {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins";
   background: #0a7224;
   border: none;
   border-radius: 5px;
@@ -78,7 +78,7 @@ body {
 }
 
 .btn-danger {
-  font-family: "Arimo", sans-serif;
+  font-family: "Poppins";
   background: red;
   border: none;
   border-radius: 5px;

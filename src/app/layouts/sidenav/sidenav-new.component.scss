@@ -1,7 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;550;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;550;600;700&display=swap");
 
 * {
-  font-family: "Inter", sans-serif;
+  font-family: "Poppins";
 }
 :host ::-webkit-scrollbar {
   width: 0px;
@@ -181,7 +181,7 @@
       }
     }
     &_help {
-      background: #08131f;
+      background: #ed1a21;
       color: #ffffff;
       border-radius: 20px;
       padding: 10px 20px;
