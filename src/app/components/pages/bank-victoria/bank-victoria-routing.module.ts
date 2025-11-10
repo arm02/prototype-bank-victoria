@@ -27,6 +27,9 @@ const routes: Routes = [
   {
     path: '',
     component: BankVictoriaComponent,
+    data: {
+      navTitle: 'Beranda',
+    },
     children: [
       {
         path: 'program',
@@ -34,6 +37,7 @@ const routes: Routes = [
         component: ProgramComponent,
         canActivate: [AuthGuard],
         data: {
+          navTitle: 'Daftar Program',
           role: 'all',
         },
       },
@@ -43,10 +47,11 @@ const routes: Routes = [
         component: ScheduleComponent,
         canActivate: [AuthGuard],
         data: {
+          navTitle: 'Jadwal Pelatihan',
           role: 'all',
         },
       },
-    ]
+    ],
   },
 ];
 
@@ -58,4 +63,4 @@ const routes: Routes = [
     { provide: TitleStrategy, useClass: TemplatePageTitleStrategy },
   ],
 })
-export class BankVictoriaPagesRoutingModule { }
+export class BankVictoriaPagesRoutingModule {}
