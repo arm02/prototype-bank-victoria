@@ -11,9 +11,7 @@ export class DashboardVictoriaComponent {
   anotherArticle = structuredClone(ANOTHER_ARTICLE);
   relatedArticle = structuredClone(RELATED_ARTICLE);
 
-  constructor(private router: Router) {
-
-  }
+  constructor(private router: Router) { }
 
   goToDetailArticle() {
     this.router.navigate(['/lms/article/detail-article']);

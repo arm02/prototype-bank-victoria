@@ -30,7 +30,7 @@
         </div>
         <div class="article-another">
             <div class="article-another-item" *ngFor="let article of anotherArticle">
-                <app-another-article [imgUrl]="article.img" [title]="article.title"></app-another-article>
+                <app-another-article (click)="goToDetailArticle()" [imgUrl]="article.img" [title]="article.title"></app-another-article>
             </div>
         </div>
     </div>
@@ -51,12 +51,12 @@
         </div>
         <div class="article-related">
             <div class="article-related-title desktop">
-                Related Article
+                Artikel Terkait
             </div>
 
             <div class="article-related-items">
                 <div class="article-related-item" *ngFor="let article of relatedArticle; let i = index">
-                    <app-related-article [imgUrl]="article.img" [title]="article.title"></app-related-article>
+                    <app-related-article (click)="goToDetailArticle()" [imgUrl]="article.img" [title]="article.title"></app-related-article>
                     <div *ngIf="i + 1 !== relatedArticle.length" class="article-related-item-divider"></div>
                 </div>
             </div>
