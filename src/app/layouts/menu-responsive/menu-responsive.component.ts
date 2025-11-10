@@ -16,7 +16,7 @@ export class MenuResponsiveComponent {
   ) {
     router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        this.activeRoute = event.url;
+        this.activeRoute = event.url.split('/')[2] || '';
       }
     });
   }

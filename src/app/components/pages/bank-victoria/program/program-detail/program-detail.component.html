@@ -1,1 +1,56 @@
-<p>program-detail works!</p>
+<div class="container">
+  <div class="courses">
+    <div class="header">
+      <div class="progress">
+        <span>65% progressed</span>
+        <progress max="100" [value]="65"></progress>
+      </div>
+      <select class="article-search-container-select">
+        <option value="" disabled selected>Pendahuluan</option>
+        <option value="all">Apa itu HTML ?</option>
+        <option value="business">Bagaimana cara kerja HTML ?</option>
+        <option value="technology">Implementasi HTML dalam Browser?</option>
+        <option value="design">Buat Websitemu sendiri menggunakan HTML</option>
+      </select>
+    </div>
+    <div class="detail">
+      <div class="session">
+        <button class="button">Pendahuluan</button>
+        <button class="button-clear">Sesi 1</button>
+        <button class="button-clear">Sesi 2</button>
+        <button class="button-clear">Sesi 3</button>
+        <button class="button-clear">Sesi 4</button>
+        <button class="button-clear">Sesi 5</button>
+      </div>
+      <div class="title">Full Course HTML and CSS Courses from Scratch</div>
+      <div>
+        <iframe
+          width="100%"
+          height="315"
+          src="https://www.youtube.com/embed/HGTJBPNC-Gw?si=wQFienny77twU3Wc"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div>
+        <p>
+          Pernahkah Anda kagum dengan situs web modern yang rapi, indah, dan
+          berfungsi sempurna di ponsel maupun desktop? Tahukah Anda bahwa semua
+          itu dimulai dari dua pondasi utama?
+        </p>
+        <p>
+          Di era digital, membangun kehadiran online bukan lagi pilihan,
+          melainkan keharusan. Namun, Anda mungkin bingung harus mulai dari
+          mana. Banyak kursus terasa terlalu rumit atau hanya mengajarkan teori
+          tanpa praktik.
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="navigation">
+    <app-navigation></app-navigation>
+  </div>
+</div>

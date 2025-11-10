@@ -4,9 +4,9 @@
             class="menu-responsive-item"
             (click)="goToPage(menu.path)"
             [ngClass]="{
-                active: menu.path === activeRoute
+                active: menu.active === activeRoute
             }">
-            <img [src]="'./assets/bank-victoria/svg/sidebar/' + menu.icon + (menu.path === activeRoute ? '-mobile-active' : '') + '.svg'" alt="Menu Icon" />
+            <img [src]="'./assets/bank-victoria/svg/sidebar/' + menu.icon + (menu.active === activeRoute ? '-mobile-active' : '') + '.svg'" alt="Menu Icon" />
             <span>{{ menu.groupTitleMobile }}</span>
         </div>
     </div>
