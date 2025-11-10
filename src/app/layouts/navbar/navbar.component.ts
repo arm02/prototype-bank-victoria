@@ -12,14 +12,19 @@ export class NavbarComponent implements OnInit {
   constructor(public route: ActivatedRoute, public router: Router) {}
 
   ngOnInit(): void {
+    this.setNavTitle(this.route);
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe(() => {
-        let current = this.route;
-        while (current.firstChild) {
-          current = current.firstChild;
-        }
-        this.navTitle = current.snapshot.data['navTitle'] || 'Dashboard';
+        this.setNavTitle(this.route);
       });
+  }
+
+  private setNavTitle(route: ActivatedRoute): void {
+    let current = route;
+    while (current.firstChild) {
+      current = current.firstChild;
+    }
+    this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
   }
 }
