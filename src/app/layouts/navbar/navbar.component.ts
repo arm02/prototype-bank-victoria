@@ -19,7 +19,7 @@ export class NavbarComponent implements OnInit {
         while (current.firstChild) {
           current = current.firstChild;
         }
-        this.navTitle = current.snapshot.data['navTitle'] || 'Dashboard';
+        this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
       });
   }
 }
