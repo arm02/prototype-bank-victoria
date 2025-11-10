@@ -8,5 +8,37 @@
         align-items: center;
         justify-content: flex-end;
         gap: 18px;
+
+        .item {
+            .profile-user {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-left: 1px solid #E6E6E6;
+                padding-left: 18px;
+                cursor: pointer;
+
+                img {
+                    width: 30px;
+                }
+
+                &-information {
+                    display: flex;
+                    flex-direction: column;
+
+                    &-name {
+                        font-size: 12px;
+                        color: #191919;
+                        font-weight: 600;
+                    }
+
+                    &-email {
+                        font-size: 12px;
+                        color: #949494;
+                        font-weight: 400;
+                    }
+                }
+            }
+        }
     }
 }

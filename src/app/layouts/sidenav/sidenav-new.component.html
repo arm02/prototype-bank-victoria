@@ -13,10 +13,9 @@
         src="assets/svg/arrow-{{ isExpanded ? 'right' : 'left' }}.svg"
       />
     </div>
-    <div class="investortrust-sidebar_divider" *ngIf="!isExpanded"></div>
+    <!-- <div class="investortrust-sidebar_divider" *ngIf="!isExpanded"></div> -->
   </div>
   <div class="investortrust-sidebar_body" [ngClass]="{ collapsed: isExpanded }">
-    <span>Menu</span>
     <div
       class="investortrust-sidebar_group"
       *ngFor="let group of navigationGroups"
