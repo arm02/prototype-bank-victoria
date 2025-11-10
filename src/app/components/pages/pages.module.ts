@@ -74,6 +74,7 @@ import { DeletedNewsComponent } from './news/deleted-news/deleted-news.component
 import { DashboardVictoriaComponent } from './dashboard-victoria/dashboard-victoria.component';
 import { AnotherArticleComponent } from './dashboard-victoria/components/another-article/another-article.component';
 import { RelatedArticleComponent } from './dashboard-victoria/components/related-article/related-article.component';
+import { DetailArticleComponent } from './dashboard-victoria/pages/detail-article/detail-article.component';
 @NgModule({
   declarations: [
     DashboardComponent,
@@ -123,6 +124,7 @@ import { RelatedArticleComponent } from './dashboard-victoria/components/related
     DashboardVictoriaComponent,
     AnotherArticleComponent,
     RelatedArticleComponent,
+    DetailArticleComponent
   ],
   exports: [
     DashboardComponent,
@@ -168,6 +170,9 @@ import { RelatedArticleComponent } from './dashboard-victoria/components/related
     AdsArticleComponent,
     MasterDataFormAdsArctileComponent,
     DeletedNewsComponent,
+    AnotherArticleComponent,
+    RelatedArticleComponent,
+    DetailArticleComponent
   ],
   imports: [
     CommonModule,
@@ -220,4 +225,4 @@ import { RelatedArticleComponent } from './dashboard-victoria/components/related
     },
   ],
 })
-export class PagesModule {}
+export class PagesModule { }

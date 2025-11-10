@@ -10,6 +10,7 @@ import { Title } from '@angular/platform-browser';
 import { ProgramComponent } from './program/program.component';
 import { BankVictoriaComponent } from './bank-victoria.component';
 import { ScheduleComponent } from './schedule/schedule.component';
+import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -48,6 +49,16 @@ const routes: Routes = [
         canActivate: [AuthGuard],
         data: {
           navTitle: 'Jadwal Pelatihan',
+          role: 'all',
+        },
+      },
+      {
+        path: 'article/detail-article',
+        title: 'LMS Detail Artikel | PT. Bank Victoria International, Tbk',
+        component: DetailArticleComponent,
+        canActivate: [AuthGuard],
+        data: {
+          navTitle: 'Detail Artikel',
           role: 'all',
         },
       },

@@ -1,0 +1,104 @@
+<section class="dashboard-victoria">
+    <div class="dashboard-victoria-left-panel">
+        <div class="main-article">
+            <div class="main-article-views">
+                <span class="main-article-views-date">
+                    5 November, 2025 10:21 WIB
+                </span>
+
+                <div class="main-article-views-view">
+                    <img src="./assets/bank-victoria/svg/eye.svg" alt="Eye Icon" />
+                    <span>1,42k</span>
+                </div>
+            </div>
+            <div class="main-article-container">
+                <span class="main-article-content-pill">Tech</span>
+                <div class="main-article-content-title">
+                    Mengapa Web Development Penting di Era Digital?
+                </div>
+                <img src="./assets/bank-victoria/images/illust-detail-article.png" alt="Illust Article" />
+                <div class="main-article-content">
+                    <div class="main-article-content-desc">
+                        Di tengah pesatnya perkembangan teknologi, hampir setiap bisnis, layanan, dan informasi hadir
+                        dalam
+                        bentuk website atau aplikasi web. Menguasai pengembangan web (web development) bukan lagi hanya
+                        keterampilan tambahan, melainkan sebuah kompetensi esensial yang membuka pintu karier tak
+                        terbatas.
+                        <br/>
+                        <br/>
+                        <b>1. Representasi Bisnis dan Kredibilitas</b>
+                        <p>
+                            Saat ini, sebuah bisnis yang tidak memiliki kehadiran online (website) dianggap tidak serius
+                            atau bahkan tidak eksis. Website berfungsi sebagai markas digital (digital headquarters) yang
+                            beroperasi 24/7.
+                            Jangkauan Global: Website memungkinkan bisnis menjangkau pelanggan di seluruh dunia tanpa
+                            batasan geografis.
+                            Kredibilitas: Sebuah website yang dirancang dengan baik, aman, dan profesional meningkatkan
+                            kepercayaan (trust) pelanggan terhadap merek tersebut. Web developer memastikan situs tersebut
+                            berfungsi optimal dan memberikan pengalaman yang mulus.
+                        </p>
+                        <b>2. Mesin Pemasaran dan Penjualan Otomatis</b>
+                        <p>
+                            Web development mengubah situs statis menjadi alat
+                            pemasaran dan penjualan yang dinamis.
+                            Pemasaran Konten: Blog, landing page, dan alat interaktif yang dibangun oleh developer menjadi
+                            aset penting untuk Search Engine Optimization (SEO), memastikan bisnis ditemukan oleh calon
+                            pelanggan melalui mesin pencari seperti Google.
+                            E-commerce dan Transaksi: Untuk bisnis yang menjual produk atau layanan, web developer membangun
+                            fungsionalitas keranjang belanja, integrasi pembayaran, dan sistem manajemen inventaris,
+                            memungkinkan transaksi terjadi secara otomatis.
+                        </p>
+
+                        <b>3. Interaksi dan Pengalaman Pengguna (UX/UI)</b>
+                        <p>
+                            Nilai sebuah aplikasi web tidak hanya terletak pada informasinya, tetapi pada kemudahan
+                            penggunaannya.
+                            Pengalaman Pengguna yang Baik (UX): Web developer berperan penting dalam menciptakan User
+                            Experience (UX) yang intuitif. Ini mencakup memastikan kecepatan loading halaman, navigasi yang
+                            mudah, dan desain yang responsif di berbagai perangkat (ponsel, tablet, desktop).
+                            Interaktivitas: Dengan menguasai frontend (HTML, CSS, JavaScript), developer dapat menambahkan
+                            fitur interaktif yang meningkatkan keterlibatan pengguna, seperti form dinamis, animasi, dan
+                            single-page application (SPA) yang cepat.
+                        </p>
+                        <p>
+                            Kesimpulan
+                            Di Era Digital, Web Development adalah jembatan antara ide dan realisasi digital. Keterampilan
+                            ini tidak hanya tentang menulis kode, tetapi tentang memecahkan masalah dan menciptakan nilai
+                            bagi pengguna dan bisnis. Permintaan untuk developer yang mahir dalam frontend (tampilan),
+                            backend (logika server), dan database (data) akan terus meningkat seiring berkembangnya dunia
+                            digital.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="dashboard-victoria-right-panel">
+        <div class="article-related-title">
+            Artikel Terkait
+        </div>
+        <div class="article-search-container">
+            <div class="article-search-container-title">
+                Cari
+            </div>
+            <div class="article-search-container-form-control">
+                <input name="search-article" class="article-search-container-input" type="text"
+                    placeholder="Cari Artikel" />
+                <img class="ic-search" src="./assets/bank-victoria/svg/ic-search.svg" alt="Search Icon" />
+            </div>
+
+        </div>
+        <div class="article-related">
+            <div class="article-related-title desktop">
+                Artikel Terkait
+            </div>
+
+            <div class="article-related-items">
+                <div class="article-related-item" *ngFor="let article of relatedArticle; let i = index">
+                    <app-related-article [imgUrl]="article.img" [title]="article.title"></app-related-article>
+                    <div *ngIf="i + 1 !== relatedArticle.length" class="article-related-item-divider"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

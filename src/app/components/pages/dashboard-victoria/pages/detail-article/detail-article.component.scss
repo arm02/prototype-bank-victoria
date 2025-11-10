@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:host * {
+    font-family: "Poppins";
+}
+
+.dashboard-victoria {
+    display: flex;
+    gap: 24px;
+
+    @media only screen and (max-width: 768px) {
+        flex-direction: column;
+    }
+
+    &-left-panel {
+        width: 70%;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .main-article {
+            padding: 20px 3rem;
+            background-color: white;
+            border: 1px solid #E6E4E4;
+            border-radius: 10px;
+            @media only screen and (max-width: 768px) {
+                padding: 20px;
+            }
+            &-container {
+                display: flex;
+                flex-direction: column;
+    
+                @media only screen and (max-width: 768px) {
+                    flex-direction: column;
+                }
+            }
+
+            img {
+                width: 100%;
+                border-radius: 10px;
+                margin-bottom: 1rem;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+
+            &-views {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: .5rem;
+
+                color: #666666;
+                font-size: 12px;
+                &-view {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+
+                    img {
+                        width: min-content;
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &-content {
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                @media only screen and (max-width: 768px) {
+                    gap: 1rem;
+                }
+
+                &-pill {
+                    width: min-content;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 2px 15px;
+                    background-color: #FFD9DA;
+                    border-radius: 25px;
+                    color: #9A4646;
+                    font-size: 12px;
+                }
+
+                &-title {
+                    font-weight: 500;
+                    font-size: 32px;
+                    line-height: normal;
+                    margin-bottom: 1rem;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+
+                &-desc {
+                    font-size: 14px;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+
+                &-information {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    color: #666666;
+                    font-size: 14px;
+                    font-weight: 400;
+
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 12px;
+                    }
+                }
+
+                &-button {
+                    border: none;
+                    display: block;
+                    padding: 10px;
+                    background-color: #E34243;
+                    border-radius: 10px;
+
+                    color: white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    color: white;
+                    text-align: center;
+
+                    @media only screen and (max-width: 768px) {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        .article-another {
+            cursor: pointer;
+            margin-top: 24px;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 1rem;
+
+            &-item {
+                width: 32%;
+
+                @media only screen and (max-width: 768px) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    &-right-panel {
+        width: 30%;
+
+        @media only screen and (max-width: 768px) {
+            width: 100%;
+        }
+
+        .article-search-container {
+            padding: 20px 25px;
+            background-color: white;
+            border: 1px solid #E6E4E4;
+            border-radius: 10px;
+
+            @media only screen and (max-width: 768px) {
+                margin-bottom: 1rem;
+            }
+
+            &-title {
+                font-size: 14px;
+                font-weight: 400;
+                margin-bottom: 1rem;
+            }
+
+            &-form-control {
+                position: relative;
+                width: 100%;
+            }
+
+            &-input {
+                position: relative;
+                width: calc(100% - 70px);
+                background-color: transparent;
+                border: 1px solid #E0E0E0;
+                border-radius: 10px;
+                padding: 14px 50px 14px 20px;
+
+                &:focus-visible {
+                    outline: none;
+                }
+            }
+
+            .ic-search {
+                position: absolute;
+                right: 20px;
+                top: 13px;
+            }
+        }
+
+        .article-related {
+            &-title {
+                font-weight: 700;
+                font-size: 14px;
+                margin: 24px 0;
+
+                display: none;
+
+                @media only screen and (max-width: 768px) {
+                    display: block;
+                }
+
+                &.desktop {
+                    display: block;
+
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+            }
+
+
+            &-item {
+                &-divider {
+                    background-color: #E34243;
+                    height: 1px;
+                    width: 100%;
+                    margin: 15px 0;
+                }
+            }
+        }
+    }
+}
