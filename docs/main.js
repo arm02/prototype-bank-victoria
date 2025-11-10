@@ -663,12 +663,16 @@ class LayoutsService {
     this.http = http;
     this.router = router;
     this.isLoading = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
+    this.isExpanded = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
   }
   show() {
     this.isLoading.next(true);
   }
   hide() {
     this.isLoading.next(false);
+  }
+  setIsExpanded(value) {
+    this.isExpanded.next(value);
   }
   successMessageDialog(message) {
     sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
