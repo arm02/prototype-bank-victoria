@@ -7,6 +7,7 @@
 .dashboard-victoria {
     display: flex;
     gap: 24px;
+    padding-bottom: 20px;
 
     @media only screen and (max-width: 768px) {
         flex-direction: column;
@@ -26,6 +27,7 @@
             border-radius: 10px;
             @media only screen and (max-width: 768px) {
                 padding: 20px;
+                border: none;
             }
             &-container {
                 display: flex;
@@ -163,7 +165,8 @@
         width: 30%;
 
         @media only screen and (max-width: 768px) {
-            width: 100%;
+            width: calc(100% - 40px);
+            padding: 0 20px;
         }
 
         .article-search-container {

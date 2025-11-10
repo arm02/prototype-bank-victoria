@@ -8,6 +8,7 @@ export interface Navigation {
 
 export interface NavigationGroup {
   groupTitle: string;
+  groupTitleMobile?: string;
   icon: string;
   path: string;
   items: Navigation[];
@@ -180,6 +181,7 @@ export const NavigationGroupData: NavigationGroup[] | any = [
 export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   {
     groupTitle: 'Beranda',
+    groupTitleMobile: 'Beranda',
     icon: 'home',
     path: '/',
     items: [],
@@ -189,6 +191,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   },
   {
     groupTitle: 'Program',
+    groupTitleMobile: 'Program',
     icon: 'box-search',
     path: '/lms/program',
     items: [],
@@ -198,6 +201,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
   },
   {
     groupTitle: 'Jadwal Pelatihan',
+    groupTitleMobile: 'Jadwal',
     icon: 'calendar',
     path: '/lms/jadwal-pelatihan',
     items: [],

@@ -1,0 +1,13 @@
+<div class="menu-responsive">
+    <div class="menu-responsive-container">
+        <div *ngFor="let menu of menuCollection" 
+            class="menu-responsive-item" 
+            (click)="goToPage(menu.path)" 
+            [ngClass]="{
+                active: menu.path === activeRoute
+            }">
+            <img [src]="'./assets/bank-victoria/svg/sidebar/' + menu.icon + (menu.path === activeRoute ? '-mobile-active' : '') + '.svg'" alt="Menu Icon" />
+            <span>{{ menu.groupTitleMobile }}</span>
+        </div>
+    </div>
+</div>

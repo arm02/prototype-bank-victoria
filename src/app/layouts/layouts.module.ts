@@ -13,9 +13,10 @@ import { MatInputModule } from '@angular/material/input';
 import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from './navbar/navbar.component';
+import { MenuResponsiveComponent } from './menu-responsive/menu-responsive.component';
 
 @NgModule({
-  declarations: [SidenavComponent, TableComponent, ForgotPasswordComponent, NavbarComponent],
+  declarations: [SidenavComponent, TableComponent, ForgotPasswordComponent, NavbarComponent, MenuResponsiveComponent],
   imports: [
     CommonModule,
     RouterModule,
@@ -28,7 +29,7 @@ import { NavbarComponent } from './navbar/navbar.component';
     FormsModule,
     MatIconModule
   ],
-  exports: [SidenavComponent, TableComponent, NavbarComponent],
+  exports: [SidenavComponent, TableComponent, NavbarComponent, MenuResponsiveComponent],
   providers: [],
 })
 export class LayoutsModule {}

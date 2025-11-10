@@ -1,3 +1,9 @@
+.sidenav-container {
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+}
+
 .container {
   position: static;
   background: transparent;
@@ -12,10 +18,16 @@
 
   .body-content {
     padding: 20px;
+
+    @media only screen and (max-width: 768px) {
+      padding: 0;
+      margin-bottom: 100px;
+    }
   }
+
   @media only screen and (max-width: 768px) {
-    margin-left: 73px;
-    width: calc(100% - 73px); // 73px sidebar + 20px padding compensation
+    margin-left: 0;
+    width: calc(100%); // 73px sidebar + 20px padding compensation
   }
 }
 
@@ -49,15 +61,15 @@
     cursor: pointer;
   }
 
-  & > div {
-    & > i[class="fa fa-times-circle"] {
+  &>div {
+    &>i[class="fa fa-times-circle"] {
       position: absolute;
       top: -5px;
       right: -5px;
       cursor: pointer;
     }
 
-    & > i[class="fa fa-comments fa-2x"] {
+    &>i[class="fa fa-comments fa-2x"] {
       color: white;
     }
   }
