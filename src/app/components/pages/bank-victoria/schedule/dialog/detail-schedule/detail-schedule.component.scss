@@ -4,6 +4,38 @@
     font-family: "Poppins";
 }
 
+::ng-deep {
+    .mat-bottom-sheet-container {
+        border-top-left-radius: 10px !important;
+        border-top-right-radius: 10px !important;
+        padding-top: 10px;
+
+        .bottom-sheet-handle-container {
+            display: flex;
+            justify-content: center;
+            /* Pusatkan secara horizontal */
+            padding: 8px 0;
+            /* Tambahkan ruang di atas dan di bawah handle */
+        }
+
+        /* Gaya untuk grabber/handle itu sendiri */
+        .bottom-sheet-grabber {
+            width: 40px;
+            /* Lebar horizontal handle */
+            height: 4px;
+            /* Tinggi handle (membuatnya tebal) */
+            background-color: #ccc;
+            /* Warna abu-abu yang umum digunakan */
+            border-radius: 2px;
+            /* Sudut membulat */
+
+            /* Tambahkan sedikit margin-bottom jika perlu */
+            margin-bottom: 4px;
+        }
+    }
+}
+
+
 .detail-schedule {
     padding: 20px;
 
