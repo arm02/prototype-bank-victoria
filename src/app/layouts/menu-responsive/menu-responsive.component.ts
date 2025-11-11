@@ -24,4 +24,8 @@ export class MenuResponsiveComponent {
   goToPage(path: string) {
     this.router.navigate([path]);
   }
+
+  isMenuActive(menu: any): boolean {
+    return menu.active === 'article' ? (!this.activeRoute || menu.active === this.activeRoute) : menu.active === this.activeRoute
+  }
 }
