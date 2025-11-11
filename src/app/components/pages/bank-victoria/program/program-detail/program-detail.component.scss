@@ -168,3 +168,112 @@ progress[value]::-webkit-progress-value {
   font-weight: 400;
   text-align: center;
 }
+
+
+.related-acticle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  &-title {
+    font-weight: 700;
+    font-size: 17px;
+  }
+
+  &>div>button {
+    margin-top: 10px;
+    background-color: #F2F2F2;
+    border-radius: 5px;
+    padding: 5px 10px;
+    border: none;
+    margin-right: 10px;
+  }
+
+  &>div#attedance {
+    background: #EDFFE2;
+    border-radius: 10px;
+    padding: 10px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    &>span {
+      font-weight: 700;
+      font-size: 17px;
+      color: #478523;
+    }
+  }
+
+  &>div#pengayaan {
+    display: flex;
+    gap: 10px;
+
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+
+    &>div#frame {
+      width: 40%;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+    }
+
+    &>div#content {
+      width: 60%;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      }
+
+      &>span#title {
+        color: #348AF7;
+        font-size: 17px;
+        font-weight: 700;
+      }
+
+      &>span {
+        color: #478523;
+        font-weight: 700;
+      }
+    }
+  }
+
+  &>div#initiation {
+    border: 1px solid #E6E4E4;
+    border-radius: 5px;
+    padding: 10px;
+
+    &>div {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &>div#divider {
+      border-bottom: 1px solid #E6E4E4;
+      margin-block: 10px;
+    }
+
+    &>div>span {
+      color: #478523;
+      font-weight: 700;
+    }
+
+    &>div>div {
+      display: flex;
+      gap: 10px;
+
+      &>a {
+        text-decoration: none;
+        color: #348AF7;
+      }
+    }
+  }
+}
