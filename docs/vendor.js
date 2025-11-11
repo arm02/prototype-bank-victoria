@@ -24812,7 +24812,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "ɵHttpInterceptorHandler": () => (/* binding */ HttpInterceptorHandler),
 /* harmony export */   "ɵwithHttpTransferCache": () => (/* binding */ withHttpTransferCache)
 /* harmony export */ });
-/* harmony import */ var _Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1699);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 4980);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! rxjs */ 2235);
@@ -26264,7 +26264,7 @@ class FetchBackend {
   }
   doRequest(request, signal, observer) {
     var _this = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const init = _this.createRequestInit(request);
       let response;
       try {
@@ -26318,7 +26318,7 @@ class FetchBackend {
         // Perform response processing outside of Angular zone to
         // ensure no excessive change detection runs are executed
         // Here calling the async ReadableStreamDefaultReader.read() is responsible for triggering CD
-        yield _this.ngZone.runOutsideAngular( /*#__PURE__*/(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+        yield _this.ngZone.runOutsideAngular( /*#__PURE__*/(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
           while (true) {
             const {
               done,
@@ -70811,8 +70811,8 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   SweetAlert2LoaderService: () => (/* binding */ SweetAlert2LoaderService),
 /* harmony export */   SweetAlert2Module: () => (/* binding */ SweetAlert2Module)
 /* harmony export */ });
-/* harmony import */ var _Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
-/* harmony import */ var _Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ 7797);
+/* harmony import */ var C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/asyncToGenerator.js */ 1670);
+/* harmony import */ var C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./node_modules/@babel/runtime/helpers/esm/defineProperty.js */ 7797);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ 1699);
 /* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 2513);
 /* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs/operators */ 274);
@@ -70836,8 +70836,8 @@ const dismissOnDestroyToken = new _angular_core__WEBPACK_IMPORTED_MODULE_2__.Inj
 class SweetAlert2LoaderService {
   // Using any because Angular metadata generator does not understand a pure TS type here
   constructor(swalProvider) {
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalProvider", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalPromiseCache", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalProvider", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalPromiseCache", void 0);
     this.swalProvider = swalProvider;
   }
   get swal() {
@@ -70858,10 +70858,10 @@ class SweetAlert2LoaderService {
     }
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2LoaderService, "\u0275fac", function SweetAlert2LoaderService_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2LoaderService, "\u0275fac", function SweetAlert2LoaderService_Factory(t) {
   return new (t || SweetAlert2LoaderService)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵinject"](swalProviderToken));
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2LoaderService, "\u0275prov", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2LoaderService, "\u0275prov", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
   token: SweetAlert2LoaderService,
   factory: SweetAlert2LoaderService.ɵfac
 }));
@@ -70951,89 +70951,89 @@ class SwalComponent {
    */
 
   constructor(sweetAlert2Loader, moduleLevelFireOnInit, moduleLevelDismissOnDestroy) {
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "sweetAlert2Loader", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "moduleLevelFireOnInit", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "moduleLevelDismissOnDestroy", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "title", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "titleText", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "text", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "html", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "footer", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "icon", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "iconColor", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "iconHtml", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "backdrop", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "toast", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "target", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "input", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "width", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "padding", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "background", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "position", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "grow", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showClass", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "hideClass", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "customClass", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "timer", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "timerProgressBar", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "heightAuto", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowOutsideClick", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowEscapeKey", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowEnterKey", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "stopKeydownPropagation", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "keydownListenerCapture", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showConfirmButton", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showDenyButton", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showCancelButton", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonText", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonText", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonText", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonColor", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonColor", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonColor", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonAriaLabel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonAriaLabel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonAriaLabel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "buttonsStyling", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "reverseButtons", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusConfirm", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusDeny", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusCancel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showCloseButton", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButtonHtml", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButtonAriaLabel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "loaderHtml", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showLoaderOnConfirm", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "preConfirm", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "preDeny", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageUrl", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageWidth", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageHeight", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageAlt", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputLabel", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputPlaceholder", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputValue", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputOptions", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputAutoTrim", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputAttributes", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputValidator", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "returnInputValueOnDeny", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "validationMessage", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "progressSteps", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "currentProgressStep", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "progressStepsDistance", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "scrollbarPadding", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalFireOnInit", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "sweetAlert2Loader", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "moduleLevelFireOnInit", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "moduleLevelDismissOnDestroy", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "title", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "titleText", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "text", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "html", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "footer", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "icon", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "iconColor", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "iconHtml", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "backdrop", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "toast", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "target", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "input", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "width", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "padding", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "background", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "position", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "grow", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showClass", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "hideClass", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "customClass", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "timer", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "timerProgressBar", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "heightAuto", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowOutsideClick", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowEscapeKey", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "allowEnterKey", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "stopKeydownPropagation", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "keydownListenerCapture", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showConfirmButton", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showDenyButton", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showCancelButton", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonText", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonText", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonText", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonColor", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonColor", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonColor", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButtonAriaLabel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButtonAriaLabel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButtonAriaLabel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "buttonsStyling", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "reverseButtons", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusConfirm", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusDeny", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "focusCancel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showCloseButton", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButtonHtml", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButtonAriaLabel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "loaderHtml", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "showLoaderOnConfirm", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "preConfirm", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "preDeny", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageUrl", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageWidth", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageHeight", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "imageAlt", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputLabel", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputPlaceholder", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputValue", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputOptions", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputAutoTrim", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputAttributes", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "inputValidator", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "returnInputValueOnDeny", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "validationMessage", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "progressSteps", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "currentProgressStep", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "progressStepsDistance", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "scrollbarPadding", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalFireOnInit", void 0);
     /**
      * Whether to dismiss the modal when the <swal> component is destroyed by Angular (for any reason) or not.
      * When left undefined (default), the value will be inherited from the module configuration, which is `true`.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalDismissOnDestroy", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "willOpen", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalDismissOnDestroy", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "willOpen", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Modal lifecycle hook. Synchronously runs before the modal is shown on screen.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didOpen", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didOpen", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Modal lifecycle hook. Synchronously runs after the popup DOM has been updated (ie. just before the modal is
      * repainted on the screen).
@@ -71041,24 +71041,24 @@ class SwalComponent {
      * If you want to perform changes in the popup's DOM, that survive `Swal.update()`, prefer {@link didRender} over
      * {@link willOpen}.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didRender", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didRender", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Modal lifecycle hook. Synchronously runs when the popup closes by user interaction (and not due to another popup
      * being fired).
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "willClose", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "willClose", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Modal lifecycle hook. Asynchronously runs after the popup has been disposed by user interaction (and not due to
      * another popup being fired).
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didClose", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didClose", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Modal lifecycle hook. Synchronously runs after popup has been destroyed either by user interaction or by another
      * popup.
      * If you have cleanup operations that you need to reliably execute each time a modal is closed, prefer
      * {@link didDestroy} over {@link didClose}.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didDestroy", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "didDestroy", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Emits when the user clicks "Confirm".
      * The event value ($event) can be either:
@@ -71073,7 +71073,7 @@ class SwalComponent {
      *         // ... save user email
      *     }
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirm", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirm", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Emits when the user clicks "Deny".
      * This event bears no value.
@@ -71086,7 +71086,7 @@ class SwalComponent {
      *     public handleDeny(): void {
      *     }
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "deny", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "deny", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Emits when the user clicks "Cancel", or dismisses the modal by any other allowed way.
      * The event value ($event) is a string that explains how the modal was dismissed. It is `undefined` when
@@ -71100,21 +71100,21 @@ class SwalComponent {
      *         // ... do something
      *     }
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "dismiss", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "dismiss", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * This Set retains the properties that have been changed from @Inputs, so we can know precisely
      * what options we have to send to {@link Swal.fire}.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "touchedProps", new Set());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "touchedProps", new Set());
     /**
      * A function of signature `(propName: string): void` that adds a given property name to the list of
      * touched properties, ie. {@link touchedProps}.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "markTouched", this.touchedProps.add.bind(this.touchedProps));
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "markTouched", this.touchedProps.add.bind(this.touchedProps));
     /**
      * Is the SweetAlert2 modal represented by this component currently opened?
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "isCurrentlyShown", false);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "isCurrentlyShown", false);
     this.sweetAlert2Loader = sweetAlert2Loader;
     this.moduleLevelFireOnInit = moduleLevelFireOnInit;
     this.moduleLevelDismissOnDestroy = moduleLevelDismissOnDestroy;
@@ -71167,7 +71167,7 @@ class SwalComponent {
    */
   fire() {
     var _this = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       const swal = yield _this.sweetAlert2Loader.swal;
       const userOptions = _this.swalOptions;
       //=> Build the SweetAlert2 options
@@ -71233,7 +71233,7 @@ class SwalComponent {
    */
   close(result) {
     var _this2 = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (!_this2.isCurrentlyShown) return;
       const swal = yield _this2.sweetAlert2Loader.swal;
       swal.close(result);
@@ -71249,7 +71249,7 @@ class SwalComponent {
    */
   update(options) {
     var _this3 = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       if (options) {
         _this3.swalOptions = options;
       }
@@ -71264,10 +71264,10 @@ class SwalComponent {
     })();
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalComponent, "\u0275fac", function SwalComponent_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalComponent, "\u0275fac", function SwalComponent_Factory(t) {
   return new (t || SwalComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](SweetAlert2LoaderService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](fireOnInitToken), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](dismissOnDestroyToken));
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalComponent, "\u0275cmp", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalComponent, "\u0275cmp", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: SwalComponent,
   selectors: [["swal"]],
   inputs: {
@@ -71687,9 +71687,9 @@ class SwalDirective {
    */
 
   constructor(viewContainerRef, resolver) {
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "viewContainerRef", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "resolver", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirm", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "viewContainerRef", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "resolver", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirm", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Emits when the user clicks "Deny".
      * This event bears no value.
@@ -71702,7 +71702,7 @@ class SwalDirective {
      *     public handleDeny(): void {
      *     }
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "deny", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "deny", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * Emits when the user clicks "Cancel", or dismisses the modal by any other allowed way.
      * The event value ($event) is a string that explains how the modal was dismissed. It is `undefined` when
@@ -71716,23 +71716,23 @@ class SwalDirective {
      *         // ... do something
      *     }
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "dismiss", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "dismiss", new _angular_core__WEBPACK_IMPORTED_MODULE_2__.EventEmitter());
     /**
      * When the user does not provides a SwalComponent instance, we create it on-the-fly and assign the plain-object
      * options to it.
      * This fields keeps a reference to the dynamically-created <swal>, to destroy it along this directive instance.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalRef", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalRef", void 0);
     /**
      * An instance of the <swal> component that this directive controls.
      * Could be an instance passed by the user, otherwise it's the instance we've dynamically created.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalInstance", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalInstance", void 0);
     /**
      * Holds the native SweetAlert2 options.
      * Empty when the user passed an existing SwalComponent instance.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalOptions", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalOptions", void 0);
     this.viewContainerRef = viewContainerRef;
     this.resolver = resolver;
   }
@@ -71777,10 +71777,10 @@ class SwalDirective {
     this.swalInstance.fire().then(() => swalClosed.next());
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalDirective, "\u0275fac", function SwalDirective_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalDirective, "\u0275fac", function SwalDirective_Factory(t) {
   return new (t || SwalDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ComponentFactoryResolver));
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalDirective, "\u0275dir", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalDirective, "\u0275dir", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
   type: SwalDirective,
   selectors: [["", "swal", ""]],
   hostBindings: function SwalDirective_HostBindings(rf, ctx) {
@@ -71838,13 +71838,13 @@ class SwalDirective {
  */
 class SwalPortalComponent {
   constructor() {
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "template", null);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "template", null);
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalComponent, "\u0275fac", function SwalPortalComponent_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalComponent, "\u0275fac", function SwalPortalComponent_Factory(t) {
   return new (t || SwalPortalComponent)();
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalComponent, "\u0275cmp", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalComponent, "\u0275cmp", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineComponent"]({
   type: SwalPortalComponent,
   selectors: [["swal-portal"]],
   inputs: {
@@ -71890,7 +71890,7 @@ class SwalPortalTargets {
     /**
      * Targets the modal close button block contents.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButton", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "closeButton", {
       element: swal => swal.getCloseButton(),
       options: {
         showCloseButton: true
@@ -71899,7 +71899,7 @@ class SwalPortalTargets {
     /**
      * Targets the modal title block contents.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "title", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "title", {
       element: swal => swal.getTitle(),
       // Empty text that will never be shown but necessary so SweetAlert2 makes the div visible.
       options: {
@@ -71910,7 +71910,7 @@ class SwalPortalTargets {
      * Targets the modal text block contents (that is another block inside the first content block, so you can still
      * use other modal features like Swal inputs, that are situated inside that parent content block).
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "content", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "content", {
       element: swal => swal.getHtmlContainer(),
       // Empty text that will never be shown but necessary so SweetAlert2 makes the div visible.
       options: {
@@ -71924,7 +71924,7 @@ class SwalPortalTargets {
      *     We could workaround that inconvenient inside this integration, but that'd be detrimental to memory and
      *     performance of everyone, for a relatively rare use case.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "actions", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "actions", {
       element: swal => swal.getActions(),
       // The button will never exist, but SweetAlert2 shows the actions block only if there is at least one button.
       options: {
@@ -71934,7 +71934,7 @@ class SwalPortalTargets {
     /**
      * Targets the confirm button contents, replacing the text inside it (not the button itself)
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButton", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "confirmButton", {
       element: swal => swal.getConfirmButton(),
       options: {
         showConfirmButton: true
@@ -71943,7 +71943,7 @@ class SwalPortalTargets {
     /**
      * Targets the deny button contents, replacing the text inside it (not the button itself)
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButton", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "denyButton", {
       element: swal => swal.getDenyButton(),
       options: {
         showDenyButton: true
@@ -71952,7 +71952,7 @@ class SwalPortalTargets {
     /**
      * Targets the cancel button contents, replacing the text inside it (not the button itself)
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButton", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "cancelButton", {
       element: swal => swal.getCancelButton(),
       options: {
         showCancelButton: true
@@ -71961,7 +71961,7 @@ class SwalPortalTargets {
     /**
      * Targets the modal footer contents.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "footer", {
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "footer", {
       element: swal => swal.getFooter(),
       // Empty text that will never be shown but necessary so SweetAlert2 makes the div visible.
       options: {
@@ -71970,10 +71970,10 @@ class SwalPortalTargets {
     });
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalTargets, "\u0275fac", function SwalPortalTargets_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalTargets, "\u0275fac", function SwalPortalTargets_Factory(t) {
   return new (t || SwalPortalTargets)();
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalTargets, "\u0275prov", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalTargets, "\u0275prov", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjectable"]({
   token: SwalPortalTargets,
   factory: SwalPortalTargets.ɵfac,
   providedIn: 'root'
@@ -72019,25 +72019,25 @@ class SwalPortalTargets {
  */
 class SwalPortalDirective {
   constructor(resolver, injector, app, templateRef, sweetAlert2Loader, swalTargets, swalComponent) {
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "resolver", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "injector", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "app", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "templateRef", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "sweetAlert2Loader", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalTargets", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalComponent", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "resolver", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "injector", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "app", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "templateRef", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "sweetAlert2Loader", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalTargets", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "swalComponent", void 0);
     /**
      * Takes a portal target or nothing (then it will target the text content zone by default).
      *
      * See the {@link SwalPortalTargets} service to see the available targets.
      * See the class doc block for more informations.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "target", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "target", void 0);
     /**
      * Holds the component reference of the controlled SwalPortalComponent to destroy it when no longer needed.
      */
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "portalComponentRef", void 0);
-    (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "destroyed", new rxjs__WEBPACK_IMPORTED_MODULE_3__.Subject());
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "portalComponentRef", void 0);
+    (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(this, "destroyed", new rxjs__WEBPACK_IMPORTED_MODULE_3__.Subject());
     this.resolver = resolver;
     this.injector = injector;
     this.app = app;
@@ -72074,7 +72074,7 @@ class SwalPortalDirective {
    */
   didRenderHook() {
     var _this4 = this;
-    return (0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
+    return (0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_asyncToGenerator_js__WEBPACK_IMPORTED_MODULE_0__["default"])(function* () {
       //=> Ensure the portal component is created
       if (!_this4.portalComponentRef) {
         _this4.portalComponentRef = _this4.createPortalComponent();
@@ -72131,10 +72131,10 @@ class SwalPortalDirective {
     return componentRef;
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalDirective, "\u0275fac", function SwalPortalDirective_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalDirective, "\u0275fac", function SwalPortalDirective_Factory(t) {
   return new (t || SwalPortalDirective)(_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ComponentFactoryResolver), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.Injector), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.ApplicationRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_2__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](SweetAlert2LoaderService), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](SwalPortalTargets), _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdirectiveInject"](SwalComponent, 1));
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalDirective, "\u0275dir", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SwalPortalDirective, "\u0275dir", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineDirective"]({
   type: SwalPortalDirective,
   selectors: [["", "swalPortal", ""]],
   inputs: {
@@ -72208,13 +72208,13 @@ class SweetAlert2Module {
     };
   }
 }
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275fac", function SweetAlert2Module_Factory(t) {
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275fac", function SweetAlert2Module_Factory(t) {
   return new (t || SweetAlert2Module)();
 });
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275mod", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275mod", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineNgModule"]({
   type: SweetAlert2Module
 }));
-(0,_Users_mac_Documents_Project_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275inj", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
+(0,C_angular_prototype_bank_victoria_node_modules_babel_runtime_helpers_esm_defineProperty_js__WEBPACK_IMPORTED_MODULE_1__["default"])(SweetAlert2Module, "\u0275inj", /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵdefineInjector"]({
   imports: [_angular_common__WEBPACK_IMPORTED_MODULE_5__.CommonModule]
 }));
 (function () {
