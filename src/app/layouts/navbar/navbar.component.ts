@@ -41,4 +41,9 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
     this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
   }
+
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['/auth/login']);
+  }
 }

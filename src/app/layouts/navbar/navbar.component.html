@@ -6,7 +6,7 @@
                 <img src="./assets/bank-victoria/svg/ic-notification.svg" alt="Notification icon" />
             </div>
             <div class="item">
-                <div class="profile-user">
+                <div class="profile-user" [matMenuTriggerFor]="eventMenu">
                     <img src="./assets/bank-victoria/images/avatar.png" alt="Avatar Illust" />
                     <div class="profile-user-information">
                         <span class="profile-user-information-name">User Dummy</span>
@@ -14,9 +14,18 @@
                     </div>
                 </div>
 
-                <div class="profile-user-responsive">
+                <div class="profile-user-responsive" [matMenuTriggerFor]="eventMenu">
                     <img src="./assets/bank-victoria/svg/burger-menu.svg" alt="Burger menu icon" />
                 </div>
+
+                <mat-menu #eventMenu="matMenu">
+                    <button mat-menu-item>
+                        <span>Profil</span>
+                    </button>
+                    <button mat-menu-item (click)="logout()">
+                        <span>Keluar</span>
+                    </button>
+                </mat-menu>
             </div>
         </div>
     </div>
