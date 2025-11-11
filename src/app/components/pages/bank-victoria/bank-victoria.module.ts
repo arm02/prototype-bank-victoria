@@ -9,6 +9,7 @@ import { ScheduleComponent } from './schedule/schedule.component';
 import { FullCalendarModule } from '@fullcalendar/angular';
 import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
 import { NavigationComponent } from './program/navigation/navigation.component';
+import { DetailScheduleComponent } from './schedule/dialog/detail-schedule/detail-schedule.component';
 @NgModule({
   declarations: [
     ProgramComponent,
@@ -16,6 +17,7 @@ import { NavigationComponent } from './program/navigation/navigation.component';
     ScheduleComponent,
     ProgramDetailComponent,
     NavigationComponent,
+    DetailScheduleComponent,
   ],
   exports: [
     ProgramComponent,

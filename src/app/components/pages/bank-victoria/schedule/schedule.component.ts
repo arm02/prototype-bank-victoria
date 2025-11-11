@@ -7,6 +7,8 @@ import timeGridPlugin from '@fullcalendar/timegrid';
 import listPlugin from '@fullcalendar/list';
 import { Subject, takeUntil } from 'rxjs';
 import idLocale from '@fullcalendar/core/locales/id';
+import { MatDialog } from '@angular/material/dialog';
+import { DetailScheduleComponent } from './dialog/detail-schedule/detail-schedule.component';
 
 @Component({
   selector: 'app-schedule',
@@ -23,7 +25,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   mobileToolbar = {
     left: 'prev,next',
     center: 'title',
-    right: 'dayGridMonth,timeGridDay,listWeek' 
+    right: 'dayGridMonth,timeGridDay,listWeek'
   };
 
   calendarOptions: CalendarOptions = {
@@ -74,7 +76,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   };
 
   private destroy$ = new Subject<void>();
-  constructor(private breakpointObserver: BreakpointObserver) { }
+  constructor(private breakpointObserver: BreakpointObserver, private dialog: MatDialog) { }
 
   ngOnInit(): void {
     this.breakpointObserver
@@ -98,7 +100,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   }
 
   handleEventClick(info: any) {
-    alert(`Event: ${info.event.title}\nWaktu: ${info.event.start}`);
+    this.openDetailDialog();
   }
 
   getEventTimeFormat(event: any): 'time' | 'dateRange' | null {
@@ -123,5 +125,12 @@ export class ScheduleComponent implements OnInit, OnDestroy {
         return null;
       }
     }
+  }
+
+  openDetailDialog(): void {
+    const dialogRef = this.dialog.open(DetailScheduleComponent, {
+      width: '400px',
+    });
+    dialogRef.afterClosed().subscribe((result) => { });
   }
 }
