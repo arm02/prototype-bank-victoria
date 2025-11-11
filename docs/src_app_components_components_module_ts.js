@@ -795,6 +795,112 @@ FeedbackFormComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODUL
 
 /***/ }),
 
+/***/ 2709:
+/*!***************************************************************************************!*\
+  !*** ./src/app/components/pages/bank-victoria/notification/notification.component.ts ***!
+  \***************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   NotificationComponent: () => (/* binding */ NotificationComponent)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 1699);
+
+class NotificationComponent {}
+NotificationComponent.ɵfac = function NotificationComponent_Factory(t) {
+  return new (t || NotificationComponent)();
+};
+NotificationComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: NotificationComponent,
+  selectors: [["app-notification"]],
+  decls: 71,
+  vars: 0,
+  consts: [[1, "notification-container"], [1, "notification-items"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "title"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
+  template: function NotificationComponent_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4)(5, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 1)(13, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "img", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 4)(16, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 1)(22, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 4)(25, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "a", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 1)(33, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "img", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 4)(36, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 1)(42, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "img", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 4)(45, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "a", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 1)(53, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "img", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 4)(56, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "div", 1)(62, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "img", 3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 4)(65, "span", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "span", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "a", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
+    }
+  },
+  styles: [".notification-container[_ngcontent-%COMP%] {\n  border: 1px solid #E6E4E4;\n  border-radius: 10px;\n  padding: 10px;\n  background-color: white;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9wYWdlcy9iYW5rLXZpY3RvcmlhL25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUVBLHVCQUFBO0FBQUo7QUFFSTtFQUNJLGVBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0FBQVI7QUFFUTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtBQUFaO0FBRVk7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFBaEI7QUFHWTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtBQURoQjtBQUlZO0VBQ0ksY0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQUZoQjtBQU1RO0VBQ0ksV0FBQTtFQUNBLFdBQUE7RUFDQSx5QkFBQTtBQUpaIiwic291cmNlc0NvbnRlbnQiOlsiLm5vdGlmaWNhdGlvbi1jb250YWluZXIge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNFNkU0RTQ7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5cbiAgICAubm90aWZpY2F0aW9uLWl0ZW0ge1xuICAgICAgICBwYWRkaW5nOiAxNHB4IDA7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICAgICAgICBnYXA6IDEycHg7XG5cbiAgICAgICAgJi1jb250ZW50IHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICAgICAgZ2FwOiA4cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS4ycmVtO1xuXG4gICAgICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAuZGVzYyB7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5saW5rIHtcbiAgICAgICAgICAgICAgICBjb2xvcjogI0UzNDI0MztcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgICYtZGl2aWRlciB7XG4gICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgIGhlaWdodDogMXB4O1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0U2RTRFNDtcbiAgICAgICAgfVxuXG4gICAgfVxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+});
+
+/***/ }),
+
 /***/ 5721:
 /*!**********************************************************************************!*\
   !*** ./src/app/components/pages/images/create-images/create-images.component.ts ***!
@@ -2254,7 +2360,11 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @angular/material/icon */ 6515);
 /* harmony import */ var _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./navbar/navbar.component */ 9535);
 /* harmony import */ var _menu_responsive_menu_responsive_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./menu-responsive/menu-responsive.component */ 9775);
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! @angular/material/menu */ 8128);
+/* harmony import */ var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! @angular/material/bottom-sheet */ 8740);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1699);
+
+
 
 
 
@@ -2279,12 +2389,12 @@ LayoutsModule.ɵmod = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["�
   type: LayoutsModule
 });
 LayoutsModule.ɵinj = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineInjector"]({
-  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_8__.MatTableModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_9__.MatPaginatorModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__.MatProgressSpinnerModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_11__.MatSortModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__.MatFormFieldModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_13__.MatInputModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule]
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_8__.MatTableModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_9__.MatPaginatorModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__.MatProgressSpinnerModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_11__.MatSortModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__.MatFormFieldModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_13__.MatInputModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_16__.MatMenuModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_17__.MatBottomSheetModule]
 });
 (function () {
   (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵsetNgModuleScope"](LayoutsModule, {
     declarations: [_sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_0__.SidenavComponent, _table_table_component__WEBPACK_IMPORTED_MODULE_1__.TableComponent, _auth_change_password_change_password_component__WEBPACK_IMPORTED_MODULE_2__.ForgotPasswordComponent, _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__.NavbarComponent, _menu_responsive_menu_responsive_component__WEBPACK_IMPORTED_MODULE_4__.MenuResponsiveComponent],
-    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_8__.MatTableModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_9__.MatPaginatorModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__.MatProgressSpinnerModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_11__.MatSortModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__.MatFormFieldModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_13__.MatInputModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule],
+    imports: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.CommonModule, _angular_router__WEBPACK_IMPORTED_MODULE_7__.RouterModule, _angular_material_table__WEBPACK_IMPORTED_MODULE_8__.MatTableModule, _angular_material_paginator__WEBPACK_IMPORTED_MODULE_9__.MatPaginatorModule, _angular_material_progress_spinner__WEBPACK_IMPORTED_MODULE_10__.MatProgressSpinnerModule, _angular_material_sort__WEBPACK_IMPORTED_MODULE_11__.MatSortModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_12__.MatFormFieldModule, _angular_material_input__WEBPACK_IMPORTED_MODULE_13__.MatInputModule, _angular_forms__WEBPACK_IMPORTED_MODULE_14__.FormsModule, _angular_material_icon__WEBPACK_IMPORTED_MODULE_15__.MatIconModule, _angular_material_menu__WEBPACK_IMPORTED_MODULE_16__.MatMenuModule, _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_17__.MatBottomSheetModule],
     exports: [_sidenav_sidenav_component__WEBPACK_IMPORTED_MODULE_0__.SidenavComponent, _table_table_component__WEBPACK_IMPORTED_MODULE_1__.TableComponent, _navbar_navbar_component__WEBPACK_IMPORTED_MODULE_3__.NavbarComponent, _menu_responsive_menu_responsive_component__WEBPACK_IMPORTED_MODULE_4__.MenuResponsiveComponent]
   });
 })();
@@ -2334,9 +2444,9 @@ function MenuResponsiveComponent_div_2_Template(rf, ctx) {
   if (rf & 2) {
     const menu_r1 = ctx.$implicit;
     const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵnextContext"]();
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](3, _c0, menu_r1.active === ctx_r0.activeRoute));
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵpureFunction1"](3, _c0, ctx_r0.isMenuActive(menu_r1)));
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](1);
-    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("src", "./assets/bank-victoria/svg/sidebar/" + menu_r1.icon + (menu_r1.active === ctx_r0.activeRoute ? "-mobile-active" : "") + ".svg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
+    _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵproperty"]("src", "./assets/bank-victoria/svg/sidebar/" + menu_r1.icon + (ctx_r0.isMenuActive(menu_r1) ? "-mobile-active" : "") + ".svg", _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsanitizeUrl"]);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵadvance"](2);
     _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵtextInterpolate"](menu_r1.groupTitleMobile);
   }
@@ -2354,6 +2464,9 @@ class MenuResponsiveComponent {
   }
   goToPage(path) {
     this.router.navigate([path]);
+  }
+  isMenuActive(menu) {
+    return menu.active === 'dashboard' ? !this.activeRoute || menu.active === this.activeRoute : menu.active === this.activeRoute;
   }
 }
 MenuResponsiveComponent.ɵfac = function MenuResponsiveComponent_Factory(t) {
@@ -2377,7 +2490,7 @@ MenuResponsiveComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MOD
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass, _angular_common__WEBPACK_IMPORTED_MODULE_3__.NgForOf],
-  styles: [".menu-responsive[_ngcontent-%COMP%] {\n  padding: 10px 0;\n  position: fixed;\n  bottom: 15px;\n  left: 20px;\n  width: calc(100% - 40px);\n  background: white;\n  border-radius: 25px;\n  border: 1px solid #E6E4E4;\n  display: none;\n  box-shadow: 2px 3px 9px 0px #d49fa1;\n}\n@media only screen and (max-width: 768px) {\n  .menu-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n.menu-responsive-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 3rem;\n}\n.menu-responsive-item[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 2px;\n  padding: 0 8px;\n  cursor: pointer;\n  font-size: 12px;\n}\n.menu-responsive-item.active[_ngcontent-%COMP%] {\n  color: #ed1a21;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9tZW51LXJlc3BvbnNpdmUvbWVudS1yZXNwb25zaXZlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBQTtFQUNBLGVBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLHdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLG1DQUFBO0FBQ0o7QUFDSTtFQVpKO0lBYVEsY0FBQTtFQUVOO0FBQ0Y7QUFBSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLHVCQUFBO0VBQ0EsU0FBQTtBQUVSO0FBRUk7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxtQkFBQTtFQUNBLFFBQUE7RUFDQSxjQUFBO0VBQ0EsZUFBQTtFQUNBLGVBQUE7QUFBUjtBQUNRO0VBQ0ksY0FBQTtBQUNaIiwic291cmNlc0NvbnRlbnQiOlsiLm1lbnUtcmVzcG9uc2l2ZSB7XG4gICAgcGFkZGluZzogMTBweCAwO1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICBib3R0b206IDE1cHg7XG4gICAgbGVmdDogMjBweDtcbiAgICB3aWR0aDogY2FsYygxMDAlIC0gNDBweCk7XG4gICAgYmFja2dyb3VuZDogd2hpdGU7XG4gICAgYm9yZGVyLXJhZGl1czogMjVweDtcbiAgICBib3JkZXI6IDFweCBzb2xpZCAjRTZFNEU0O1xuICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgYm94LXNoYWRvdzogMnB4IDNweCA5cHggMHB4ICNkNDlmYTE7XG5cbiAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XG4gICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIH1cblxuICAgICYtY29udGFpbmVyIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBjZW50ZXI7XG4gICAgICAgIGdhcDogM3JlbTtcblxuICAgIH1cblxuICAgICYtaXRlbSB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGdhcDogMnB4O1xuICAgICAgICBwYWRkaW5nOiAwICA4cHg7XG4gICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAmLmFjdGl2ZSB7XG4gICAgICAgICAgICBjb2xvcjogI2VkMWEyMTtcbiAgICAgICAgfVxuXG4gICAgfVxufVxuIl0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  styles: [".menu-responsive[_ngcontent-%COMP%] {\n  padding: 10px 0;\n  position: fixed;\n  bottom: 15px;\n  left: 20px;\n  width: calc(100% - 40px);\n  background: white;\n  border-radius: 25px;\n  border: 1px solid #E6E4E4;\n  display: none;\n  box-shadow: 2px 3px 9px 0px #d49fa1;\n  z-index: 999;\n}\n@media only screen and (max-width: 768px) {\n  .menu-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n.menu-responsive-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: center;\n  gap: 1.5rem;\n}\n.menu-responsive-item[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  align-items: center;\n  gap: 2px;\n  padding: 0 8px;\n  cursor: pointer;\n  font-size: 12px;\n}\n.menu-responsive-item.active[_ngcontent-%COMP%] {\n  color: #ed1a21;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9tZW51LXJlc3BvbnNpdmUvbWVudS1yZXNwb25zaXZlLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBQTtFQUNBLGVBQUE7RUFDQSxZQUFBO0VBQ0EsVUFBQTtFQUNBLHdCQUFBO0VBQ0EsaUJBQUE7RUFDQSxtQkFBQTtFQUNBLHlCQUFBO0VBQ0EsYUFBQTtFQUNBLG1DQUFBO0VBQ0EsWUFBQTtBQUNKO0FBQ0k7RUFiSjtJQWNRLGNBQUE7RUFFTjtBQUNGO0FBQUk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSx1QkFBQTtFQUNBLFdBQUE7QUFFUjtBQUVJO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBQ0EsbUJBQUE7RUFDQSxRQUFBO0VBQ0EsY0FBQTtFQUNBLGVBQUE7RUFDQSxlQUFBO0FBQVI7QUFDUTtFQUNJLGNBQUE7QUFDWiIsInNvdXJjZXNDb250ZW50IjpbIi5tZW51LXJlc3BvbnNpdmUge1xuICAgIHBhZGRpbmc6IDEwcHggMDtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgYm90dG9tOiAxNXB4O1xuICAgIGxlZnQ6IDIwcHg7XG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDQwcHgpO1xuICAgIGJhY2tncm91bmQ6IHdoaXRlO1xuICAgIGJvcmRlci1yYWRpdXM6IDI1cHg7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0U2RTRFNDtcbiAgICBkaXNwbGF5OiBub25lO1xuICAgIGJveC1zaGFkb3c6IDJweCAzcHggOXB4IDBweCAjZDQ5ZmExO1xuICAgIHotaW5kZXg6IDk5OTtcblxuICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgfVxuXG4gICAgJi1jb250YWluZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjtcbiAgICAgICAgZ2FwOiAxLjVyZW07XG5cbiAgICB9XG5cbiAgICAmLWl0ZW0ge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBnYXA6IDJweDtcbiAgICAgICAgcGFkZGluZzogMCAgOHB4O1xuICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgICAgJi5hY3RpdmUge1xuICAgICAgICAgICAgY29sb3I6ICNlZDFhMjE7XG4gICAgICAgIH1cblxuICAgIH1cbn1cbiJdLCJzb3VyY2VSb290IjoiIn0= */"]
 });
 
 /***/ }),
@@ -2393,13 +2506,19 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   NavbarComponent: () => (/* binding */ NavbarComponent)
 /* harmony export */ });
-/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ 7947);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! rxjs */ 2513);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 4520);
-/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! rxjs */ 274);
-/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/core */ 1699);
-/* harmony import */ var _layouts_service__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../layouts.service */ 8098);
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/router */ 7947);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 2513);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! rxjs */ 4520);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! rxjs */ 274);
+/* harmony import */ var src_app_components_pages_bank_victoria_notification_notification_component__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! src/app/components/pages/bank-victoria/notification/notification.component */ 2709);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _layouts_service__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../layouts.service */ 8098);
+/* harmony import */ var _angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/material/bottom-sheet */ 8740);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! @angular/material/menu */ 8128);
+
+
+
 
 
 
@@ -2412,20 +2531,21 @@ const _c0 = function (a0) {
   };
 };
 class NavbarComponent {
-  constructor(route, router, layoutService) {
+  constructor(route, router, layoutService, bottomSheet) {
     this.route = route;
     this.router = router;
     this.layoutService = layoutService;
+    this.bottomSheet = bottomSheet;
     this.navTitle = '';
     this.isExpanded = false;
-    this.ngUnsubscribe = new rxjs__WEBPACK_IMPORTED_MODULE_1__.Subject();
+    this.ngUnsubscribe = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
   }
   ngOnInit() {
     this.setNavTitle(this.route);
-    this.router.events.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_2__.filter)(event => event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__.NavigationEnd), (0,rxjs__WEBPACK_IMPORTED_MODULE_4__.takeUntil)(this.ngUnsubscribe)).subscribe(() => {
+    this.router.events.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_3__.filter)(event => event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_4__.NavigationEnd), (0,rxjs__WEBPACK_IMPORTED_MODULE_5__.takeUntil)(this.ngUnsubscribe)).subscribe(() => {
       this.setNavTitle(this.route);
     });
-    this.layoutService.isExpanded.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_4__.takeUntil)(this.ngUnsubscribe)).subscribe({
+    this.layoutService.isExpanded.pipe((0,rxjs__WEBPACK_IMPORTED_MODULE_5__.takeUntil)(this.ngUnsubscribe)).subscribe({
       next: value => {
         this.isExpanded = value;
       }
@@ -2442,44 +2562,91 @@ class NavbarComponent {
     }
     this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
   }
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['/auth/login']);
+  }
+  openNotification() {
+    this.bottomSheet.open(src_app_components_pages_bank_victoria_notification_notification_component__WEBPACK_IMPORTED_MODULE_0__.NotificationComponent, {
+      panelClass: 'full-height-bottom-sheet'
+    });
+  }
 }
 NavbarComponent.ɵfac = function NavbarComponent_Factory(t) {
-  return new (t || NavbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_3__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdirectiveInject"](_layouts_service__WEBPACK_IMPORTED_MODULE_0__.LayoutsService));
+  return new (t || NavbarComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.ActivatedRoute), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_4__.Router), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_layouts_service__WEBPACK_IMPORTED_MODULE_1__.LayoutsService), _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdirectiveInject"](_angular_material_bottom_sheet__WEBPACK_IMPORTED_MODULE_7__.MatBottomSheet));
 };
-NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵdefineComponent"]({
+NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({
   type: NavbarComponent,
   selectors: [["app-navbar"]],
-  decls: 17,
-  vars: 4,
-  consts: [[1, "navbar", 3, "ngClass"], [1, "items-container"], [1, "title"], [1, "right"], [1, "item"], ["src", "./assets/bank-victoria/svg/ic-notification.svg", "alt", "Notification icon"], [1, "profile-user"], ["src", "./assets/bank-victoria/images/avatar.png", "alt", "Avatar Illust"], [1, "profile-user-information"], [1, "profile-user-information-name"], [1, "profile-user-information-email"], [1, "profile-user-responsive"], ["src", "./assets/bank-victoria/svg/burger-menu.svg", "alt", "Burger menu icon"]],
+  decls: 46,
+  vars: 6,
+  consts: [[1, "navbar", 3, "ngClass"], [1, "items-container"], [1, "title"], [1, "right"], [1, "item", 3, "click"], ["src", "./assets/bank-victoria/svg/ic-notification.svg", "alt", "Notification icon"], [1, "item"], [1, "profile-user", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/images/avatar.png", "alt", "Avatar Illust"], [1, "profile-user-information"], [1, "profile-user-information-name"], [1, "profile-user-information-email"], [1, "profile-user-responsive", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/svg/burger-menu.svg", "alt", "Burger menu icon"], ["eventMenu", "matMenu"], ["mat-menu-item", ""], ["mat-menu-item", "", 3, "click"], ["eventNotification", "matMenu"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
   template: function NavbarComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](4, "div", 3)(5, "div", 4);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](6, "img", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](7, "div", 4)(8, "div", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](9, "img", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](10, "div", 8)(11, "span", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](12, "User Dummy");
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](13, "span", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](14, "lms@victoria.com");
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementStart"](15, "div", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelement"](16, "img", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementEnd"]()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "div", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](4, "div", 3)(5, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function NavbarComponent_Template_div_click_5_listener() {
+        return ctx.openNotification();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](6, "img", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](7, "div", 6)(8, "div", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](9, "img", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](10, "div", 9)(11, "span", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](12, "User Dummy");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](13, "span", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](14, "lms@victoria.com");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](15, "div", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](16, "img", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](17, "mat-menu", null, 14)(19, "button", 15)(20, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](21, "Profil");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](22, "button", 16);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function NavbarComponent_Template_button_click_22_listener() {
+        return ctx.logout();
+      });
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](23, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](24, "Keluar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](25, "mat-menu", null, 17)(27, "button", 15)(28, "div", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](29, "img", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](30, "div", 20)(31, "span", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](32, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](33, "span", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](34, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](35, "a", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](36, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](37, "div", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](38, "div", 15)(39, "div", 18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](40, "img", 24);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](41, "div", 20)(42, "span", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](43, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](44, "span", 21);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](45, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()()();
     }
     if (rf & 2) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵpureFunction1"](2, _c0, ctx.isExpanded));
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵadvance"](3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtextInterpolate"](ctx.navTitle);
+      const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵreference"](18);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction1"](4, _c0, ctx.isExpanded));
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtextInterpolate"](ctx.navTitle);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("matMenuTriggerFor", _r0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("matMenuTriggerFor", _r0);
     }
   },
-  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.NgClass],
-  styles: [".navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  background-color: #ffffff;\n  color: black;\n  padding: 20px 30px;\n  z-index: 999;\n  display: block;\n  width: calc(100% - 332px);\n}\n.navbar.expanded[_ngcontent-%COMP%] {\n  width: calc(100% - 140px);\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%] {\n    width: calc(100% - 60px);\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-weight: 400;\n  font-size: 20px;\n  margin-left: 20px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  border-left: 1px solid #E6E6E6;\n  padding-left: 18px;\n  cursor: pointer;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 30px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-name[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #191919;\n  font-weight: 600;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-email[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #949494;\n  font-weight: 400;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBO0VBQ0ksZUFBQTtFQUNBLE1BQUE7RUFDQSx5QkFBQTtFQUNBLFlBQUE7RUFDQSxrQkFBQTtFQUNBLFlBQUE7RUFDQSxjQUFBO0VBQ0EseUJBQUE7QUFDSjtBQUNJO0VBQ0kseUJBQUE7QUFDUjtBQUVJO0VBZEo7SUFlUSx3QkFBQTtFQUNOO0FBQ0Y7QUFDSTtFQUNJLGFBQUE7RUFDQSxtQkFBQTtFQUNBLDhCQUFBO0VBQ0EsU0FBQTtBQUNSO0FBQ1E7RUFDSSxnQkFBQTtFQUNBLGVBQUE7RUFDQSxpQkFBQTtBQUNaO0FBRVE7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxTQUFBO0FBQVo7QUFHZ0I7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxRQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7QUFEcEI7QUFHb0I7RUFDSSxXQUFBO0FBRHhCO0FBSW9CO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0FBRnhCO0FBSXdCO0VBQ0ksZUFBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtBQUY1QjtBQUt3QjtFQUNJLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUFINUI7QUFPb0I7RUE3Qko7SUE4QlEsYUFBQTtFQUp0QjtBQUNGO0FBTW9CO0VBQ0ksYUFBQTtBQUp4QjtBQU13QjtFQUhKO0lBSVEsY0FBQTtFQUgxQjtBQUNGIiwic291cmNlc0NvbnRlbnQiOlsiLm5hdmJhciB7XG4gICAgcG9zaXRpb246IGZpeGVkO1xuICAgIHRvcDogMDtcbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjZmZmZmZmO1xuICAgIGNvbG9yOiBibGFjaztcbiAgICBwYWRkaW5nOiAyMHB4IDMwcHg7XG4gICAgei1pbmRleDogOTk5O1xuICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAzMzJweCk7XG5cbiAgICAmLmV4cGFuZGVkIHtcbiAgICAgICAgd2lkdGg6IGNhbGMoMTAwJSAtIDE0MHB4KTtcbiAgICB9XG5cbiAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XG4gICAgICAgIHdpZHRoOiBjYWxjKDEwMCUgLSA2MHB4KTtcbiAgICB9XG5cbiAgICAuaXRlbXMtY29udGFpbmVyIHtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAganVzdGlmeS1jb250ZW50OiBzcGFjZS1iZXR3ZWVuO1xuICAgICAgICBnYXA6IDE4cHg7XG5cbiAgICAgICAgLnRpdGxlIHtcbiAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICBmb250LXNpemU6IDIwcHg7XG4gICAgICAgICAgICBtYXJnaW4tbGVmdDogMjBweDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5yaWdodCB7XG4gICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgIGdhcDogMThweDtcblxuICAgICAgICAgICAgLml0ZW0ge1xuICAgICAgICAgICAgICAgIC5wcm9maWxlLXVzZXIge1xuICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICAgICAgICAgICAgICBnYXA6IDhweDtcbiAgICAgICAgICAgICAgICAgICAgYm9yZGVyLWxlZnQ6IDFweCBzb2xpZCAjRTZFNkU2O1xuICAgICAgICAgICAgICAgICAgICBwYWRkaW5nLWxlZnQ6IDE4cHg7XG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcblxuICAgICAgICAgICAgICAgICAgICBpbWcge1xuICAgICAgICAgICAgICAgICAgICAgICAgd2lkdGg6IDMwcHg7XG4gICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAmLWluZm9ybWF0aW9uIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICAgICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuXG4gICAgICAgICAgICAgICAgICAgICAgICAmLW5hbWUge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBjb2xvcjogIzE5MTkxOTtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNjAwO1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgICAgICAgICAmLWVtYWlsIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICM5NDk0OTQ7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAmLXJlc3BvbnNpdmUge1xuICAgICAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogbm9uZTtcblxuICAgICAgICAgICAgICAgICAgICAgICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweCkge1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICB9XG4gICAgICAgIH1cbiAgICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgClass, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenuTrigger],
+  styles: ["@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400[_ngcontent-%COMP%];500[_ngcontent-%COMP%];550[_ngcontent-%COMP%];600[_ngcontent-%COMP%];700&display=swap)[_ngcontent-%COMP%];*[_ngcontent-%COMP%] {\n  font-family: \"Poppins\";\n}\n\n.navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  background-color: #ffffff;\n  color: black;\n  padding: 20px 30px;\n  z-index: 999;\n  display: block;\n  width: calc(100% - 332px);\n}\n.navbar.expanded[_ngcontent-%COMP%] {\n  width: calc(100% - 140px);\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%] {\n    width: calc(100% - 60px);\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-weight: 400;\n  font-size: 20px;\n  margin-left: 20px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  border-left: 1px solid #E6E6E6;\n  padding-left: 18px;\n  cursor: pointer;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 30px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-name[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #191919;\n  font-weight: 600;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-email[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #949494;\n  font-weight: 400;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n\n.notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0Usc0JBQUE7QUFBRjs7QUFHQTtFQUNJLGVBQUE7RUFDQSxNQUFBO0VBQ0EseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0FBQUo7QUFFSTtFQUNJLHlCQUFBO0FBQVI7QUFHSTtFQWRKO0lBZVEsd0JBQUE7RUFBTjtBQUNGO0FBRUk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtFQUNBLFNBQUE7QUFBUjtBQUVRO0VBQ0ksZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUFBWjtBQUdRO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtBQURaO0FBSWdCO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsUUFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBRnBCO0FBSW9CO0VBQ0ksV0FBQTtBQUZ4QjtBQUtvQjtFQUNJLGFBQUE7RUFDQSxzQkFBQTtBQUh4QjtBQUt3QjtFQUNJLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUFINUI7QUFNd0I7RUFDSSxlQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0FBSjVCO0FBUW9CO0VBN0JKO0lBOEJRLGFBQUE7RUFMdEI7QUFDRjtBQU9vQjtFQUNJLGFBQUE7QUFMeEI7QUFPd0I7RUFISjtJQUlRLGNBQUE7RUFKMUI7QUFDRjs7QUFhQTtFQUNJLGVBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0FBVko7QUFZSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtBQVZSO0FBV1E7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFUWjtBQVlRO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0FBVlo7QUFhUTtFQUNJLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUFYWjtBQWVJO0VBQ0ksV0FBQTtFQUNBLFdBQUE7RUFDQSx5QkFBQTtBQWJSIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PVBvcHBpbnM6d2dodEAzMDA7NDAwOzUwMDs1NTA7NjAwOzcwMCZkaXNwbGF5PXN3YXBcIik7XG5cbioge1xuICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XG59XG5cbi5uYXZiYXIge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZzogMjBweCAzMHB4O1xuICAgIHotaW5kZXg6IDk5OTtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICB3aWR0aDogY2FsYygxMDAlIC0gMzMycHgpO1xuXG4gICAgJi5leHBhbmRlZCB7XG4gICAgICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAxNDBweCk7XG4gICAgfVxuXG4gICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweCkge1xuICAgICAgICB3aWR0aDogY2FsYygxMDAlIC0gNjBweCk7XG4gICAgfVxuXG4gICAgLml0ZW1zLWNvbnRhaW5lciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgZ2FwOiAxOHB4O1xuXG4gICAgICAgIC50aXRsZSB7XG4gICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDIwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAucmlnaHQge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgICAgICBnYXA6IDE4cHg7XG5cbiAgICAgICAgICAgIC5pdGVtIHtcbiAgICAgICAgICAgICAgICAucHJvZmlsZS11c2VyIHtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgZ2FwOiA4cHg7XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI0U2RTZFNjtcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAxOHB4O1xuICAgICAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG5cbiAgICAgICAgICAgICAgICAgICAgaW1nIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1pbmZvcm1hdGlvbiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1uYW1lIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICMxOTE5MTk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1lbWFpbCB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjOTQ5NDk0O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1yZXNwb25zaXZlIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxufVxuXG4ubm90aWZpY2F0aW9uLWl0ZW0ge1xuICAgIHBhZGRpbmc6IDE0cHggMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICAgIGdhcDogMTJweDtcblxuICAgICYtY29udGVudCB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGdhcDogOHB4O1xuICAgICAgICBsaW5lLWhlaWdodDogMS4ycmVtO1xuICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICAgICAgfVxuICAgIFxuICAgICAgICAuZGVzYyB7XG4gICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICB9XG4gICAgXG4gICAgICAgIC5saW5rIHtcbiAgICAgICAgICAgIGNvbG9yOiAjRTM0MjQzO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgfVxuICAgIH1cblxuICAgICYtZGl2aWRlciB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IDFweDtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0U2RTRFNDtcbiAgICB9XG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
 });
 
 /***/ }),
@@ -2633,7 +2800,7 @@ const VictoriaNavigationGroupData = [{
   groupTitleMobile: 'Beranda',
   icon: 'home',
   path: '/',
-  active: 'article',
+  active: 'dashboard',
   items: [],
   route: undefined,
   role: 'all',
@@ -2644,6 +2811,16 @@ const VictoriaNavigationGroupData = [{
   icon: 'box-search',
   path: '/lms/program',
   active: 'program',
+  items: [],
+  route: undefined,
+  role: 'all',
+  isVisible: true
+}, {
+  groupTitle: 'Sertifikat',
+  groupTitleMobile: 'Sertifikat',
+  icon: 'book',
+  path: '/lms/sertifikat',
+  active: 'sertifikat',
   items: [],
   route: undefined,
   role: 'all',
@@ -2864,7 +3041,7 @@ function SidenavComponent_span_15_Template(rf, ctx) {
 function SidenavComponent_ng_container_19_Template(rf, ctx) {
   if (rf & 1) {
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerStart"](0);
-    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Saya Butuh Bantuan");
+    _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵtext"](1, "Butuh Bantuan");
     _angular_core__WEBPACK_IMPORTED_MODULE_5__["ɵɵelementContainerEnd"]();
   }
 }
@@ -2901,7 +3078,7 @@ class SidenavComponent {
     this.router.navigate(['/auth/login']);
   }
   help() {
-    window.open('https://wa.me/6287872753959', '_blank');
+    window.open('https://wa.me/628112175175', '_blank');
   }
   changePassword() {
     const dialogRef = this.dialog.open(src_app_auth_change_password_change_password_component__WEBPACK_IMPORTED_MODULE_2__.ForgotPasswordComponent, {
@@ -21469,6 +21646,485 @@ TextFieldModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_4_
 
 /***/ }),
 
+/***/ 8740:
+/*!******************************************************************!*\
+  !*** ./node_modules/@angular/material/fesm2022/bottom-sheet.mjs ***!
+  \******************************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MAT_BOTTOM_SHEET_DATA: () => (/* binding */ MAT_BOTTOM_SHEET_DATA),
+/* harmony export */   MAT_BOTTOM_SHEET_DEFAULT_OPTIONS: () => (/* binding */ MAT_BOTTOM_SHEET_DEFAULT_OPTIONS),
+/* harmony export */   MatBottomSheet: () => (/* binding */ MatBottomSheet),
+/* harmony export */   MatBottomSheetConfig: () => (/* binding */ MatBottomSheetConfig),
+/* harmony export */   MatBottomSheetContainer: () => (/* binding */ MatBottomSheetContainer),
+/* harmony export */   MatBottomSheetModule: () => (/* binding */ MatBottomSheetModule),
+/* harmony export */   MatBottomSheetRef: () => (/* binding */ MatBottomSheetRef),
+/* harmony export */   matBottomSheetAnimations: () => (/* binding */ matBottomSheetAnimations)
+/* harmony export */ });
+/* harmony import */ var _angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/cdk/dialog */ 3108);
+/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/cdk/portal */ 3517);
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/core */ 5309);
+/* harmony import */ var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/a11y */ 3170);
+/* harmony import */ var _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/layout */ 9743);
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/overlay */ 2698);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/animations */ 2501);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/keycodes */ 554);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs */ 2513);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs */ 7835);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs/operators */ 4520);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! rxjs/operators */ 1527);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/** Animations used by the Material bottom sheet. */
+function MatBottomSheetContainer_ng_template_0_Template(rf, ctx) {}
+const matBottomSheetAnimations = {
+  /** Animation that shows and hides a bottom sheet. */
+  bottomSheetState: (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.trigger)('state', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.state)('void, hidden', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.style)({
+    transform: 'translateY(100%)'
+  })), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.state)('visible', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.style)({
+    transform: 'translateY(0%)'
+  })), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.transition)('visible => void, visible => hidden', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.group)([(0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.animate)(`${_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.AnimationDurations.COMPLEX} ${_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.AnimationCurves.ACCELERATION_CURVE}`), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.query)('@*', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.animateChild)(), {
+    optional: true
+  })])), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.transition)('void => visible', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.group)([(0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.animate)(`${_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.AnimationDurations.EXITING} ${_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.AnimationCurves.DECELERATION_CURVE}`), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.query)('@*', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_0__.animateChild)(), {
+    optional: true
+  })]))])
+};
+
+/**
+ * Internal component that wraps user-provided bottom sheet content.
+ * @docs-private
+ */
+class MatBottomSheetContainer extends _angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.CdkDialogContainer {
+  constructor(elementRef, focusTrapFactory, document, config, checker, ngZone, overlayRef, breakpointObserver, _changeDetectorRef, focusMonitor) {
+    super(elementRef, focusTrapFactory, document, config, checker, ngZone, overlayRef, focusMonitor);
+    this._changeDetectorRef = _changeDetectorRef;
+    /** The state of the bottom sheet animations. */
+    this._animationState = 'void';
+    /** Emits whenever the state of the animation changes. */
+    this._animationStateChanged = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.EventEmitter();
+    this._breakpointSubscription = breakpointObserver.observe([_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.Medium, _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.Large, _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.XLarge]).subscribe(() => {
+      this._toggleClass('mat-bottom-sheet-container-medium', breakpointObserver.isMatched(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.Medium));
+      this._toggleClass('mat-bottom-sheet-container-large', breakpointObserver.isMatched(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.Large));
+      this._toggleClass('mat-bottom-sheet-container-xlarge', breakpointObserver.isMatched(_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.Breakpoints.XLarge));
+    });
+  }
+  /** Begin animation of bottom sheet entrance into view. */
+  enter() {
+    if (!this._destroyed) {
+      this._animationState = 'visible';
+      this._changeDetectorRef.detectChanges();
+    }
+  }
+  /** Begin animation of the bottom sheet exiting from view. */
+  exit() {
+    if (!this._destroyed) {
+      this._animationState = 'hidden';
+      this._changeDetectorRef.markForCheck();
+    }
+  }
+  ngOnDestroy() {
+    super.ngOnDestroy();
+    this._breakpointSubscription.unsubscribe();
+    this._destroyed = true;
+  }
+  _onAnimationDone(event) {
+    if (event.toState === 'visible') {
+      this._trapFocus();
+    }
+    this._animationStateChanged.emit(event);
+  }
+  _onAnimationStart(event) {
+    this._animationStateChanged.emit(event);
+  }
+  _captureInitialFocus() {}
+  _toggleClass(cssClass, add) {
+    this._elementRef.nativeElement.classList.toggle(cssClass, add);
+  }
+}
+MatBottomSheetContainer.ɵfac = function MatBottomSheetContainer_Factory(t) {
+  return new (t || MatBottomSheetContainer)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.FocusTrapFactory), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_6__.DOCUMENT, 8), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.DialogConfig), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.InteractivityChecker), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__.OverlayRef), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.BreakpointObserver), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__.ChangeDetectorRef), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.FocusMonitor));
+};
+MatBottomSheetContainer.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineComponent"]({
+  type: MatBottomSheetContainer,
+  selectors: [["mat-bottom-sheet-container"]],
+  hostAttrs: ["tabindex", "-1", 1, "mat-bottom-sheet-container"],
+  hostVars: 4,
+  hostBindings: function MatBottomSheetContainer_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsyntheticHostListener"]("@state.start", function MatBottomSheetContainer_animation_state_start_HostBindingHandler($event) {
+        return ctx._onAnimationStart($event);
+      })("@state.done", function MatBottomSheetContainer_animation_state_done_HostBindingHandler($event) {
+        return ctx._onAnimationDone($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵattribute"]("role", ctx._config.role)("aria-modal", ctx._config.ariaModal)("aria-label", ctx._config.ariaLabel);
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵsyntheticHostProperty"]("@state", ctx._animationState);
+    }
+  },
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵInheritDefinitionFeature"]],
+  decls: 1,
+  vars: 0,
+  consts: [["cdkPortalOutlet", ""]],
+  template: function MatBottomSheetContainer_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵtemplate"](0, MatBottomSheetContainer_ng_template_0_Template, 0, 0, "ng-template", 0);
+    }
+  },
+  dependencies: [_angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__.CdkPortalOutlet],
+  styles: [".mat-bottom-sheet-container{--mat-bottom-sheet-container-shape:4px;box-shadow:0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);padding:8px 16px;min-width:100vw;box-sizing:border-box;display:block;outline:0;max-height:80vh;overflow:auto;background:var(--mat-bottom-sheet-container-background-color);color:var(--mat-bottom-sheet-container-text-color);font-family:var(--mat-bottom-sheet-container-text-font);font-size:var(--mat-bottom-sheet-container-text-size);line-height:var(--mat-bottom-sheet-container-text-line-height);font-weight:var(--mat-bottom-sheet-container-text-weight);letter-spacing:var(--mat-bottom-sheet-container-text-tracking)}.cdk-high-contrast-active .mat-bottom-sheet-container{outline:1px solid}.mat-bottom-sheet-container-xlarge,.mat-bottom-sheet-container-large,.mat-bottom-sheet-container-medium{border-top-left-radius:var(--mat-bottom-sheet-container-shape);border-top-right-radius:var(--mat-bottom-sheet-container-shape)}.mat-bottom-sheet-container-medium{min-width:384px;max-width:calc(100vw - 128px)}.mat-bottom-sheet-container-large{min-width:512px;max-width:calc(100vw - 256px)}.mat-bottom-sheet-container-xlarge{min-width:576px;max-width:calc(100vw - 384px)}"],
+  encapsulation: 2,
+  data: {
+    animation: [matBottomSheetAnimations.bottomSheetState]
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](MatBottomSheetContainer, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Component,
+    args: [{
+      selector: 'mat-bottom-sheet-container',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ChangeDetectionStrategy.Default,
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ViewEncapsulation.None,
+      animations: [matBottomSheetAnimations.bottomSheetState],
+      host: {
+        'class': 'mat-bottom-sheet-container',
+        'tabindex': '-1',
+        '[attr.role]': '_config.role',
+        '[attr.aria-modal]': '_config.ariaModal',
+        '[attr.aria-label]': '_config.ariaLabel',
+        '[@state]': '_animationState',
+        '(@state.start)': '_onAnimationStart($event)',
+        '(@state.done)': '_onAnimationDone($event)'
+      },
+      template: "<ng-template cdkPortalOutlet></ng-template>\r\n",
+      styles: [".mat-bottom-sheet-container{--mat-bottom-sheet-container-shape:4px;box-shadow:0px 8px 10px -5px rgba(0, 0, 0, 0.2), 0px 16px 24px 2px rgba(0, 0, 0, 0.14), 0px 6px 30px 5px rgba(0, 0, 0, 0.12);padding:8px 16px;min-width:100vw;box-sizing:border-box;display:block;outline:0;max-height:80vh;overflow:auto;background:var(--mat-bottom-sheet-container-background-color);color:var(--mat-bottom-sheet-container-text-color);font-family:var(--mat-bottom-sheet-container-text-font);font-size:var(--mat-bottom-sheet-container-text-size);line-height:var(--mat-bottom-sheet-container-text-line-height);font-weight:var(--mat-bottom-sheet-container-text-weight);letter-spacing:var(--mat-bottom-sheet-container-text-tracking)}.cdk-high-contrast-active .mat-bottom-sheet-container{outline:1px solid}.mat-bottom-sheet-container-xlarge,.mat-bottom-sheet-container-large,.mat-bottom-sheet-container-medium{border-top-left-radius:var(--mat-bottom-sheet-container-shape);border-top-right-radius:var(--mat-bottom-sheet-container-shape)}.mat-bottom-sheet-container-medium{min-width:384px;max-width:calc(100vw - 128px)}.mat-bottom-sheet-container-large{min-width:512px;max-width:calc(100vw - 256px)}.mat-bottom-sheet-container-xlarge{min-width:576px;max-width:calc(100vw - 384px)}"]
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ElementRef
+    }, {
+      type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.FocusTrapFactory
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Optional
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_6__.DOCUMENT]
+      }]
+    }, {
+      type: _angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.DialogConfig
+    }, {
+      type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.InteractivityChecker
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgZone
+    }, {
+      type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__.OverlayRef
+    }, {
+      type: _angular_cdk_layout__WEBPACK_IMPORTED_MODULE_4__.BreakpointObserver
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.ChangeDetectorRef
+    }, {
+      type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_5__.FocusMonitor
+    }];
+  }, null);
+})();
+class MatBottomSheetModule {}
+MatBottomSheetModule.ɵfac = function MatBottomSheetModule_Factory(t) {
+  return new (t || MatBottomSheetModule)();
+};
+MatBottomSheetModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineNgModule"]({
+  type: MatBottomSheetModule
+});
+MatBottomSheetModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjector"]({
+  imports: [_angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.DialogModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__.PortalModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](MatBottomSheetModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.NgModule,
+    args: [{
+      imports: [_angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.DialogModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_8__.PortalModule],
+      exports: [MatBottomSheetContainer, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule],
+      declarations: [MatBottomSheetContainer]
+    }]
+  }], null, null);
+})();
+
+/** Injection token that can be used to access the data that was passed in to a bottom sheet. */
+const MAT_BOTTOM_SHEET_DATA = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.InjectionToken('MatBottomSheetData');
+/**
+ * Configuration used when opening a bottom sheet.
+ */
+class MatBottomSheetConfig {
+  constructor() {
+    /** Data being injected into the child component. */
+    this.data = null;
+    /** Whether the bottom sheet has a backdrop. */
+    this.hasBackdrop = true;
+    /** Whether the user can use escape or clicking outside to close the bottom sheet. */
+    this.disableClose = false;
+    /** Aria label to assign to the bottom sheet element. */
+    this.ariaLabel = null;
+    /** Whether this is a modal bottom sheet. Used to set the `aria-modal` attribute. */
+    this.ariaModal = true;
+    /**
+     * Whether the bottom sheet should close when the user goes backwards/forwards in history.
+     * Note that this usually doesn't include clicking on links (unless the user is using
+     * the `HashLocationStrategy`).
+     */
+    this.closeOnNavigation = true;
+    // Note that this is set to 'dialog' by default, because while the a11y recommendations
+    // are to focus the first focusable element, doing so prevents screen readers from reading out the
+    // rest of the bottom sheet content.
+    /**
+     * Where the bottom sheet should focus on open.
+     * @breaking-change 14.0.0 Remove boolean option from autoFocus. Use string or
+     * AutoFocusTarget instead.
+     */
+    this.autoFocus = 'dialog';
+    /**
+     * Whether the bottom sheet should restore focus to the
+     * previously-focused element, after it's closed.
+     */
+    this.restoreFocus = true;
+  }
+}
+
+/**
+ * Reference to a bottom sheet dispatched from the bottom sheet service.
+ */
+class MatBottomSheetRef {
+  /** Instance of the component making up the content of the bottom sheet. */
+  get instance() {
+    return this._ref.componentInstance;
+  }
+  constructor(_ref, config, containerInstance) {
+    this._ref = _ref;
+    /** Subject for notifying the user that the bottom sheet has opened and appeared. */
+    this._afterOpened = new rxjs__WEBPACK_IMPORTED_MODULE_9__.Subject();
+    this.containerInstance = containerInstance;
+    this.disableClose = config.disableClose;
+    // Emit when opening animation completes
+    containerInstance._animationStateChanged.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.filter)(event => event.phaseName === 'done' && event.toState === 'visible'), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.take)(1)).subscribe(() => {
+      this._afterOpened.next();
+      this._afterOpened.complete();
+    });
+    // Dispose overlay when closing animation is complete
+    containerInstance._animationStateChanged.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.filter)(event => event.phaseName === 'done' && event.toState === 'hidden'), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.take)(1)).subscribe(() => {
+      clearTimeout(this._closeFallbackTimeout);
+      this._ref.close(this._result);
+    });
+    _ref.overlayRef.detachments().subscribe(() => {
+      this._ref.close(this._result);
+    });
+    (0,rxjs__WEBPACK_IMPORTED_MODULE_12__.merge)(this.backdropClick(), this.keydownEvents().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.filter)(event => event.keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__.ESCAPE))).subscribe(event => {
+      if (!this.disableClose && (event.type !== 'keydown' || !(0,_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_13__.hasModifierKey)(event))) {
+        event.preventDefault();
+        this.dismiss();
+      }
+    });
+  }
+  /**
+   * Dismisses the bottom sheet.
+   * @param result Data to be passed back to the bottom sheet opener.
+   */
+  dismiss(result) {
+    if (!this.containerInstance) {
+      return;
+    }
+    // Transition the backdrop in parallel to the bottom sheet.
+    this.containerInstance._animationStateChanged.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_10__.filter)(event => event.phaseName === 'start'), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_11__.take)(1)).subscribe(event => {
+      // The logic that disposes of the overlay depends on the exit animation completing, however
+      // it isn't guaranteed if the parent view is destroyed while it's running. Add a fallback
+      // timeout which will clean everything up if the animation hasn't fired within the specified
+      // amount of time plus 100ms. We don't need to run this outside the NgZone, because for the
+      // vast majority of cases the timeout will have been cleared before it has fired.
+      this._closeFallbackTimeout = setTimeout(() => {
+        this._ref.close(this._result);
+      }, event.totalTime + 100);
+      this._ref.overlayRef.detachBackdrop();
+    });
+    this._result = result;
+    this.containerInstance.exit();
+    this.containerInstance = null;
+  }
+  /** Gets an observable that is notified when the bottom sheet is finished closing. */
+  afterDismissed() {
+    return this._ref.closed;
+  }
+  /** Gets an observable that is notified when the bottom sheet has opened and appeared. */
+  afterOpened() {
+    return this._afterOpened;
+  }
+  /**
+   * Gets an observable that emits when the overlay's backdrop has been clicked.
+   */
+  backdropClick() {
+    return this._ref.backdropClick;
+  }
+  /**
+   * Gets an observable that emits when keydown events are targeted on the overlay.
+   */
+  keydownEvents() {
+    return this._ref.keydownEvents;
+  }
+}
+
+/** Injection token that can be used to specify default bottom sheet options. */
+const MAT_BOTTOM_SHEET_DEFAULT_OPTIONS = new _angular_core__WEBPACK_IMPORTED_MODULE_3__.InjectionToken('mat-bottom-sheet-default-options');
+/**
+ * Service to trigger Material Design bottom sheets.
+ */
+class MatBottomSheet {
+  /** Reference to the currently opened bottom sheet. */
+  get _openedBottomSheetRef() {
+    const parent = this._parentBottomSheet;
+    return parent ? parent._openedBottomSheetRef : this._bottomSheetRefAtThisLevel;
+  }
+  set _openedBottomSheetRef(value) {
+    if (this._parentBottomSheet) {
+      this._parentBottomSheet._openedBottomSheetRef = value;
+    } else {
+      this._bottomSheetRefAtThisLevel = value;
+    }
+  }
+  constructor(_overlay, injector, _parentBottomSheet, _defaultOptions) {
+    this._overlay = _overlay;
+    this._parentBottomSheet = _parentBottomSheet;
+    this._defaultOptions = _defaultOptions;
+    this._bottomSheetRefAtThisLevel = null;
+    this._dialog = injector.get(_angular_cdk_dialog__WEBPACK_IMPORTED_MODULE_2__.Dialog);
+  }
+  open(componentOrTemplateRef, config) {
+    const _config = {
+      ...(this._defaultOptions || new MatBottomSheetConfig()),
+      ...config
+    };
+    let ref;
+    this._dialog.open(componentOrTemplateRef, {
+      ..._config,
+      // Disable closing since we need to sync it up to the animation ourselves.
+      disableClose: true,
+      // Disable closing on detachments so that we can sync up the animation.
+      closeOnOverlayDetachments: false,
+      maxWidth: '100%',
+      container: MatBottomSheetContainer,
+      scrollStrategy: _config.scrollStrategy || this._overlay.scrollStrategies.block(),
+      positionStrategy: this._overlay.position().global().centerHorizontally().bottom('0'),
+      templateContext: () => ({
+        bottomSheetRef: ref
+      }),
+      providers: (cdkRef, _cdkConfig, container) => {
+        ref = new MatBottomSheetRef(cdkRef, _config, container);
+        return [{
+          provide: MatBottomSheetRef,
+          useValue: ref
+        }, {
+          provide: MAT_BOTTOM_SHEET_DATA,
+          useValue: _config.data
+        }];
+      }
+    });
+    // When the bottom sheet is dismissed, clear the reference to it.
+    ref.afterDismissed().subscribe(() => {
+      // Clear the bottom sheet ref if it hasn't already been replaced by a newer one.
+      if (this._openedBottomSheetRef === ref) {
+        this._openedBottomSheetRef = null;
+      }
+    });
+    if (this._openedBottomSheetRef) {
+      // If a bottom sheet is already in view, dismiss it and enter the
+      // new bottom sheet after exit animation is complete.
+      this._openedBottomSheetRef.afterDismissed().subscribe(() => ref.containerInstance?.enter());
+      this._openedBottomSheetRef.dismiss();
+    } else {
+      // If no bottom sheet is in view, enter the new bottom sheet.
+      ref.containerInstance.enter();
+    }
+    this._openedBottomSheetRef = ref;
+    return ref;
+  }
+  /**
+   * Dismisses the currently-visible bottom sheet.
+   * @param result Data to pass to the bottom sheet instance.
+   */
+  dismiss(result) {
+    if (this._openedBottomSheetRef) {
+      this._openedBottomSheetRef.dismiss(result);
+    }
+  }
+  ngOnDestroy() {
+    if (this._bottomSheetRefAtThisLevel) {
+      this._bottomSheetRefAtThisLevel.dismiss();
+    }
+  }
+}
+MatBottomSheet.ɵfac = function MatBottomSheet_Factory(t) {
+  return new (t || MatBottomSheet)(_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__.Overlay), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](_angular_core__WEBPACK_IMPORTED_MODULE_3__.Injector), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](MatBottomSheet, 12), _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵinject"](MAT_BOTTOM_SHEET_DEFAULT_OPTIONS, 8));
+};
+MatBottomSheet.ɵprov = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵɵdefineInjectable"]({
+  token: MatBottomSheet,
+  factory: MatBottomSheet.ɵfac,
+  providedIn: MatBottomSheetModule
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_3__["ɵsetClassMetadata"](MatBottomSheet, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Injectable,
+    args: [{
+      providedIn: MatBottomSheetModule
+    }]
+  }], function () {
+    return [{
+      type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_7__.Overlay
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Injector
+    }, {
+      type: MatBottomSheet,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Optional
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.SkipSelf
+      }]
+    }, {
+      type: MatBottomSheetConfig,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Optional
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_3__.Inject,
+        args: [MAT_BOTTOM_SHEET_DEFAULT_OPTIONS]
+      }]
+    }];
+  }, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
 /***/ 895:
 /*!************************************************************!*\
   !*** ./node_modules/@angular/material/fesm2022/button.mjs ***!
@@ -30188,6 +30844,1660 @@ MatInputModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__
       imports: [_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatFormFieldModule],
       exports: [MatInput, _angular_material_form_field__WEBPACK_IMPORTED_MODULE_7__.MatFormFieldModule, _angular_cdk_text_field__WEBPACK_IMPORTED_MODULE_6__.TextFieldModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule],
       declarations: [MatInput]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Generated bundle index. Do not edit.
+ */
+
+
+
+/***/ }),
+
+/***/ 8128:
+/*!**********************************************************!*\
+  !*** ./node_modules/@angular/material/fesm2022/menu.mjs ***!
+  \**********************************************************/
+/***/ ((__unused_webpack___webpack_module__, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   MAT_MENU_CONTENT: () => (/* binding */ MAT_MENU_CONTENT),
+/* harmony export */   MAT_MENU_DEFAULT_OPTIONS: () => (/* binding */ MAT_MENU_DEFAULT_OPTIONS),
+/* harmony export */   MAT_MENU_PANEL: () => (/* binding */ MAT_MENU_PANEL),
+/* harmony export */   MAT_MENU_SCROLL_STRATEGY: () => (/* binding */ MAT_MENU_SCROLL_STRATEGY),
+/* harmony export */   MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER: () => (/* binding */ MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER),
+/* harmony export */   MENU_PANEL_TOP_PADDING: () => (/* binding */ MENU_PANEL_TOP_PADDING),
+/* harmony export */   MatMenu: () => (/* binding */ MatMenu),
+/* harmony export */   MatMenuContent: () => (/* binding */ MatMenuContent),
+/* harmony export */   MatMenuItem: () => (/* binding */ MatMenuItem),
+/* harmony export */   MatMenuModule: () => (/* binding */ MatMenuModule),
+/* harmony export */   MatMenuTrigger: () => (/* binding */ MatMenuTrigger),
+/* harmony export */   _MatMenuBase: () => (/* binding */ _MatMenuBase),
+/* harmony export */   _MatMenuContentBase: () => (/* binding */ _MatMenuContentBase),
+/* harmony export */   _MatMenuTriggerBase: () => (/* binding */ _MatMenuTriggerBase),
+/* harmony export */   fadeInItems: () => (/* binding */ fadeInItems),
+/* harmony export */   matMenuAnimations: () => (/* binding */ matMenuAnimations),
+/* harmony export */   transformMenu: () => (/* binding */ transformMenu)
+/* harmony export */ });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ 1699);
+/* harmony import */ var _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @angular/cdk/a11y */ 3170);
+/* harmony import */ var _angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/cdk/coercion */ 5998);
+/* harmony import */ var _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! @angular/cdk/keycodes */ 554);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! rxjs */ 2513);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_10__ = __webpack_require__(/*! rxjs */ 7835);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! rxjs */ 1523);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! rxjs */ 4980);
+/* harmony import */ var rxjs__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! rxjs */ 1141);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! rxjs/operators */ 5043);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_9__ = __webpack_require__(/*! rxjs/operators */ 1891);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! rxjs/operators */ 1527);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! rxjs/operators */ 274);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! rxjs/operators */ 4520);
+/* harmony import */ var rxjs_operators__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! rxjs/operators */ 7592);
+/* harmony import */ var _angular_material_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/material/core */ 5309);
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/common */ 6575);
+/* harmony import */ var _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! @angular/cdk/portal */ 3517);
+/* harmony import */ var _angular_animations__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! @angular/animations */ 2501);
+/* harmony import */ var _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! @angular/cdk/bidi */ 4565);
+/* harmony import */ var _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/cdk/overlay */ 2698);
+/* harmony import */ var _angular_cdk_platform__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/cdk/platform */ 3274);
+/* harmony import */ var _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__ = __webpack_require__(/*! @angular/cdk/scrolling */ 275);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**
+ * Injection token used to provide the parent menu to menu-specific components.
+ * @docs-private
+ */
+const _c0 = ["mat-menu-item", ""];
+function MatMenuItem__svg_svg_4_Template(rf, ctx) {
+  if (rf & 1) {
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnamespaceSVG"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "svg", 3);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "polygon", 4);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+  }
+}
+const _c1 = [[["mat-icon"], ["", "matMenuItemIcon", ""]], "*"];
+const _c2 = ["mat-icon, [matMenuItemIcon]", "*"];
+function MatMenu_ng_template_0_Template(rf, ctx) {
+  if (rf & 1) {
+    const _r2 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetCurrentView"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("keydown", function MatMenu_ng_template_0_Template_div_keydown_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2);
+      const ctx_r1 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r1._handleKeydown($event));
+    })("click", function MatMenu_ng_template_0_Template_div_click_0_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2);
+      const ctx_r3 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r3.closed.emit("click"));
+    })("@transformMenu.start", function MatMenu_ng_template_0_Template_div_animation_transformMenu_start_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2);
+      const ctx_r4 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r4._onAnimationStart($event));
+    })("@transformMenu.done", function MatMenu_ng_template_0_Template_div_animation_transformMenu_done_0_listener($event) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵrestoreView"](_r2);
+      const ctx_r5 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+      return _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵresetView"](ctx_r5._onAnimationDone($event));
+    });
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "div", 1);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()();
+  }
+  if (rf & 2) {
+    const ctx_r0 = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵnextContext"]();
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("id", ctx_r0.panelId)("ngClass", ctx_r0._classList)("@transformMenu", ctx_r0._panelAnimationState);
+    _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-label", ctx_r0.ariaLabel || null)("aria-labelledby", ctx_r0.ariaLabelledby || null)("aria-describedby", ctx_r0.ariaDescribedby || null);
+  }
+}
+const _c3 = ["*"];
+const MAT_MENU_PANEL = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('MAT_MENU_PANEL');
+
+// Boilerplate for applying mixins to MatMenuItem.
+/** @docs-private */
+const _MatMenuItemBase = (0,_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.mixinDisableRipple)((0,_angular_material_core__WEBPACK_IMPORTED_MODULE_1__.mixinDisabled)(class {}));
+/**
+ * Single item inside a `mat-menu`. Provides the menu item styling and accessibility treatment.
+ */
+class MatMenuItem extends _MatMenuItemBase {
+  constructor(_elementRef, _document, _focusMonitor, _parentMenu, _changeDetectorRef) {
+    super();
+    this._elementRef = _elementRef;
+    this._document = _document;
+    this._focusMonitor = _focusMonitor;
+    this._parentMenu = _parentMenu;
+    this._changeDetectorRef = _changeDetectorRef;
+    /** ARIA role for the menu item. */
+    this.role = 'menuitem';
+    /** Stream that emits when the menu item is hovered. */
+    this._hovered = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
+    /** Stream that emits when the menu item is focused. */
+    this._focused = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
+    /** Whether the menu item is highlighted. */
+    this._highlighted = false;
+    /** Whether the menu item acts as a trigger for a sub-menu. */
+    this._triggersSubmenu = false;
+    _parentMenu?.addItem?.(this);
+  }
+  /** Focuses the menu item. */
+  focus(origin, options) {
+    if (this._focusMonitor && origin) {
+      this._focusMonitor.focusVia(this._getHostElement(), origin, options);
+    } else {
+      this._getHostElement().focus(options);
+    }
+    this._focused.next(this);
+  }
+  ngAfterViewInit() {
+    if (this._focusMonitor) {
+      // Start monitoring the element, so it gets the appropriate focused classes. We want
+      // to show the focus style for menu items only when the focus was not caused by a
+      // mouse or touch interaction.
+      this._focusMonitor.monitor(this._elementRef, false);
+    }
+  }
+  ngOnDestroy() {
+    if (this._focusMonitor) {
+      this._focusMonitor.stopMonitoring(this._elementRef);
+    }
+    if (this._parentMenu && this._parentMenu.removeItem) {
+      this._parentMenu.removeItem(this);
+    }
+    this._hovered.complete();
+    this._focused.complete();
+  }
+  /** Used to set the `tabindex`. */
+  _getTabIndex() {
+    return this.disabled ? '-1' : '0';
+  }
+  /** Returns the host DOM element. */
+  _getHostElement() {
+    return this._elementRef.nativeElement;
+  }
+  /** Prevents the default element actions if it is disabled. */
+  _checkDisabled(event) {
+    if (this.disabled) {
+      event.preventDefault();
+      event.stopPropagation();
+    }
+  }
+  /** Emits to the hover stream. */
+  _handleMouseEnter() {
+    this._hovered.next(this);
+  }
+  /** Gets the label to be used when determining whether the option should be focused. */
+  getLabel() {
+    const clone = this._elementRef.nativeElement.cloneNode(true);
+    const icons = clone.querySelectorAll('mat-icon, .material-icons');
+    // Strip away icons, so they don't show up in the text.
+    for (let i = 0; i < icons.length; i++) {
+      icons[i].remove();
+    }
+    return clone.textContent?.trim() || '';
+  }
+  _setHighlighted(isHighlighted) {
+    // We need to mark this for check for the case where the content is coming from a
+    // `matMenuContent` whose change detection tree is at the declaration position,
+    // not the insertion position. See #23175.
+    // @breaking-change 12.0.0 Remove null check for `_changeDetectorRef`.
+    this._highlighted = isHighlighted;
+    this._changeDetectorRef?.markForCheck();
+  }
+  _setTriggersSubmenu(triggersSubmenu) {
+    // @breaking-change 12.0.0 Remove null check for `_changeDetectorRef`.
+    this._triggersSubmenu = triggersSubmenu;
+    this._changeDetectorRef?.markForCheck();
+  }
+  _hasFocus() {
+    return this._document && this._document.activeElement === this._getHostElement();
+  }
+}
+MatMenuItem.ɵfac = function MatMenuItem_Factory(t) {
+  return new (t || MatMenuItem)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.FocusMonitor), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_MENU_PANEL, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+MatMenuItem.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: MatMenuItem,
+  selectors: [["", "mat-menu-item", ""]],
+  hostAttrs: [1, "mat-mdc-menu-item", "mat-mdc-focus-indicator"],
+  hostVars: 8,
+  hostBindings: function MatMenuItem_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function MatMenuItem_click_HostBindingHandler($event) {
+        return ctx._checkDisabled($event);
+      })("mouseenter", function MatMenuItem_mouseenter_HostBindingHandler() {
+        return ctx._handleMouseEnter();
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("role", ctx.role)("tabindex", ctx._getTabIndex())("aria-disabled", ctx.disabled)("disabled", ctx.disabled || null);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵclassProp"]("mat-mdc-menu-item-highlighted", ctx._highlighted)("mat-mdc-menu-item-submenu-trigger", ctx._triggersSubmenu);
+    }
+  },
+  inputs: {
+    disabled: "disabled",
+    disableRipple: "disableRipple",
+    role: "role"
+  },
+  exportAs: ["matMenuItem"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  attrs: _c0,
+  ngContentSelectors: _c2,
+  decls: 5,
+  vars: 3,
+  consts: [[1, "mat-mdc-menu-item-text"], ["matRipple", "", 1, "mat-mdc-menu-ripple", 3, "matRippleDisabled", "matRippleTrigger"], ["class", "mat-mdc-menu-submenu-icon", "viewBox", "0 0 5 10", "focusable", "false", "aria-hidden", "true", 4, "ngIf"], ["viewBox", "0 0 5 10", "focusable", "false", "aria-hidden", "true", 1, "mat-mdc-menu-submenu-icon"], ["points", "0,0 5,5 0,10"]],
+  template: function MatMenuItem_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"](_c1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "span", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojection"](2, 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "div", 1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](4, MatMenuItem__svg_svg_4_Template, 2, 0, "svg", 2);
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](3);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("matRippleDisabled", ctx.disableRipple || ctx.disabled)("matRippleTrigger", ctx._getHostElement());
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵadvance"](1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵproperty"]("ngIf", ctx._triggersSubmenu);
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgIf, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatRipple],
+  encapsulation: 2,
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MatMenuItem, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: '[mat-menu-item]',
+      exportAs: 'matMenuItem',
+      inputs: ['disabled', 'disableRipple'],
+      host: {
+        '[attr.role]': 'role',
+        'class': 'mat-mdc-menu-item mat-mdc-focus-indicator',
+        '[class.mat-mdc-menu-item-highlighted]': '_highlighted',
+        '[class.mat-mdc-menu-item-submenu-trigger]': '_triggersSubmenu',
+        '[attr.tabindex]': '_getTabIndex()',
+        '[attr.aria-disabled]': 'disabled',
+        '[attr.disabled]': 'disabled || null',
+        '(click)': '_checkDisabled($event)',
+        '(mouseenter)': '_handleMouseEnter()'
+      },
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewEncapsulation.None,
+      template: "<ng-content select=\"mat-icon, [matMenuItemIcon]\"></ng-content>\n<span class=\"mat-mdc-menu-item-text\"><ng-content></ng-content></span>\n<div class=\"mat-mdc-menu-ripple\" matRipple\n     [matRippleDisabled]=\"disableRipple || disabled\"\n     [matRippleTrigger]=\"_getHostElement()\">\n</div>\n<svg\n  *ngIf=\"_triggersSubmenu\"\n  class=\"mat-mdc-menu-submenu-icon\"\n  viewBox=\"0 0 5 10\"\n  focusable=\"false\"\n  aria-hidden=\"true\"><polygon points=\"0,0 5,5 0,10\"/></svg>\n"
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT]
+      }]
+    }, {
+      type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.FocusMonitor
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [MAT_MENU_PANEL]
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+      }]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, {
+    role: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }]
+  });
+})();
+
+/**
+ * Throws an exception for the case when menu's x-position value isn't valid.
+ * In other words, it doesn't match 'before' or 'after'.
+ * @docs-private
+ */
+function throwMatMenuInvalidPositionX() {
+  throw Error(`xPosition value must be either 'before' or after'.
+      Example: <mat-menu xPosition="before" #menu="matMenu"></mat-menu>`);
+}
+/**
+ * Throws an exception for the case when menu's y-position value isn't valid.
+ * In other words, it doesn't match 'above' or 'below'.
+ * @docs-private
+ */
+function throwMatMenuInvalidPositionY() {
+  throw Error(`yPosition value must be either 'above' or below'.
+      Example: <mat-menu yPosition="above" #menu="matMenu"></mat-menu>`);
+}
+/**
+ * Throws an exception for the case when a menu is assigned
+ * to a trigger that is placed inside the same menu.
+ * @docs-private
+ */
+function throwMatMenuRecursiveError() {
+  throw Error(`matMenuTriggerFor: menu cannot contain its own trigger. Assign a menu that is ` + `not a parent of the trigger or move the trigger outside of the menu.`);
+}
+
+/**
+ * Injection token that can be used to reference instances of `MatMenuContent`. It serves
+ * as alternative token to the actual `MatMenuContent` class which could cause unnecessary
+ * retention of the class and its directive metadata.
+ */
+const MAT_MENU_CONTENT = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('MatMenuContent');
+class _MatMenuContentBase {
+  constructor(_template, _componentFactoryResolver, _appRef, _injector, _viewContainerRef, _document, _changeDetectorRef) {
+    this._template = _template;
+    this._componentFactoryResolver = _componentFactoryResolver;
+    this._appRef = _appRef;
+    this._injector = _injector;
+    this._viewContainerRef = _viewContainerRef;
+    this._document = _document;
+    this._changeDetectorRef = _changeDetectorRef;
+    /** Emits when the menu content has been attached. */
+    this._attached = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
+  }
+  /**
+   * Attaches the content with a particular context.
+   * @docs-private
+   */
+  attach(context = {}) {
+    if (!this._portal) {
+      this._portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__.TemplatePortal(this._template, this._viewContainerRef);
+    }
+    this.detach();
+    if (!this._outlet) {
+      this._outlet = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__.DomPortalOutlet(this._document.createElement('div'), this._componentFactoryResolver, this._appRef, this._injector);
+    }
+    const element = this._template.elementRef.nativeElement;
+    // Because we support opening the same menu from different triggers (which in turn have their
+    // own `OverlayRef` panel), we have to re-insert the host element every time, otherwise we
+    // risk it staying attached to a pane that's no longer in the DOM.
+    element.parentNode.insertBefore(this._outlet.outletElement, element);
+    // When `MatMenuContent` is used in an `OnPush` component, the insertion of the menu
+    // content via `createEmbeddedView` does not cause the content to be seen as "dirty"
+    // by Angular. This causes the `@ContentChildren` for menu items within the menu to
+    // not be updated by Angular. By explicitly marking for check here, we tell Angular that
+    // it needs to check for new menu items and update the `@ContentChild` in `MatMenu`.
+    // @breaking-change 9.0.0 Make change detector ref required
+    this._changeDetectorRef?.markForCheck();
+    this._portal.attach(this._outlet, context);
+    this._attached.next();
+  }
+  /**
+   * Detaches the content.
+   * @docs-private
+   */
+  detach() {
+    if (this._portal.isAttached) {
+      this._portal.detach();
+    }
+  }
+  ngOnDestroy() {
+    if (this._outlet) {
+      this._outlet.dispose();
+    }
+  }
+}
+_MatMenuContentBase.ɵfac = function _MatMenuContentBase_Factory(t) {
+  return new (t || _MatMenuContentBase)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+_MatMenuContentBase.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: _MatMenuContentBase
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](_MatMenuContentBase, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ComponentFactoryResolver
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ApplicationRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Injector
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.DOCUMENT]
+      }]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, null);
+})();
+/** Menu content that will be rendered lazily once the menu is opened. */
+class MatMenuContent extends _MatMenuContentBase {}
+MatMenuContent.ɵfac = /* @__PURE__ */function () {
+  let ɵMatMenuContent_BaseFactory;
+  return function MatMenuContent_Factory(t) {
+    return (ɵMatMenuContent_BaseFactory || (ɵMatMenuContent_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatMenuContent)))(t || MatMenuContent);
+  };
+}();
+MatMenuContent.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: MatMenuContent,
+  selectors: [["ng-template", "matMenuContent", ""]],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([{
+    provide: MAT_MENU_CONTENT,
+    useExisting: MatMenuContent
+  }]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MatMenuContent, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: 'ng-template[matMenuContent]',
+      providers: [{
+        provide: MAT_MENU_CONTENT,
+        useExisting: MatMenuContent
+      }]
+    }]
+  }], null, null);
+})();
+
+/**
+ * Animations used by the mat-menu component.
+ * Animation duration and timing values are based on:
+ * https://material.io/guidelines/components/menus.html#menus-usage
+ * @docs-private
+ */
+const matMenuAnimations = {
+  /**
+   * This animation controls the menu panel's entry and exit from the page.
+   *
+   * When the menu panel is added to the DOM, it scales in and fades in its border.
+   *
+   * When the menu panel is removed from the DOM, it simply fades out after a brief
+   * delay to display the ripple.
+   */
+  transformMenu: (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.trigger)('transformMenu', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.state)('void', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.style)({
+    opacity: 0,
+    transform: 'scale(0.8)'
+  })), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.transition)('void => enter', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.animate)('120ms cubic-bezier(0, 0, 0.2, 1)', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.style)({
+    opacity: 1,
+    transform: 'scale(1)'
+  }))), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.transition)('* => void', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.animate)('100ms 25ms linear', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.style)({
+    opacity: 0
+  })))]),
+  /**
+   * This animation fades in the background color and content of the menu panel
+   * after its containing element is scaled in.
+   */
+  fadeInItems: (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.trigger)('fadeInItems', [
+  // TODO(crisbeto): this is inside the `transformMenu`
+  // now. Remove next time we do breaking changes.
+  (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.state)('showing', (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.style)({
+    opacity: 1
+  })), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.transition)('void => *', [(0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.style)({
+    opacity: 0
+  }), (0,_angular_animations__WEBPACK_IMPORTED_MODULE_6__.animate)('400ms 100ms cubic-bezier(0.55, 0, 0.55, 0.2)')])])
+};
+/**
+ * @deprecated
+ * @breaking-change 8.0.0
+ * @docs-private
+ */
+const fadeInItems = matMenuAnimations.fadeInItems;
+/**
+ * @deprecated
+ * @breaking-change 8.0.0
+ * @docs-private
+ */
+const transformMenu = matMenuAnimations.transformMenu;
+let menuPanelUid = 0;
+/** Injection token to be used to override the default options for `mat-menu`. */
+const MAT_MENU_DEFAULT_OPTIONS = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('mat-menu-default-options', {
+  providedIn: 'root',
+  factory: MAT_MENU_DEFAULT_OPTIONS_FACTORY
+});
+/** @docs-private */
+function MAT_MENU_DEFAULT_OPTIONS_FACTORY() {
+  return {
+    overlapTrigger: false,
+    xPosition: 'after',
+    yPosition: 'below',
+    backdropClass: 'cdk-overlay-transparent-backdrop'
+  };
+}
+/** Base class with all of the `MatMenu` functionality. */
+class _MatMenuBase {
+  /** Position of the menu in the X axis. */
+  get xPosition() {
+    return this._xPosition;
+  }
+  set xPosition(value) {
+    if (value !== 'before' && value !== 'after' && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+      throwMatMenuInvalidPositionX();
+    }
+    this._xPosition = value;
+    this.setPositionClasses();
+  }
+  /** Position of the menu in the Y axis. */
+  get yPosition() {
+    return this._yPosition;
+  }
+  set yPosition(value) {
+    if (value !== 'above' && value !== 'below' && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+      throwMatMenuInvalidPositionY();
+    }
+    this._yPosition = value;
+    this.setPositionClasses();
+  }
+  /** Whether the menu should overlap its trigger. */
+  get overlapTrigger() {
+    return this._overlapTrigger;
+  }
+  set overlapTrigger(value) {
+    this._overlapTrigger = (0,_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_7__.coerceBooleanProperty)(value);
+  }
+  /** Whether the menu has a backdrop. */
+  get hasBackdrop() {
+    return this._hasBackdrop;
+  }
+  set hasBackdrop(value) {
+    this._hasBackdrop = (0,_angular_cdk_coercion__WEBPACK_IMPORTED_MODULE_7__.coerceBooleanProperty)(value);
+  }
+  /**
+   * This method takes classes set on the host mat-menu element and applies them on the
+   * menu template that displays in the overlay container.  Otherwise, it's difficult
+   * to style the containing menu from outside the component.
+   * @param classes list of class names
+   */
+  set panelClass(classes) {
+    const previousPanelClass = this._previousPanelClass;
+    if (previousPanelClass && previousPanelClass.length) {
+      previousPanelClass.split(' ').forEach(className => {
+        this._classList[className] = false;
+      });
+    }
+    this._previousPanelClass = classes;
+    if (classes && classes.length) {
+      classes.split(' ').forEach(className => {
+        this._classList[className] = true;
+      });
+      this._elementRef.nativeElement.className = '';
+    }
+  }
+  /**
+   * This method takes classes set on the host mat-menu element and applies them on the
+   * menu template that displays in the overlay container.  Otherwise, it's difficult
+   * to style the containing menu from outside the component.
+   * @deprecated Use `panelClass` instead.
+   * @breaking-change 8.0.0
+   */
+  get classList() {
+    return this.panelClass;
+  }
+  set classList(classes) {
+    this.panelClass = classes;
+  }
+  constructor(_elementRef, _ngZone, defaultOptions,
+  // @breaking-change 15.0.0 `_changeDetectorRef` to become a required parameter.
+  _changeDetectorRef) {
+    this._elementRef = _elementRef;
+    this._ngZone = _ngZone;
+    this._changeDetectorRef = _changeDetectorRef;
+    /** Only the direct descendant menu items. */
+    this._directDescendantItems = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.QueryList();
+    /** Config object to be passed into the menu's ngClass */
+    this._classList = {};
+    /** Current state of the panel animation. */
+    this._panelAnimationState = 'void';
+    /** Emits whenever an animation on the menu completes. */
+    this._animationDone = new rxjs__WEBPACK_IMPORTED_MODULE_2__.Subject();
+    /** Event emitted when the menu is closed. */
+    this.closed = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    /**
+     * Event emitted when the menu is closed.
+     * @deprecated Switch to `closed` instead
+     * @breaking-change 8.0.0
+     */
+    this.close = this.closed;
+    this.panelId = `mat-menu-panel-${menuPanelUid++}`;
+    this.overlayPanelClass = defaultOptions.overlayPanelClass || '';
+    this._xPosition = defaultOptions.xPosition;
+    this._yPosition = defaultOptions.yPosition;
+    this.backdropClass = defaultOptions.backdropClass;
+    this._overlapTrigger = defaultOptions.overlapTrigger;
+    this._hasBackdrop = defaultOptions.hasBackdrop;
+  }
+  ngOnInit() {
+    this.setPositionClasses();
+  }
+  ngAfterContentInit() {
+    this._updateDirectDescendants();
+    this._keyManager = new _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.FocusKeyManager(this._directDescendantItems).withWrap().withTypeAhead().withHomeAndEnd();
+    this._keyManager.tabOut.subscribe(() => this.closed.emit('tab'));
+    // If a user manually (programmatically) focuses a menu item, we need to reflect that focus
+    // change back to the key manager. Note that we don't need to unsubscribe here because _focused
+    // is internal and we know that it gets completed on destroy.
+    this._directDescendantItems.changes.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.startWith)(this._directDescendantItems), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.switchMap)(items => (0,rxjs__WEBPACK_IMPORTED_MODULE_10__.merge)(...items.map(item => item._focused)))).subscribe(focusedItem => this._keyManager.updateActiveItem(focusedItem));
+    this._directDescendantItems.changes.subscribe(itemsList => {
+      // Move focus to another item, if the active item is removed from the list.
+      // We need to debounce the callback, because multiple items might be removed
+      // in quick succession.
+      const manager = this._keyManager;
+      if (this._panelAnimationState === 'enter' && manager.activeItem?._hasFocus()) {
+        const items = itemsList.toArray();
+        const index = Math.max(0, Math.min(items.length - 1, manager.activeItemIndex || 0));
+        if (items[index] && !items[index].disabled) {
+          manager.setActiveItem(index);
+        } else {
+          manager.setNextItemActive();
+        }
+      }
+    });
+  }
+  ngOnDestroy() {
+    this._keyManager?.destroy();
+    this._directDescendantItems.destroy();
+    this.closed.complete();
+    this._firstItemFocusSubscription?.unsubscribe();
+  }
+  /** Stream that emits whenever the hovered menu item changes. */
+  _hovered() {
+    // Coerce the `changes` property because Angular types it as `Observable<any>`
+    const itemChanges = this._directDescendantItems.changes;
+    return itemChanges.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.startWith)(this._directDescendantItems), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_9__.switchMap)(items => (0,rxjs__WEBPACK_IMPORTED_MODULE_10__.merge)(...items.map(item => item._hovered))));
+  }
+  /*
+   * Registers a menu item with the menu.
+   * @docs-private
+   * @deprecated No longer being used. To be removed.
+   * @breaking-change 9.0.0
+   */
+  addItem(_item) {}
+  /**
+   * Removes an item from the menu.
+   * @docs-private
+   * @deprecated No longer being used. To be removed.
+   * @breaking-change 9.0.0
+   */
+  removeItem(_item) {}
+  /** Handle a keyboard event from the menu, delegating to the appropriate action. */
+  _handleKeydown(event) {
+    const keyCode = event.keyCode;
+    const manager = this._keyManager;
+    switch (keyCode) {
+      case _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.ESCAPE:
+        if (!(0,_angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.hasModifierKey)(event)) {
+          event.preventDefault();
+          this.closed.emit('keydown');
+        }
+        break;
+      case _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.LEFT_ARROW:
+        if (this.parentMenu && this.direction === 'ltr') {
+          this.closed.emit('keydown');
+        }
+        break;
+      case _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.RIGHT_ARROW:
+        if (this.parentMenu && this.direction === 'rtl') {
+          this.closed.emit('keydown');
+        }
+        break;
+      default:
+        if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.UP_ARROW || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.DOWN_ARROW) {
+          manager.setFocusOrigin('keyboard');
+        }
+        manager.onKeydown(event);
+        return;
+    }
+    // Don't allow the event to propagate if we've already handled it, or it may
+    // end up reaching other overlays that were opened earlier (see #22694).
+    event.stopPropagation();
+  }
+  /**
+   * Focus the first item in the menu.
+   * @param origin Action from which the focus originated. Used to set the correct styling.
+   */
+  focusFirstItem(origin = 'program') {
+    // Wait for `onStable` to ensure iOS VoiceOver screen reader focuses the first item (#24735).
+    this._firstItemFocusSubscription?.unsubscribe();
+    this._firstItemFocusSubscription = this._ngZone.onStable.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.take)(1)).subscribe(() => {
+      let menuPanel = null;
+      if (this._directDescendantItems.length) {
+        // Because the `mat-menuPanel` is at the DOM insertion point, not inside the overlay, we don't
+        // have a nice way of getting a hold of the menuPanel panel. We can't use a `ViewChild` either
+        // because the panel is inside an `ng-template`. We work around it by starting from one of
+        // the items and walking up the DOM.
+        menuPanel = this._directDescendantItems.first._getHostElement().closest('[role="menu"]');
+      }
+      // If an item in the menuPanel is already focused, avoid overriding the focus.
+      if (!menuPanel || !menuPanel.contains(document.activeElement)) {
+        const manager = this._keyManager;
+        manager.setFocusOrigin(origin).setFirstItemActive();
+        // If there's no active item at this point, it means that all the items are disabled.
+        // Move focus to the menuPanel panel so keyboard events like Escape still work. Also this will
+        // give _some_ feedback to screen readers.
+        if (!manager.activeItem && menuPanel) {
+          menuPanel.focus();
+        }
+      }
+    });
+  }
+  /**
+   * Resets the active item in the menu. This is used when the menu is opened, allowing
+   * the user to start from the first option when pressing the down arrow.
+   */
+  resetActiveItem() {
+    this._keyManager.setActiveItem(-1);
+  }
+  /**
+   * Sets the menu panel elevation.
+   * @param depth Number of parent menus that come before the menu.
+   */
+  setElevation(depth) {
+    // The elevation starts at the base and increases by one for each level.
+    // Capped at 24 because that's the maximum elevation defined in the Material design spec.
+    const elevation = Math.min(this._baseElevation + depth, 24);
+    const newElevation = `${this._elevationPrefix}${elevation}`;
+    const customElevation = Object.keys(this._classList).find(className => {
+      return className.startsWith(this._elevationPrefix);
+    });
+    if (!customElevation || customElevation === this._previousElevation) {
+      if (this._previousElevation) {
+        this._classList[this._previousElevation] = false;
+      }
+      this._classList[newElevation] = true;
+      this._previousElevation = newElevation;
+    }
+  }
+  /**
+   * Adds classes to the menu panel based on its position. Can be used by
+   * consumers to add specific styling based on the position.
+   * @param posX Position of the menu along the x axis.
+   * @param posY Position of the menu along the y axis.
+   * @docs-private
+   */
+  setPositionClasses(posX = this.xPosition, posY = this.yPosition) {
+    const classes = this._classList;
+    classes['mat-menu-before'] = posX === 'before';
+    classes['mat-menu-after'] = posX === 'after';
+    classes['mat-menu-above'] = posY === 'above';
+    classes['mat-menu-below'] = posY === 'below';
+    // @breaking-change 15.0.0 Remove null check for `_changeDetectorRef`.
+    this._changeDetectorRef?.markForCheck();
+  }
+  /** Starts the enter animation. */
+  _startAnimation() {
+    // @breaking-change 8.0.0 Combine with _resetAnimation.
+    this._panelAnimationState = 'enter';
+  }
+  /** Resets the panel animation to its initial state. */
+  _resetAnimation() {
+    // @breaking-change 8.0.0 Combine with _startAnimation.
+    this._panelAnimationState = 'void';
+  }
+  /** Callback that is invoked when the panel animation completes. */
+  _onAnimationDone(event) {
+    this._animationDone.next(event);
+    this._isAnimating = false;
+  }
+  _onAnimationStart(event) {
+    this._isAnimating = true;
+    // Scroll the content element to the top as soon as the animation starts. This is necessary,
+    // because we move focus to the first item while it's still being animated, which can throw
+    // the browser off when it determines the scroll position. Alternatively we can move focus
+    // when the animation is done, however moving focus asynchronously will interrupt screen
+    // readers which are in the process of reading out the menu already. We take the `element`
+    // from the `event` since we can't use a `ViewChild` to access the pane.
+    if (event.toState === 'enter' && this._keyManager.activeItemIndex === 0) {
+      event.element.scrollTop = 0;
+    }
+  }
+  /**
+   * Sets up a stream that will keep track of any newly-added menu items and will update the list
+   * of direct descendants. We collect the descendants this way, because `_allItems` can include
+   * items that are part of child menus, and using a custom way of registering items is unreliable
+   * when it comes to maintaining the item order.
+   */
+  _updateDirectDescendants() {
+    this._allItems.changes.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_8__.startWith)(this._allItems)).subscribe(items => {
+      this._directDescendantItems.reset(items.filter(item => item._parentMenu === this));
+      this._directDescendantItems.notifyOnChanges();
+    });
+  }
+}
+_MatMenuBase.ɵfac = function _MatMenuBase_Factory(t) {
+  return new (t || _MatMenuBase)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_MENU_DEFAULT_OPTIONS), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+_MatMenuBase.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: _MatMenuBase,
+  contentQueries: function _MatMenuBase_ContentQueries(rf, ctx, dirIndex) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, MAT_MENU_CONTENT, 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, MatMenuItem, 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵcontentQuery"](dirIndex, MatMenuItem, 4);
+    }
+    if (rf & 2) {
+      let _t;
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.lazyContent = _t.first);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx._allItems = _t);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.items = _t);
+    }
+  },
+  viewQuery: function _MatMenuBase_Query(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef, 5);
+    }
+    if (rf & 2) {
+      let _t;
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵqueryRefresh"](_t = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵloadQuery"]()) && (ctx.templateRef = _t.first);
+    }
+  },
+  inputs: {
+    backdropClass: "backdropClass",
+    ariaLabel: ["aria-label", "ariaLabel"],
+    ariaLabelledby: ["aria-labelledby", "ariaLabelledby"],
+    ariaDescribedby: ["aria-describedby", "ariaDescribedby"],
+    xPosition: "xPosition",
+    yPosition: "yPosition",
+    overlapTrigger: "overlapTrigger",
+    hasBackdrop: "hasBackdrop",
+    panelClass: ["class", "panelClass"],
+    classList: "classList"
+  },
+  outputs: {
+    closed: "closed",
+    close: "close"
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](_MatMenuBase, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [MAT_MENU_DEFAULT_OPTIONS]
+      }]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, {
+    _allItems: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ContentChildren,
+      args: [MatMenuItem, {
+        descendants: true
+      }]
+    }],
+    backdropClass: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    ariaLabel: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['aria-label']
+    }],
+    ariaLabelledby: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['aria-labelledby']
+    }],
+    ariaDescribedby: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['aria-describedby']
+    }],
+    xPosition: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    yPosition: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    templateRef: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewChild,
+      args: [_angular_core__WEBPACK_IMPORTED_MODULE_0__.TemplateRef]
+    }],
+    items: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ContentChildren,
+      args: [MatMenuItem, {
+        descendants: false
+      }]
+    }],
+    lazyContent: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ContentChild,
+      args: [MAT_MENU_CONTENT]
+    }],
+    overlapTrigger: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    hasBackdrop: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    panelClass: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['class']
+    }],
+    classList: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input
+    }],
+    closed: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    close: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+class MatMenu extends _MatMenuBase {
+  constructor(_elementRef, _ngZone, _defaultOptions, changeDetectorRef) {
+    super(_elementRef, _ngZone, _defaultOptions, changeDetectorRef);
+    this._elevationPrefix = 'mat-elevation-z';
+    this._baseElevation = 8;
+  }
+}
+MatMenu.ɵfac = function MatMenu_Factory(t) {
+  return new (t || MatMenu)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_MENU_DEFAULT_OPTIONS), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef));
+};
+MatMenu.ɵcmp = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
+  type: MatMenu,
+  selectors: [["mat-menu"]],
+  hostAttrs: ["ngSkipHydration", ""],
+  hostVars: 3,
+  hostBindings: function MatMenu_HostBindings(rf, ctx) {
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-label", null)("aria-labelledby", null)("aria-describedby", null);
+    }
+  },
+  exportAs: ["matMenu"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵProvidersFeature"]([{
+    provide: MAT_MENU_PANEL,
+    useExisting: MatMenu
+  }]), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]],
+  ngContentSelectors: _c3,
+  decls: 1,
+  vars: 0,
+  consts: [["tabindex", "-1", "role", "menu", 1, "mat-mdc-menu-panel", "mat-mdc-elevation-specific", 3, "id", "ngClass", "keydown", "click"], [1, "mat-mdc-menu-content"]],
+  template: function MatMenu_Template(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵprojectionDef"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtemplate"](0, MatMenu_ng_template_0_Template, 3, 6, "ng-template");
+    }
+  },
+  dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.NgClass],
+  styles: ["mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;list-style-type:none}.mat-mdc-menu-content:focus{outline:none}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;white-space:normal;font-family:var(--mat-menu-item-label-text-font);line-height:var(--mat-menu-item-label-text-line-height);font-size:var(--mat-menu-item-label-text-size);letter-spacing:var(--mat-menu-item-label-text-tracking);font-weight:var(--mat-menu-item-label-text-weight)}.mat-mdc-menu-panel{--mat-menu-container-shape:4px;min-width:112px;max-width:280px;overflow:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;outline:0;border-radius:var(--mat-menu-container-shape);background-color:var(--mat-menu-container-color);will-change:transform,opacity}.mat-mdc-menu-panel.ng-animating{pointer-events:none}.cdk-high-contrast-active .mat-mdc-menu-panel{outline:solid 1px}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;padding-left:16px;padding-right:16px;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0);cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;align-items:center;min-height:48px}.mat-mdc-menu-item:focus{outline:none}[dir=rtl] .mat-mdc-menu-item,.mat-mdc-menu-item[dir=rtl]{padding-left:16px;padding-right:16px}.mat-mdc-menu-item::-moz-focus-inner{border:0}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color)}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color)}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:\"\";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item .mat-icon{margin-right:16px}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:16px}.mat-mdc-menu-item.mat-mdc-menu-item-submenu-trigger{padding-right:32px}[dir=rtl] .mat-mdc-menu-item.mat-mdc-menu-item-submenu-trigger{padding-right:16px;padding-left:32px}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color)}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color)}.cdk-high-contrast-active .mat-mdc-menu-item{margin-top:1px}.mat-mdc-menu-submenu-icon{position:absolute;top:50%;right:16px;transform:translateY(-50%);width:5px;height:10px;fill:currentColor}[dir=rtl] .mat-mdc-menu-submenu-icon{right:auto;left:16px;transform:translateY(-50%) scaleX(-1)}.cdk-high-contrast-active .mat-mdc-menu-submenu-icon{fill:CanvasText}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}"],
+  encapsulation: 2,
+  data: {
+    animation: [matMenuAnimations.transformMenu, matMenuAnimations.fadeInItems]
+  },
+  changeDetection: 0
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MatMenu, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Component,
+    args: [{
+      selector: 'mat-menu',
+      changeDetection: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectionStrategy.OnPush,
+      encapsulation: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewEncapsulation.None,
+      exportAs: 'matMenu',
+      host: {
+        '[attr.aria-label]': 'null',
+        '[attr.aria-labelledby]': 'null',
+        '[attr.aria-describedby]': 'null',
+        'ngSkipHydration': ''
+      },
+      animations: [matMenuAnimations.transformMenu, matMenuAnimations.fadeInItems],
+      providers: [{
+        provide: MAT_MENU_PANEL,
+        useExisting: MatMenu
+      }],
+      template: "<ng-template>\n  <div\n    class=\"mat-mdc-menu-panel mat-mdc-elevation-specific\"\n    [id]=\"panelId\"\n    [ngClass]=\"_classList\"\n    (keydown)=\"_handleKeydown($event)\"\n    (click)=\"closed.emit('click')\"\n    [@transformMenu]=\"_panelAnimationState\"\n    (@transformMenu.start)=\"_onAnimationStart($event)\"\n    (@transformMenu.done)=\"_onAnimationDone($event)\"\n    tabindex=\"-1\"\n    role=\"menu\"\n    [attr.aria-label]=\"ariaLabel || null\"\n    [attr.aria-labelledby]=\"ariaLabelledby || null\"\n    [attr.aria-describedby]=\"ariaDescribedby || null\">\n    <div class=\"mat-mdc-menu-content\">\n      <ng-content></ng-content>\n    </div>\n  </div>\n</ng-template>\n",
+      styles: ["mat-menu{display:none}.mat-mdc-menu-content{margin:0;padding:8px 0;list-style-type:none}.mat-mdc-menu-content:focus{outline:none}.mat-mdc-menu-content,.mat-mdc-menu-content .mat-mdc-menu-item .mat-mdc-menu-item-text{-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;white-space:normal;font-family:var(--mat-menu-item-label-text-font);line-height:var(--mat-menu-item-label-text-line-height);font-size:var(--mat-menu-item-label-text-size);letter-spacing:var(--mat-menu-item-label-text-tracking);font-weight:var(--mat-menu-item-label-text-weight)}.mat-mdc-menu-panel{--mat-menu-container-shape:4px;min-width:112px;max-width:280px;overflow:auto;-webkit-overflow-scrolling:touch;box-sizing:border-box;outline:0;border-radius:var(--mat-menu-container-shape);background-color:var(--mat-menu-container-color);will-change:transform,opacity}.mat-mdc-menu-panel.ng-animating{pointer-events:none}.cdk-high-contrast-active .mat-mdc-menu-panel{outline:solid 1px}.mat-mdc-menu-item{display:flex;position:relative;align-items:center;justify-content:flex-start;overflow:hidden;padding:0;padding-left:16px;padding-right:16px;-webkit-user-select:none;user-select:none;cursor:pointer;outline:none;border:none;-webkit-tap-highlight-color:rgba(0,0,0,0);cursor:pointer;width:100%;text-align:left;box-sizing:border-box;color:inherit;font-size:inherit;background:none;text-decoration:none;margin:0;align-items:center;min-height:48px}.mat-mdc-menu-item:focus{outline:none}[dir=rtl] .mat-mdc-menu-item,.mat-mdc-menu-item[dir=rtl]{padding-left:16px;padding-right:16px}.mat-mdc-menu-item::-moz-focus-inner{border:0}.mat-mdc-menu-item,.mat-mdc-menu-item:visited,.mat-mdc-menu-item:link{color:var(--mat-menu-item-label-text-color)}.mat-mdc-menu-item .mat-icon-no-color,.mat-mdc-menu-item .mat-mdc-menu-submenu-icon{color:var(--mat-menu-item-icon-color)}.mat-mdc-menu-item[disabled]{cursor:default;opacity:.38}.mat-mdc-menu-item[disabled]::after{display:block;position:absolute;content:\"\";top:0;left:0;bottom:0;right:0}.mat-mdc-menu-item .mat-icon{margin-right:16px}[dir=rtl] .mat-mdc-menu-item{text-align:right}[dir=rtl] .mat-mdc-menu-item .mat-icon{margin-right:0;margin-left:16px}.mat-mdc-menu-item.mat-mdc-menu-item-submenu-trigger{padding-right:32px}[dir=rtl] .mat-mdc-menu-item.mat-mdc-menu-item-submenu-trigger{padding-right:16px;padding-left:32px}.mat-mdc-menu-item:not([disabled]):hover{background-color:var(--mat-menu-item-hover-state-layer-color)}.mat-mdc-menu-item:not([disabled]).cdk-program-focused,.mat-mdc-menu-item:not([disabled]).cdk-keyboard-focused,.mat-mdc-menu-item:not([disabled]).mat-mdc-menu-item-highlighted{background-color:var(--mat-menu-item-focus-state-layer-color)}.cdk-high-contrast-active .mat-mdc-menu-item{margin-top:1px}.mat-mdc-menu-submenu-icon{position:absolute;top:50%;right:16px;transform:translateY(-50%);width:5px;height:10px;fill:currentColor}[dir=rtl] .mat-mdc-menu-submenu-icon{right:auto;left:16px;transform:translateY(-50%) scaleX(-1)}.cdk-high-contrast-active .mat-mdc-menu-submenu-icon{fill:CanvasText}.mat-mdc-menu-item .mat-mdc-menu-ripple{top:0;left:0;right:0;bottom:0;position:absolute;pointer-events:none}"]
+    }]
+  }], function () {
+    return [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [MAT_MENU_DEFAULT_OPTIONS]
+      }]
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef
+    }];
+  }, null);
+})();
+
+/** Injection token that determines the scroll handling while the menu is open. */
+const MAT_MENU_SCROLL_STRATEGY = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.InjectionToken('mat-menu-scroll-strategy');
+/** @docs-private */
+function MAT_MENU_SCROLL_STRATEGY_FACTORY(overlay) {
+  return () => overlay.scrollStrategies.reposition();
+}
+/** @docs-private */
+const MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER = {
+  provide: MAT_MENU_SCROLL_STRATEGY,
+  deps: [_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.Overlay],
+  useFactory: MAT_MENU_SCROLL_STRATEGY_FACTORY
+};
+/** Options for binding a passive event listener. */
+const passiveEventListenerOptions = (0,_angular_cdk_platform__WEBPACK_IMPORTED_MODULE_14__.normalizePassiveListenerOptions)({
+  passive: true
+});
+/**
+ * Default top padding of the menu panel.
+ * @deprecated No longer being used. Will be removed.
+ * @breaking-change 15.0.0
+ */
+const MENU_PANEL_TOP_PADDING = 8;
+class _MatMenuTriggerBase {
+  /**
+   * @deprecated
+   * @breaking-change 8.0.0
+   */
+  get _deprecatedMatMenuTriggerFor() {
+    return this.menu;
+  }
+  set _deprecatedMatMenuTriggerFor(v) {
+    this.menu = v;
+  }
+  /** References the menu instance that the trigger is associated with. */
+  get menu() {
+    return this._menu;
+  }
+  set menu(menu) {
+    if (menu === this._menu) {
+      return;
+    }
+    this._menu = menu;
+    this._menuCloseSubscription.unsubscribe();
+    if (menu) {
+      if (menu === this._parentMaterialMenu && (typeof ngDevMode === 'undefined' || ngDevMode)) {
+        throwMatMenuRecursiveError();
+      }
+      this._menuCloseSubscription = menu.close.subscribe(reason => {
+        this._destroyMenu(reason);
+        // If a click closed the menu, we should close the entire chain of nested menus.
+        if ((reason === 'click' || reason === 'tab') && this._parentMaterialMenu) {
+          this._parentMaterialMenu.closed.emit(reason);
+        }
+      });
+    }
+    this._menuItemInstance?._setTriggersSubmenu(this.triggersSubmenu());
+  }
+  constructor(_overlay, _element, _viewContainerRef, scrollStrategy, parentMenu,
+  // `MatMenuTrigger` is commonly used in combination with a `MatMenuItem`.
+  // tslint:disable-next-line: lightweight-tokens
+  _menuItemInstance, _dir, _focusMonitor, _ngZone) {
+    this._overlay = _overlay;
+    this._element = _element;
+    this._viewContainerRef = _viewContainerRef;
+    this._menuItemInstance = _menuItemInstance;
+    this._dir = _dir;
+    this._focusMonitor = _focusMonitor;
+    this._ngZone = _ngZone;
+    this._overlayRef = null;
+    this._menuOpen = false;
+    this._closingActionsSubscription = rxjs__WEBPACK_IMPORTED_MODULE_15__.Subscription.EMPTY;
+    this._hoverSubscription = rxjs__WEBPACK_IMPORTED_MODULE_15__.Subscription.EMPTY;
+    this._menuCloseSubscription = rxjs__WEBPACK_IMPORTED_MODULE_15__.Subscription.EMPTY;
+    this._changeDetectorRef = (0,_angular_core__WEBPACK_IMPORTED_MODULE_0__.inject)(_angular_core__WEBPACK_IMPORTED_MODULE_0__.ChangeDetectorRef);
+    /**
+     * Handles touch start events on the trigger.
+     * Needs to be an arrow function so we can easily use addEventListener and removeEventListener.
+     */
+    this._handleTouchStart = event => {
+      if (!(0,_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.isFakeTouchstartFromScreenReader)(event)) {
+        this._openedBy = 'touch';
+      }
+    };
+    // Tracking input type is necessary so it's possible to only auto-focus
+    // the first item of the list when the menu is opened via the keyboard
+    this._openedBy = undefined;
+    /**
+     * Whether focus should be restored when the menu is closed.
+     * Note that disabling this option can have accessibility implications
+     * and it's up to you to manage focus, if you decide to turn it off.
+     */
+    this.restoreFocus = true;
+    /** Event emitted when the associated menu is opened. */
+    this.menuOpened = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    /**
+     * Event emitted when the associated menu is opened.
+     * @deprecated Switch to `menuOpened` instead
+     * @breaking-change 8.0.0
+     */
+    // tslint:disable-next-line:no-output-on-prefix
+    this.onMenuOpen = this.menuOpened;
+    /** Event emitted when the associated menu is closed. */
+    this.menuClosed = new _angular_core__WEBPACK_IMPORTED_MODULE_0__.EventEmitter();
+    /**
+     * Event emitted when the associated menu is closed.
+     * @deprecated Switch to `menuClosed` instead
+     * @breaking-change 8.0.0
+     */
+    // tslint:disable-next-line:no-output-on-prefix
+    this.onMenuClose = this.menuClosed;
+    this._scrollStrategy = scrollStrategy;
+    this._parentMaterialMenu = parentMenu instanceof _MatMenuBase ? parentMenu : undefined;
+    _element.nativeElement.addEventListener('touchstart', this._handleTouchStart, passiveEventListenerOptions);
+  }
+  ngAfterContentInit() {
+    this._handleHover();
+  }
+  ngOnDestroy() {
+    if (this._overlayRef) {
+      this._overlayRef.dispose();
+      this._overlayRef = null;
+    }
+    this._element.nativeElement.removeEventListener('touchstart', this._handleTouchStart, passiveEventListenerOptions);
+    this._menuCloseSubscription.unsubscribe();
+    this._closingActionsSubscription.unsubscribe();
+    this._hoverSubscription.unsubscribe();
+  }
+  /** Whether the menu is open. */
+  get menuOpen() {
+    return this._menuOpen;
+  }
+  /** The text direction of the containing app. */
+  get dir() {
+    return this._dir && this._dir.value === 'rtl' ? 'rtl' : 'ltr';
+  }
+  /** Whether the menu triggers a sub-menu or a top-level one. */
+  triggersSubmenu() {
+    return !!(this._menuItemInstance && this._parentMaterialMenu && this.menu);
+  }
+  /** Toggles the menu between the open and closed states. */
+  toggleMenu() {
+    return this._menuOpen ? this.closeMenu() : this.openMenu();
+  }
+  /** Opens the menu. */
+  openMenu() {
+    const menu = this.menu;
+    if (this._menuOpen || !menu) {
+      return;
+    }
+    const overlayRef = this._createOverlay(menu);
+    const overlayConfig = overlayRef.getConfig();
+    const positionStrategy = overlayConfig.positionStrategy;
+    this._setPosition(menu, positionStrategy);
+    overlayConfig.hasBackdrop = menu.hasBackdrop == null ? !this.triggersSubmenu() : menu.hasBackdrop;
+    overlayRef.attach(this._getPortal(menu));
+    if (menu.lazyContent) {
+      menu.lazyContent.attach(this.menuData);
+    }
+    this._closingActionsSubscription = this._menuClosingActions().subscribe(() => this.closeMenu());
+    this._initMenu(menu);
+    if (menu instanceof _MatMenuBase) {
+      menu._startAnimation();
+      menu._directDescendantItems.changes.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_16__.takeUntil)(menu.close)).subscribe(() => {
+        // Re-adjust the position without locking when the amount of items
+        // changes so that the overlay is allowed to pick a new optimal position.
+        positionStrategy.withLockedPosition(false).reapplyLastPosition();
+        positionStrategy.withLockedPosition(true);
+      });
+    }
+  }
+  /** Closes the menu. */
+  closeMenu() {
+    this.menu?.close.emit();
+  }
+  /**
+   * Focuses the menu trigger.
+   * @param origin Source of the menu trigger's focus.
+   */
+  focus(origin, options) {
+    if (this._focusMonitor && origin) {
+      this._focusMonitor.focusVia(this._element, origin, options);
+    } else {
+      this._element.nativeElement.focus(options);
+    }
+  }
+  /**
+   * Updates the position of the menu to ensure that it fits all options within the viewport.
+   */
+  updatePosition() {
+    this._overlayRef?.updatePosition();
+  }
+  /** Closes the menu and does the necessary cleanup. */
+  _destroyMenu(reason) {
+    if (!this._overlayRef || !this.menuOpen) {
+      return;
+    }
+    const menu = this.menu;
+    this._closingActionsSubscription.unsubscribe();
+    this._overlayRef.detach();
+    // Always restore focus if the user is navigating using the keyboard or the menu was opened
+    // programmatically. We don't restore for non-root triggers, because it can prevent focus
+    // from making it back to the root trigger when closing a long chain of menus by clicking
+    // on the backdrop.
+    if (this.restoreFocus && (reason === 'keydown' || !this._openedBy || !this.triggersSubmenu())) {
+      this.focus(this._openedBy);
+    }
+    this._openedBy = undefined;
+    if (menu instanceof _MatMenuBase) {
+      menu._resetAnimation();
+      if (menu.lazyContent) {
+        // Wait for the exit animation to finish before detaching the content.
+        menu._animationDone.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.filter)(event => event.toState === 'void'), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.take)(1),
+        // Interrupt if the content got re-attached.
+        (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_16__.takeUntil)(menu.lazyContent._attached)).subscribe({
+          next: () => menu.lazyContent.detach(),
+          // No matter whether the content got re-attached, reset the menu.
+          complete: () => this._setIsMenuOpen(false)
+        });
+      } else {
+        this._setIsMenuOpen(false);
+      }
+    } else {
+      this._setIsMenuOpen(false);
+      menu?.lazyContent?.detach();
+    }
+  }
+  /**
+   * This method sets the menu state to open and focuses the first item if
+   * the menu was opened via the keyboard.
+   */
+  _initMenu(menu) {
+    menu.parentMenu = this.triggersSubmenu() ? this._parentMaterialMenu : undefined;
+    menu.direction = this.dir;
+    this._setMenuElevation(menu);
+    menu.focusFirstItem(this._openedBy || 'program');
+    this._setIsMenuOpen(true);
+  }
+  /** Updates the menu elevation based on the amount of parent menus that it has. */
+  _setMenuElevation(menu) {
+    if (menu.setElevation) {
+      let depth = 0;
+      let parentMenu = menu.parentMenu;
+      while (parentMenu) {
+        depth++;
+        parentMenu = parentMenu.parentMenu;
+      }
+      menu.setElevation(depth);
+    }
+  }
+  // set state rather than toggle to support triggers sharing a menu
+  _setIsMenuOpen(isOpen) {
+    if (isOpen !== this._menuOpen) {
+      this._menuOpen = isOpen;
+      this._menuOpen ? this.menuOpened.emit() : this.menuClosed.emit();
+      if (this.triggersSubmenu()) {
+        this._menuItemInstance._setHighlighted(isOpen);
+      }
+      this._changeDetectorRef.markForCheck();
+    }
+  }
+  /**
+   * This method creates the overlay from the provided menu's template and saves its
+   * OverlayRef so that it can be attached to the DOM when openMenu is called.
+   */
+  _createOverlay(menu) {
+    if (!this._overlayRef) {
+      const config = this._getOverlayConfig(menu);
+      this._subscribeToPositions(menu, config.positionStrategy);
+      this._overlayRef = this._overlay.create(config);
+      // Consume the `keydownEvents` in order to prevent them from going to another overlay.
+      // Ideally we'd also have our keyboard event logic in here, however doing so will
+      // break anybody that may have implemented the `MatMenuPanel` themselves.
+      this._overlayRef.keydownEvents().subscribe();
+    }
+    return this._overlayRef;
+  }
+  /**
+   * This method builds the configuration object needed to create the overlay, the OverlayState.
+   * @returns OverlayConfig
+   */
+  _getOverlayConfig(menu) {
+    return new _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.OverlayConfig({
+      positionStrategy: this._overlay.position().flexibleConnectedTo(this._element).withLockedPosition().withGrowAfterOpen().withTransformOriginOn('.mat-menu-panel, .mat-mdc-menu-panel'),
+      backdropClass: menu.backdropClass || 'cdk-overlay-transparent-backdrop',
+      panelClass: menu.overlayPanelClass,
+      scrollStrategy: this._scrollStrategy(),
+      direction: this._dir
+    });
+  }
+  /**
+   * Listens to changes in the position of the overlay and sets the correct classes
+   * on the menu based on the new position. This ensures the animation origin is always
+   * correct, even if a fallback position is used for the overlay.
+   */
+  _subscribeToPositions(menu, position) {
+    if (menu.setPositionClasses) {
+      position.positionChanges.subscribe(change => {
+        const posX = change.connectionPair.overlayX === 'start' ? 'after' : 'before';
+        const posY = change.connectionPair.overlayY === 'top' ? 'below' : 'above';
+        // @breaking-change 15.0.0 Remove null check for `ngZone`.
+        // `positionChanges` fires outside of the `ngZone` and `setPositionClasses` might be
+        // updating something in the view so we need to bring it back in.
+        if (this._ngZone) {
+          this._ngZone.run(() => menu.setPositionClasses(posX, posY));
+        } else {
+          menu.setPositionClasses(posX, posY);
+        }
+      });
+    }
+  }
+  /**
+   * Sets the appropriate positions on a position strategy
+   * so the overlay connects with the trigger correctly.
+   * @param positionStrategy Strategy whose position to update.
+   */
+  _setPosition(menu, positionStrategy) {
+    let [originX, originFallbackX] = menu.xPosition === 'before' ? ['end', 'start'] : ['start', 'end'];
+    let [overlayY, overlayFallbackY] = menu.yPosition === 'above' ? ['bottom', 'top'] : ['top', 'bottom'];
+    let [originY, originFallbackY] = [overlayY, overlayFallbackY];
+    let [overlayX, overlayFallbackX] = [originX, originFallbackX];
+    let offsetY = 0;
+    if (this.triggersSubmenu()) {
+      // When the menu is a sub-menu, it should always align itself
+      // to the edges of the trigger, instead of overlapping it.
+      overlayFallbackX = originX = menu.xPosition === 'before' ? 'start' : 'end';
+      originFallbackX = overlayX = originX === 'end' ? 'start' : 'end';
+      if (this._parentMaterialMenu) {
+        if (this._parentInnerPadding == null) {
+          const firstItem = this._parentMaterialMenu.items.first;
+          this._parentInnerPadding = firstItem ? firstItem._getHostElement().offsetTop : 0;
+        }
+        offsetY = overlayY === 'bottom' ? this._parentInnerPadding : -this._parentInnerPadding;
+      }
+    } else if (!menu.overlapTrigger) {
+      originY = overlayY === 'top' ? 'bottom' : 'top';
+      originFallbackY = overlayFallbackY === 'top' ? 'bottom' : 'top';
+    }
+    positionStrategy.withPositions([{
+      originX,
+      originY,
+      overlayX,
+      overlayY,
+      offsetY
+    }, {
+      originX: originFallbackX,
+      originY,
+      overlayX: overlayFallbackX,
+      overlayY,
+      offsetY
+    }, {
+      originX,
+      originY: originFallbackY,
+      overlayX,
+      overlayY: overlayFallbackY,
+      offsetY: -offsetY
+    }, {
+      originX: originFallbackX,
+      originY: originFallbackY,
+      overlayX: overlayFallbackX,
+      overlayY: overlayFallbackY,
+      offsetY: -offsetY
+    }]);
+  }
+  /** Returns a stream that emits whenever an action that should close the menu occurs. */
+  _menuClosingActions() {
+    const backdrop = this._overlayRef.backdropClick();
+    const detachments = this._overlayRef.detachments();
+    const parentClose = this._parentMaterialMenu ? this._parentMaterialMenu.closed : (0,rxjs__WEBPACK_IMPORTED_MODULE_18__.of)();
+    const hover = this._parentMaterialMenu ? this._parentMaterialMenu._hovered().pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.filter)(active => active !== this._menuItemInstance), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.filter)(() => this._menuOpen)) : (0,rxjs__WEBPACK_IMPORTED_MODULE_18__.of)();
+    return (0,rxjs__WEBPACK_IMPORTED_MODULE_10__.merge)(backdrop, parentClose, hover, detachments);
+  }
+  /** Handles mouse presses on the trigger. */
+  _handleMousedown(event) {
+    if (!(0,_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.isFakeMousedownFromScreenReader)(event)) {
+      // Since right or middle button clicks won't trigger the `click` event,
+      // we shouldn't consider the menu as opened by mouse in those cases.
+      this._openedBy = event.button === 0 ? 'mouse' : undefined;
+      // Since clicking on the trigger won't close the menu if it opens a sub-menu,
+      // we should prevent focus from moving onto it via click to avoid the
+      // highlight from lingering on the menu item.
+      if (this.triggersSubmenu()) {
+        event.preventDefault();
+      }
+    }
+  }
+  /** Handles key presses on the trigger. */
+  _handleKeydown(event) {
+    const keyCode = event.keyCode;
+    // Pressing enter on the trigger will trigger the click handler later.
+    if (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.ENTER || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.SPACE) {
+      this._openedBy = 'keyboard';
+    }
+    if (this.triggersSubmenu() && (keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.RIGHT_ARROW && this.dir === 'ltr' || keyCode === _angular_cdk_keycodes__WEBPACK_IMPORTED_MODULE_11__.LEFT_ARROW && this.dir === 'rtl')) {
+      this._openedBy = 'keyboard';
+      this.openMenu();
+    }
+  }
+  /** Handles click events on the trigger. */
+  _handleClick(event) {
+    if (this.triggersSubmenu()) {
+      // Stop event propagation to avoid closing the parent menu.
+      event.stopPropagation();
+      this.openMenu();
+    } else {
+      this.toggleMenu();
+    }
+  }
+  /** Handles the cases where the user hovers over the trigger. */
+  _handleHover() {
+    // Subscribe to changes in the hovered item in order to toggle the panel.
+    if (!this.triggersSubmenu() || !this._parentMaterialMenu) {
+      return;
+    }
+    this._hoverSubscription = this._parentMaterialMenu._hovered()
+    // Since we might have multiple competing triggers for the same menu (e.g. a sub-menu
+    // with different data and triggers), we have to delay it by a tick to ensure that
+    // it won't be closed immediately after it is opened.
+    .pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_17__.filter)(active => active === this._menuItemInstance && !active.disabled), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.delay)(0, rxjs__WEBPACK_IMPORTED_MODULE_20__.asapScheduler)).subscribe(() => {
+      this._openedBy = 'mouse';
+      // If the same menu is used between multiple triggers, it might still be animating
+      // while the new trigger tries to re-open it. Wait for the animation to finish
+      // before doing so. Also interrupt if the user moves to another item.
+      if (this.menu instanceof _MatMenuBase && this.menu._isAnimating) {
+        // We need the `delay(0)` here in order to avoid
+        // 'changed after checked' errors in some cases. See #12194.
+        this.menu._animationDone.pipe((0,rxjs_operators__WEBPACK_IMPORTED_MODULE_12__.take)(1), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_19__.delay)(0, rxjs__WEBPACK_IMPORTED_MODULE_20__.asapScheduler), (0,rxjs_operators__WEBPACK_IMPORTED_MODULE_16__.takeUntil)(this._parentMaterialMenu._hovered())).subscribe(() => this.openMenu());
+      } else {
+        this.openMenu();
+      }
+    });
+  }
+  /** Gets the portal that should be attached to the overlay. */
+  _getPortal(menu) {
+    // Note that we can avoid this check by keeping the portal on the menu panel.
+    // While it would be cleaner, we'd have to introduce another required method on
+    // `MatMenuPanel`, making it harder to consume.
+    if (!this._portal || this._portal.templateRef !== menu.templateRef) {
+      this._portal = new _angular_cdk_portal__WEBPACK_IMPORTED_MODULE_5__.TemplatePortal(menu.templateRef, this._viewContainerRef);
+    }
+    return this._portal;
+  }
+}
+_MatMenuTriggerBase.ɵfac = function _MatMenuTriggerBase_Factory(t) {
+  return new (t || _MatMenuTriggerBase)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.Overlay), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_MENU_SCROLL_STRATEGY), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MAT_MENU_PANEL, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](MatMenuItem, 10), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_21__.Directionality, 8), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.FocusMonitor), _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone));
+};
+_MatMenuTriggerBase.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: _MatMenuTriggerBase,
+  hostVars: 3,
+  hostBindings: function _MatMenuTriggerBase_HostBindings(rf, ctx) {
+    if (rf & 1) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function _MatMenuTriggerBase_click_HostBindingHandler($event) {
+        return ctx._handleClick($event);
+      })("mousedown", function _MatMenuTriggerBase_mousedown_HostBindingHandler($event) {
+        return ctx._handleMousedown($event);
+      })("keydown", function _MatMenuTriggerBase_keydown_HostBindingHandler($event) {
+        return ctx._handleKeydown($event);
+      });
+    }
+    if (rf & 2) {
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵattribute"]("aria-haspopup", ctx.menu ? "menu" : null)("aria-expanded", ctx.menuOpen)("aria-controls", ctx.menuOpen ? ctx.menu.panelId : null);
+    }
+  },
+  inputs: {
+    _deprecatedMatMenuTriggerFor: ["mat-menu-trigger-for", "_deprecatedMatMenuTriggerFor"],
+    menu: ["matMenuTriggerFor", "menu"],
+    menuData: ["matMenuTriggerData", "menuData"],
+    restoreFocus: ["matMenuTriggerRestoreFocus", "restoreFocus"]
+  },
+  outputs: {
+    menuOpened: "menuOpened",
+    onMenuOpen: "onMenuOpen",
+    menuClosed: "menuClosed",
+    onMenuClose: "onMenuClose"
+  }
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](_MatMenuTriggerBase, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      host: {
+        '[attr.aria-haspopup]': 'menu ? "menu" : null',
+        '[attr.aria-expanded]': 'menuOpen',
+        '[attr.aria-controls]': 'menuOpen ? menu.panelId : null',
+        '(click)': '_handleClick($event)',
+        '(mousedown)': '_handleMousedown($event)',
+        '(keydown)': '_handleKeydown($event)'
+      }
+    }]
+  }], function () {
+    return [{
+      type: _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.Overlay
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ElementRef
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.ViewContainerRef
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [MAT_MENU_SCROLL_STRATEGY]
+      }]
+    }, {
+      type: undefined,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Inject,
+        args: [MAT_MENU_PANEL]
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+      }]
+    }, {
+      type: MatMenuItem,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+      }, {
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Self
+      }]
+    }, {
+      type: _angular_cdk_bidi__WEBPACK_IMPORTED_MODULE_21__.Directionality,
+      decorators: [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Optional
+      }]
+    }, {
+      type: _angular_cdk_a11y__WEBPACK_IMPORTED_MODULE_4__.FocusMonitor
+    }, {
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgZone
+    }];
+  }, {
+    _deprecatedMatMenuTriggerFor: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['mat-menu-trigger-for']
+    }],
+    menu: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['matMenuTriggerFor']
+    }],
+    menuData: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['matMenuTriggerData']
+    }],
+    restoreFocus: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Input,
+      args: ['matMenuTriggerRestoreFocus']
+    }],
+    menuOpened: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onMenuOpen: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    menuClosed: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }],
+    onMenuClose: [{
+      type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Output
+    }]
+  });
+})();
+/** Directive applied to an element that should trigger a `mat-menu`. */
+class MatMenuTrigger extends _MatMenuTriggerBase {}
+MatMenuTrigger.ɵfac = /* @__PURE__ */function () {
+  let ɵMatMenuTrigger_BaseFactory;
+  return function MatMenuTrigger_Factory(t) {
+    return (ɵMatMenuTrigger_BaseFactory || (ɵMatMenuTrigger_BaseFactory = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵgetInheritedFactory"](MatMenuTrigger)))(t || MatMenuTrigger);
+  };
+}();
+MatMenuTrigger.ɵdir = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineDirective"]({
+  type: MatMenuTrigger,
+  selectors: [["", "mat-menu-trigger-for", ""], ["", "matMenuTriggerFor", ""]],
+  hostAttrs: [1, "mat-mdc-menu-trigger"],
+  exportAs: ["matMenuTrigger"],
+  features: [_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵInheritDefinitionFeature"]]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MatMenuTrigger, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.Directive,
+    args: [{
+      selector: `[mat-menu-trigger-for], [matMenuTriggerFor]`,
+      host: {
+        'class': 'mat-mdc-menu-trigger'
+      },
+      exportAs: 'matMenuTrigger'
+    }]
+  }], null, null);
+})();
+class MatMenuModule {}
+MatMenuModule.ɵfac = function MatMenuModule_Factory(t) {
+  return new (t || MatMenuModule)();
+};
+MatMenuModule.ɵmod = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineNgModule"]({
+  type: MatMenuModule
+});
+MatMenuModule.ɵinj = /* @__PURE__ */_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjector"]({
+  providers: [MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER],
+  imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatRippleModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.OverlayModule, _angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__.CdkScrollableModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule]
+});
+(function () {
+  (typeof ngDevMode === "undefined" || ngDevMode) && _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](MatMenuModule, [{
+    type: _angular_core__WEBPACK_IMPORTED_MODULE_0__.NgModule,
+    args: [{
+      imports: [_angular_common__WEBPACK_IMPORTED_MODULE_3__.CommonModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatRippleModule, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, _angular_cdk_overlay__WEBPACK_IMPORTED_MODULE_13__.OverlayModule],
+      exports: [_angular_cdk_scrolling__WEBPACK_IMPORTED_MODULE_22__.CdkScrollableModule, MatMenu, _angular_material_core__WEBPACK_IMPORTED_MODULE_1__.MatCommonModule, MatMenuItem, MatMenuContent, MatMenuTrigger],
+      declarations: [MatMenu, MatMenuItem, MatMenuContent, MatMenuTrigger],
+      providers: [MAT_MENU_SCROLL_STRATEGY_FACTORY_PROVIDER]
     }]
   }], null, null);
 })();

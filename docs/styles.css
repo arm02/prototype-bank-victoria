@@ -201,4 +201,15 @@ body {
   width: 100%;
 }
 
+::ng-deep .mat-mdc-bottom-sheet-container.full-height-bottom-sheet {
+  /* Atur tinggi container ke 100% dari viewport height (vh) */
+  height: 100vh;
+  /* PENTING: Posisikan container mulai dari atas viewport */
+  top: 0;
+  /* Atur margin bawah ke 0 (defaultnya ada margin) */
+  margin-bottom: 0;
+  /* Atur lebar penuh */
+  max-width: 100vw;
+}
+
 /*# sourceMappingURL=styles.css.map*/
