@@ -33,12 +33,20 @@
       <div class="item" *ngFor="let course of coursesList">
         <div class="card-article">
           <img [src]="course.image" alt="Article Thumbnail" />
-          <span class="information">{{ course.type }}</span>
+          <span
+            [ngClass]="{
+              information2: course.type === 'Sertifikat',
+              information: course.type === 'E-Sertifikat',
+            }"
+            >{{ course.type }}</span
+          >
           <div class="title">{{ course.title }}</div>
           <div class="subtitle" style="margin-bottom: 10px !important">
             {{ course.subtitle }}
           </div>
-          <button class="button">Lihat Sertifikat</button>
+          <button class="button" (click)="openSertif(course.image)">
+            Lihat Sertifikat
+          </button>
         </div>
       </div>
     </div>
