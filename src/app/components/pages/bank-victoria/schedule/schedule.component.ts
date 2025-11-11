@@ -131,8 +131,7 @@ export class ScheduleComponent implements OnInit, OnDestroy {
 
   openDetailDialog(): void {
     if (this.isMobile) {
-      this.bottomSheet.open(DetailScheduleComponent, {
-      });
+      this.bottomSheet.open(DetailScheduleComponent);
     } else {
 
       const dialogRef = this.dialog.open(DetailScheduleComponent, {
