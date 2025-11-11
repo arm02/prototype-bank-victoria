@@ -1,6 +1,9 @@
 <nav class="navbar" [ngClass]="{ 'expanded' : isExpanded }">
     <div class="items-container">
-        <div class="title">{{ navTitle }}</div>
+        <div class="title">
+            <img *ngIf="showBack" (click)="goBack()" src="./assets/bank-victoria/svg/sidebar/arrow-down.svg" alt="Arrow Left"/>
+            {{ navTitle }}
+        </div>
         <div class="right">
             <div class="item mobile" (click)="openNotification()">
                 <img src="./assets/bank-victoria/svg/ic-notification.svg" alt="Notification icon" />
@@ -17,7 +20,7 @@
                     </div>
                 </div>
 
-                <div class="profile-user-responsive" [matMenuTriggerFor]="eventMenu">
+                <div class="profile-user-responsive" (click)="openProfile()">
                     <img src="./assets/bank-victoria/svg/burger-menu.svg" alt="Burger menu icon" />
                 </div>
 

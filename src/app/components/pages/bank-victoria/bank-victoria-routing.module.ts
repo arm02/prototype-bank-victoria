@@ -54,6 +54,7 @@ const routes: Routes = [
         data: {
           navTitle: 'Detil Program',
           role: 'all',
+          showBack: true
         },
       },
       {
@@ -84,6 +85,7 @@ const routes: Routes = [
         data: {
           navTitle: 'Detail Artikel',
           role: 'all',
+          showBack: true
         },
       },
     ],

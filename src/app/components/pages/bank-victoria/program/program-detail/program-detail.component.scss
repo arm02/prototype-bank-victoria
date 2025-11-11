@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;550;600;700&display=swap");
 
 * {
-    font-family: "Poppins";
+  font-family: "Poppins";
 }
 
 .container {
@@ -33,10 +33,18 @@
       flex-direction: column;
       gap: 30px;
 
+      @media only screen and (max-width: 768px) {
+        gap: 20px;
+      }
+
       .title {
         font-weight: 500;
         font-size: 30px;
         line-height: normal;
+
+        @media only screen and (max-width: 768px) {
+          font-size: 20px;
+        }
       }
     }
 
@@ -184,6 +192,11 @@ progress[value]::-webkit-progress-value {
   &-title {
     font-weight: 700;
     font-size: 17px;
+    
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+      font-weight: 600;
+    }
   }
 
   &>div>button {

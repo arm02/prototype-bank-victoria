@@ -1,4 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
+import { Location } from '@angular/common';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, Subject, takeUntil } from 'rxjs';
 import { LayoutsService } from '../layouts.service';
@@ -12,16 +13,23 @@ import { NotificationComponent } from 'src/app/components/pages/bank-victoria/no
 })
 export class NavbarComponent implements OnInit, OnDestroy {
   navTitle = '';
+  showBack = false;
   isExpanded = false;
   private ngUnsubscribe = new Subject<void>();
-  constructor(public route: ActivatedRoute, public router: Router, private layoutService: LayoutsService, private bottomSheet: MatBottomSheet) { }
+  constructor(
+    public route: ActivatedRoute, 
+    public router: Router, 
+    private layoutService: LayoutsService, 
+    private bottomSheet: MatBottomSheet, 
+    private location: Location
+  ) { }
 
   ngOnInit(): void {
-    this.setNavTitle(this.route);
+    this.setAttributeRoute(this.route);
     this.router.events
       .pipe(filter((event) => event instanceof NavigationEnd), takeUntil(this.ngUnsubscribe))
       .subscribe(() => {
-        this.setNavTitle(this.route);
+        this.setAttributeRoute(this.route);
       });
 
     this.layoutService.isExpanded.pipe(takeUntil(this.ngUnsubscribe)).subscribe({
@@ -36,12 +44,13 @@ export class NavbarComponent implements OnInit, OnDestroy {
     this.ngUnsubscribe.complete();
   }
 
-  private setNavTitle(route: ActivatedRoute): void {
+  private setAttributeRoute(route: ActivatedRoute): void {
     let current = route;
     while (current.firstChild) {
       current = current.firstChild;
     }
     this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
+    this.showBack = current.snapshot.data['showBack'] || false;
   }
 
   logout() {
@@ -52,7 +61,24 @@ export class NavbarComponent implements OnInit, OnDestroy {
   openNotification() {
     this.bottomSheet.open(NotificationComponent, {
       panelClass: 'full-height-bottom-sheet',
+      data: {
+        type: 'notification'
+      }
     });
+  }
+
+  openProfile() {
+    this.bottomSheet.open(NotificationComponent, {
+      panelClass: 'full-height-bottom-sheet',
+      data: {
+        type: 'profile'
+      }
+    });
+  }
+
+  goBack(): void {
+    // Memanggil metode back() pada objek Location
+    this.location.back();
   }
 }
 

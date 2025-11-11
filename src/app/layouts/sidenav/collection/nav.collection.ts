@@ -185,7 +185,7 @@ export const VictoriaNavigationGroupData: NavigationGroup[] | any = [
     groupTitleMobile: 'Beranda',
     icon: 'home',
     path: '/',
-    active: 'dashboard',
+    active: 'article',
     items: [],
     route: undefined,
     role: 'all',

@@ -2,7 +2,7 @@
     <div class="bottom-sheet-grabber"></div>
 </div>
 
-<div class="notification-container">
+<div *ngIf="type === 'notification'" class="notification-container">
     <div class="notification-items">
         <div class="notification-item">
             <img src="./assets/bank-victoria/svg/clock.svg" alt="Clock Icon" />
@@ -43,6 +43,26 @@
                     kursus Anda.
                 </span>
                 <a class="link">Kunjungi Program</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div *ngIf="type === 'profile'" class="notification-container">
+    <div class="notification-items">
+        <div class="notification-item profile">
+            <img src="./assets/bank-victoria/svg/sidebar/user-tag.svg" alt="Clock Icon" />
+            <div class="notification-item-content">
+                <span class="title">Profil</span>
+            </div>
+        </div>
+    </div>
+    <div class="notification-item-divider"></div>
+    <div class="notification-items" (click)="logout()">
+        <div class="notification-item profile">
+            <img src="./assets/bank-victoria/svg/sidebar/logout.svg" alt="Clock Icon" />
+            <div class="notification-item-content">
+                <span class="title">Logout</span>
             </div>
         </div>
     </div>

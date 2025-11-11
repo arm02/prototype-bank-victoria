@@ -26,6 +26,6 @@ export class MenuResponsiveComponent {
   }
 
   isMenuActive(menu: any): boolean {
-    return menu.active === 'dashboard' ? (!this.activeRoute || menu.active === this.activeRoute) : menu.active === this.activeRoute
+    return menu.active === 'article' ? (!this.activeRoute || menu.active === this.activeRoute) : menu.active === this.activeRoute
   }
 }

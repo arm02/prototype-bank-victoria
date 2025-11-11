@@ -36,6 +36,9 @@
         align-items: flex-start;
         gap: 12px;
 
+        &.profile {
+            align-items: center;
+        }
         &-content {
             display: flex;
             flex-direction: column;
