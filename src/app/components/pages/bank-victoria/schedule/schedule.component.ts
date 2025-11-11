@@ -9,6 +9,7 @@ import { Subject, takeUntil } from 'rxjs';
 import idLocale from '@fullcalendar/core/locales/id';
 import { MatDialog } from '@angular/material/dialog';
 import { DetailScheduleComponent } from './dialog/detail-schedule/detail-schedule.component';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
 
 @Component({
   selector: 'app-schedule',
@@ -16,6 +17,7 @@ import { DetailScheduleComponent } from './dialog/detail-schedule/detail-schedul
   styleUrls: ['./schedule.component.scss']
 })
 export class ScheduleComponent implements OnInit, OnDestroy {
+  isMobile = false;
   desktopToolbar = {
     left: 'prev,next today',
     center: 'title',
@@ -76,20 +78,20 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   };
 
   private destroy$ = new Subject<void>();
-  constructor(private breakpointObserver: BreakpointObserver, private dialog: MatDialog) { }
+  constructor(private breakpointObserver: BreakpointObserver, private dialog: MatDialog, private bottomSheet: MatBottomSheet) { }
 
   ngOnInit(): void {
     this.breakpointObserver
       .observe([Breakpoints.XSmall]) // Anda bisa menggunakan 'max-width: 768px' jika mau
       .pipe(takeUntil(this.destroy$))
       .subscribe(result => {
-        const isMobile = result.matches;
+        this.isMobile = result.matches;
 
         // Perbarui headerToolbar di calendarOptions
         this.calendarOptions = {
           ...this.calendarOptions, // Pertahankan semua opsi lainnya
-          headerToolbar: isMobile ? this.mobileToolbar : this.desktopToolbar,
-          contentHeight: isMobile ? 'auto' : undefined,
+          headerToolbar: this.isMobile ? this.mobileToolbar : this.desktopToolbar,
+          contentHeight: this.isMobile ? 'auto' : undefined,
         };
       });
   }
@@ -128,9 +130,15 @@ export class ScheduleComponent implements OnInit, OnDestroy {
   }
 
   openDetailDialog(): void {
-    const dialogRef = this.dialog.open(DetailScheduleComponent, {
-      width: '400px',
-    });
-    dialogRef.afterClosed().subscribe((result) => { });
+    if (this.isMobile) {
+      this.bottomSheet.open(DetailScheduleComponent, {
+      });
+    } else {
+
+      const dialogRef = this.dialog.open(DetailScheduleComponent, {
+        width: '500px',
+      });
+      dialogRef.afterClosed().subscribe((result) => { });
+    }
   }
 }

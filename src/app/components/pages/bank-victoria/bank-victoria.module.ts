@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 import { BankVictoriaPagesRoutingModule } from './bank-victoria-routing.module';
 import { ProgramComponent } from './program/program.component';
@@ -26,7 +27,8 @@ import { DetailScheduleComponent } from './schedule/dialog/detail-schedule/detai
     CommonModule,
     BankVictoriaPagesRoutingModule,
     RouterModule,
-    FullCalendarModule
+    FullCalendarModule,
+    MatBottomSheetModule
   ],
   providers: [
   ],
