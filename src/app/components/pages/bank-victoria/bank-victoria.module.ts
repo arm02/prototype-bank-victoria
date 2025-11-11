@@ -11,6 +11,7 @@ import { FullCalendarModule } from '@fullcalendar/angular';
 import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
 import { NavigationComponent } from './program/navigation/navigation.component';
 import { DetailScheduleComponent } from './schedule/dialog/detail-schedule/detail-schedule.component';
+import { CertificationComponent } from './certification/certification.component';
 @NgModule({
   declarations: [
     ProgramComponent,
@@ -19,6 +20,7 @@ import { DetailScheduleComponent } from './schedule/dialog/detail-schedule/detai
     ProgramDetailComponent,
     NavigationComponent,
     DetailScheduleComponent,
+    CertificationComponent,
   ],
   exports: [
     ProgramComponent,

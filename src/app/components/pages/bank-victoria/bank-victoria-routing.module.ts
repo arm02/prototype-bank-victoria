@@ -12,6 +12,7 @@ import { BankVictoriaComponent } from './bank-victoria.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
 import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
+import { CertificationComponent } from './certification/certification.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -47,11 +48,21 @@ const routes: Routes = [
       },
       {
         path: 'program/detail',
-        title: 'Full Course HTML and CSS Courses from Scratch | PT. Bank Victoria International, Tbk',
+        title: 'Detil Program | PT. Bank Victoria International, Tbk',
         component: ProgramDetailComponent,
         canActivate: [AuthGuard],
         data: {
-          navTitle: 'Full Course HTML and CSS Courses from Scratch',
+          navTitle: 'Detil Program',
+          role: 'all',
+        },
+      },
+      {
+        path: 'sertifikat',
+        title: 'Sertifikat | PT. Bank Victoria International, Tbk',
+        component: CertificationComponent,
+        canActivate: [AuthGuard],
+        data: {
+          navTitle: 'Sertifikat',
           role: 'all',
         },
       },
