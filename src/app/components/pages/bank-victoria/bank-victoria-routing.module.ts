@@ -12,6 +12,7 @@ import { BankVictoriaComponent } from './bank-victoria.component';
 import { ScheduleComponent } from './schedule/schedule.component';
 import { DetailArticleComponent } from '../dashboard-victoria/pages/detail-article/detail-article.component';
 import { ProgramDetailComponent } from './program/program-detail/program-detail.component';
+import { DashboardVictoriaComponent } from '../dashboard-victoria/dashboard-victoria.component';
 @Injectable({ providedIn: 'root' })
 export class TemplatePageTitleStrategy extends TitleStrategy {
   constructor(private readonly title: Title) {
@@ -62,6 +63,16 @@ const routes: Routes = [
         canActivate: [AuthGuard],
         data: {
           navTitle: 'Jadwal Pelatihan',
+          role: 'all',
+        },
+      },
+      {
+        path: 'article',
+        title: 'Artikel | PT. Bank Victoria International, Tbk',
+        component: DashboardVictoriaComponent,
+        canActivate: [AuthGuard],
+        data: {
+          navTitle: 'Artikel',
           role: 'all',
         },
       },
