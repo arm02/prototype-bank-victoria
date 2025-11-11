@@ -257,7 +257,7 @@ SigninComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_2__[
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](6, "div", 6);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelement"](7, "img", 7);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](8, "span", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](9, "Selamat Datang ke Perjalanan Belajar Anda");
+      _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](9, "Selamat Datang di Learning Portal Bank Victoria");
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementEnd"]();
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵelementStart"](10, "p", 9);
       _angular_core__WEBPACK_IMPORTED_MODULE_2__["ɵɵtext"](11, "Masuk untuk mengakses kursus Anda, melacak kemajuan, dan mencapai tujuan Anda.");
