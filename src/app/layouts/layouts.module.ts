@@ -14,6 +14,8 @@ import { FormsModule } from '@angular/forms';
 import { MatIconModule } from '@angular/material/icon';
 import { NavbarComponent } from './navbar/navbar.component';
 import { MenuResponsiveComponent } from './menu-responsive/menu-responsive.component';
+import { MatMenuModule } from '@angular/material/menu';
+import { MatBottomSheetModule } from '@angular/material/bottom-sheet';
 
 @NgModule({
   declarations: [SidenavComponent, TableComponent, ForgotPasswordComponent, NavbarComponent, MenuResponsiveComponent],
@@ -27,7 +29,9 @@ import { MenuResponsiveComponent } from './menu-responsive/menu-responsive.compo
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    MatIconModule
+    MatIconModule,
+    MatMenuModule,
+    MatBottomSheetModule
   ],
   exports: [SidenavComponent, TableComponent, NavbarComponent, MenuResponsiveComponent],
   providers: [],

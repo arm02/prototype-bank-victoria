@@ -12,6 +12,7 @@ import { ProgramDetailComponent } from './program/program-detail/program-detail.
 import { NavigationComponent } from './program/navigation/navigation.component';
 import { DetailScheduleComponent } from './schedule/dialog/detail-schedule/detail-schedule.component';
 import { CertificationComponent } from './certification/certification.component';
+import { NotificationComponent } from './notification/notification.component';
 @NgModule({
   declarations: [
     ProgramComponent,
@@ -21,9 +22,11 @@ import { CertificationComponent } from './certification/certification.component'
     NavigationComponent,
     DetailScheduleComponent,
     CertificationComponent,
+    NotificationComponent,
   ],
   exports: [
     ProgramComponent,
+    NotificationComponent
   ],
   imports: [
     CommonModule,

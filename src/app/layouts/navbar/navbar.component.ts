@@ -2,6 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter, Subject, takeUntil } from 'rxjs';
 import { LayoutsService } from '../layouts.service';
+import { MatBottomSheet } from '@angular/material/bottom-sheet';
+import { NotificationComponent } from 'src/app/components/pages/bank-victoria/notification/notification.component';
 
 @Component({
   selector: 'app-navbar',
@@ -12,7 +14,7 @@ export class NavbarComponent implements OnInit, OnDestroy {
   navTitle = '';
   isExpanded = false;
   private ngUnsubscribe = new Subject<void>();
-  constructor(public route: ActivatedRoute, public router: Router, private layoutService: LayoutsService) { }
+  constructor(public route: ActivatedRoute, public router: Router, private layoutService: LayoutsService, private bottomSheet: MatBottomSheet) { }
 
   ngOnInit(): void {
     this.setNavTitle(this.route);
@@ -41,4 +43,16 @@ export class NavbarComponent implements OnInit, OnDestroy {
     }
     this.navTitle = current.snapshot.data['navTitle'] || 'Beranda';
   }
+
+  logout() {
+    localStorage.clear();
+    this.router.navigate(['/auth/login']);
+  }
+
+  openNotification() {
+    this.bottomSheet.open(NotificationComponent, {
+      panelClass: 'full-height-bottom-sheet',
+    });
+  }
 }
+
