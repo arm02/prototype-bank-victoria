@@ -56,11 +56,11 @@ export const SERTIFIKAT_LIST = [
     image: './assets/bank-victoria/images/sertifikat-3.webp',
     title: 'Software Engineering Vol 1, Vol2, Vol 3',
     subtitle: 'PT RajaGrafindo Persada',
-    type: 'E-Sertifikat',
+    type: 'Sertifikat',
     progress: 65,
   },
   {
-    image: './assets/bank-victoria/images/sertifikat-1.jpg',
+    image: './assets/bank-victoria/images/sertifikat-2.jpg',
     title: 'Sampling dalam Auditing di Era Serba Digital',
     subtitle: 'PT RajaGrafindo Persada',
     type: 'E-Sertifikat',
@@ -70,7 +70,7 @@ export const SERTIFIKAT_LIST = [
     image: './assets/bank-victoria/images/sertifikat-1.jpg',
     title: 'Sampling dalam Auditing di Era Serba Digital',
     subtitle: 'PT RajaGrafindo Persada',
-    type: 'E-Sertifikat',
+    type: 'Sertifikat',
     progress: 65,
   },
 ];

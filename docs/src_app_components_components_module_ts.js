@@ -815,88 +815,91 @@ NotificationComponent.ɵfac = function NotificationComponent_Factory(t) {
 NotificationComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({
   type: NotificationComponent,
   selectors: [["app-notification"]],
-  decls: 71,
+  decls: 73,
   vars: 0,
-  consts: [[1, "notification-container"], [1, "notification-items"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "title"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
+  consts: [[1, "bottom-sheet-handle-container"], [1, "bottom-sheet-grabber"], [1, "notification-container"], [1, "notification-items"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "title"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
   template: function NotificationComponent_Template(rf, ctx) {
     if (rf & 1) {
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0)(1, "div", 1)(2, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](3, "img", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](4, "div", 4)(5, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](6, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "div", 0);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](1, "div", 1);
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](7, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](2, "div", 2)(3, "div", 3)(4, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](5, "img", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](6, "div", 6)(7, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](8, "Pengingat");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "a", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](9, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](10, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](11, "a", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](12, "Kunjungi Program");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](11, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](12, "div", 1)(13, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](14, "img", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](15, "div", 4)(16, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](17, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](13, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](14, "div", 3)(15, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](16, "img", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](17, "div", 6)(18, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, "Setifikasi kamu sudah siap!");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](18, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](19, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](20, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](21, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](20, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](21, "div", 1)(22, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](23, "img", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "div", 4)(25, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](22, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](23, "div", 3)(24, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](25, "img", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](26, "div", 6)(27, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, "Pengingat");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](27, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](28, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](29, "a", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](30, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](31, "a", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](32, "Kunjungi Program");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](31, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](32, "div", 1)(33, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](34, "img", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](35, "div", 4)(36, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](37, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](33, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](34, "div", 3)(35, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](36, "img", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](37, "div", 6)(38, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, "Setifikasi kamu sudah siap!");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](38, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](39, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](40, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](41, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](40, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](41, "div", 1)(42, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](43, "img", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](44, "div", 4)(45, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](46, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](42, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](43, "div", 3)(44, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](45, "img", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](46, "div", 6)(47, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, "Pengingat");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](47, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](48, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](49, "a", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](50, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](51, "a", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](52, "Kunjungi Program");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](51, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](52, "div", 1)(53, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](54, "img", 9);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](55, "div", 4)(56, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](57, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](53, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](54, "div", 3)(55, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](56, "img", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](57, "div", 6)(58, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, "Setifikasi kamu sudah siap!");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](58, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](59, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](60, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](61, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](60, "div", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](61, "div", 1)(62, "div", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](63, "img", 3);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](64, "div", 4)(65, "span", 5);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](66, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](62, "div", 10);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](63, "div", 3)(64, "div", 4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](65, "img", 5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](66, "div", 6)(67, "span", 7);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, "Pengingat");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](67, "span", 6);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](68, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "span", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](69, "a", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](70, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](71, "a", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](72, "Kunjungi Program");
       _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]()()()()();
     }
   },
-  styles: [".notification-container[_ngcontent-%COMP%] {\n  border: 1px solid #E6E4E4;\n  border-radius: 10px;\n  padding: 10px;\n  background-color: white;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9wYWdlcy9iYW5rLXZpY3RvcmlhL25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7RUFDSSx5QkFBQTtFQUNBLG1CQUFBO0VBQ0EsYUFBQTtFQUVBLHVCQUFBO0FBQUo7QUFFSTtFQUNJLGVBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0FBQVI7QUFFUTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtBQUFaO0FBRVk7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFBaEI7QUFHWTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtBQURoQjtBQUlZO0VBQ0ksY0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQUZoQjtBQU1RO0VBQ0ksV0FBQTtFQUNBLFdBQUE7RUFDQSx5QkFBQTtBQUpaIiwic291cmNlc0NvbnRlbnQiOlsiLm5vdGlmaWNhdGlvbi1jb250YWluZXIge1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNFNkU0RTQ7XG4gICAgYm9yZGVyLXJhZGl1czogMTBweDtcbiAgICBwYWRkaW5nOiAxMHB4O1xuXG4gICAgYmFja2dyb3VuZC1jb2xvcjogd2hpdGU7XG5cbiAgICAubm90aWZpY2F0aW9uLWl0ZW0ge1xuICAgICAgICBwYWRkaW5nOiAxNHB4IDA7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICAgICAgICBnYXA6IDEycHg7XG5cbiAgICAgICAgJi1jb250ZW50IHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBmbGV4LWRpcmVjdGlvbjogY29sdW1uO1xuICAgICAgICAgICAgZ2FwOiA4cHg7XG4gICAgICAgICAgICBsaW5lLWhlaWdodDogMS4ycmVtO1xuXG4gICAgICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMTRweDtcbiAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgICAgICAgfVxuXG4gICAgICAgICAgICAuZGVzYyB7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5saW5rIHtcbiAgICAgICAgICAgICAgICBjb2xvcjogI0UzNDI0MztcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgIH1cbiAgICAgICAgfVxuXG4gICAgICAgICYtZGl2aWRlciB7XG4gICAgICAgICAgICB3aWR0aDogMTAwJTtcbiAgICAgICAgICAgIGhlaWdodDogMXB4O1xuICAgICAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0U2RTRFNDtcbiAgICAgICAgfVxuXG4gICAgfVxufSJdLCJzb3VyY2VSb290IjoiIn0= */"]
+  styles: [".mat-bottom-sheet-container {\n  border-top-left-radius: 10px !important;\n  border-top-right-radius: 10px !important;\n  padding-top: 10px;\n}\n\n.bottom-sheet-handle-container[_ngcontent-%COMP%] {\n  display: flex;\n  justify-content: center; \n\n  padding: 8px 0; \n\n}\n\n\n\n.bottom-sheet-grabber[_ngcontent-%COMP%] {\n  width: 40px; \n\n  height: 4px; \n\n  background-color: #ccc; \n\n  border-radius: 2px; \n\n  \n\n  margin-bottom: 4px;\n}\n\n.notification-container[_ngcontent-%COMP%] {\n  border: 1px solid #E6E4E4;\n  border-radius: 10px;\n  padding: 10px;\n  background-color: white;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-container[_ngcontent-%COMP%]   .notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvY29tcG9uZW50cy9wYWdlcy9iYW5rLXZpY3RvcmlhL25vdGlmaWNhdGlvbi9ub3RpZmljYXRpb24uY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQ0k7RUFDSSx1Q0FBQTtFQUNBLHdDQUFBO0VBQ0EsaUJBQUE7QUFBUjs7QUFJQTtFQUNJLGFBQUE7RUFDQSx1QkFBQSxFQUFBLCtCQUFBO0VBQ0EsY0FBQSxFQUFBLGdEQUFBO0FBREo7O0FBSUEsMENBQUE7QUFDQTtFQUNJLFdBQUEsRUFBQSw0QkFBQTtFQUNBLFdBQUEsRUFBQSxxQ0FBQTtFQUNBLHNCQUFBLEVBQUEsc0NBQUE7RUFDQSxrQkFBQSxFQUFBLG1CQUFBO0VBRUEsK0NBQUE7RUFDQSxrQkFBQTtBQUZKOztBQUtBO0VBQ0kseUJBQUE7RUFDQSxtQkFBQTtFQUNBLGFBQUE7RUFFQSx1QkFBQTtBQUhKO0FBS0k7RUFDSSxlQUFBO0VBQ0EsYUFBQTtFQUNBLHVCQUFBO0VBQ0EsU0FBQTtBQUhSO0FBS1E7RUFDSSxhQUFBO0VBQ0Esc0JBQUE7RUFDQSxRQUFBO0VBQ0EsbUJBQUE7QUFIWjtBQUtZO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0FBSGhCO0FBTVk7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFKaEI7QUFPWTtFQUNJLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUFMaEI7QUFTUTtFQUNJLFdBQUE7RUFDQSxXQUFBO0VBQ0EseUJBQUE7QUFQWiIsInNvdXJjZXNDb250ZW50IjpbIjo6bmctZGVlcCB7XG4gICAgLm1hdC1ib3R0b20tc2hlZXQtY29udGFpbmVyIHtcbiAgICAgICAgYm9yZGVyLXRvcC1sZWZ0LXJhZGl1czogMTBweCAhaW1wb3J0YW50O1xuICAgICAgICBib3JkZXItdG9wLXJpZ2h0LXJhZGl1czogMTBweCAhaW1wb3J0YW50O1xuICAgICAgICBwYWRkaW5nLXRvcDogMTBweDtcbiAgICB9XG59XG5cbi5ib3R0b20tc2hlZXQtaGFuZGxlLWNvbnRhaW5lciB7XG4gICAgZGlzcGxheTogZmxleDtcbiAgICBqdXN0aWZ5LWNvbnRlbnQ6IGNlbnRlcjsgLyogUHVzYXRrYW4gc2VjYXJhIGhvcml6b250YWwgKi9cbiAgICBwYWRkaW5nOiA4cHggMDsgLyogVGFtYmFoa2FuIHJ1YW5nIGRpIGF0YXMgZGFuIGRpIGJhd2FoIGhhbmRsZSAqL1xufVxuXG4vKiBHYXlhIHVudHVrIGdyYWJiZXIvaGFuZGxlIGl0dSBzZW5kaXJpICovXG4uYm90dG9tLXNoZWV0LWdyYWJiZXIge1xuICAgIHdpZHRoOiA0MHB4OyAvKiBMZWJhciBob3Jpem9udGFsIGhhbmRsZSAqL1xuICAgIGhlaWdodDogNHB4OyAvKiBUaW5nZ2kgaGFuZGxlIChtZW1idWF0bnlhIHRlYmFsKSAqL1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNjY2M7IC8qIFdhcm5hIGFidS1hYnUgeWFuZyB1bXVtIGRpZ3VuYWthbiAqL1xuICAgIGJvcmRlci1yYWRpdXM6IDJweDsgLyogU3VkdXQgbWVtYnVsYXQgKi9cbiAgICBcbiAgICAvKiBUYW1iYWhrYW4gc2VkaWtpdCBtYXJnaW4tYm90dG9tIGppa2EgcGVybHUgKi9cbiAgICBtYXJnaW4tYm90dG9tOiA0cHg7IFxufVxuXG4ubm90aWZpY2F0aW9uLWNvbnRhaW5lciB7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI0U2RTRFNDtcbiAgICBib3JkZXItcmFkaXVzOiAxMHB4O1xuICAgIHBhZGRpbmc6IDEwcHg7XG5cbiAgICBiYWNrZ3JvdW5kLWNvbG9yOiB3aGl0ZTtcblxuICAgIC5ub3RpZmljYXRpb24taXRlbSB7XG4gICAgICAgIHBhZGRpbmc6IDE0cHggMDtcbiAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgYWxpZ24taXRlbXM6IGZsZXgtc3RhcnQ7XG4gICAgICAgIGdhcDogMTJweDtcblxuICAgICAgICAmLWNvbnRlbnQge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgICAgICBnYXA6IDhweDtcbiAgICAgICAgICAgIGxpbmUtaGVpZ2h0OiAxLjJyZW07XG5cbiAgICAgICAgICAgIC50aXRsZSB7XG4gICAgICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA1MDA7XG4gICAgICAgICAgICB9XG5cbiAgICAgICAgICAgIC5kZXNjIHtcbiAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgLmxpbmsge1xuICAgICAgICAgICAgICAgIGNvbG9yOiAjRTM0MjQzO1xuICAgICAgICAgICAgICAgIGZvbnQtc2l6ZTogMTJweDtcbiAgICAgICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICAgICAgfVxuICAgICAgICB9XG5cbiAgICAgICAgJi1kaXZpZGVyIHtcbiAgICAgICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICAgICAgaGVpZ2h0OiAxcHg7XG4gICAgICAgICAgICBiYWNrZ3JvdW5kLWNvbG9yOiAjRTZFNEU0O1xuICAgICAgICB9XG5cbiAgICB9XG59Il0sInNvdXJjZVJvb3QiOiIifQ== */"]
 });
 
 /***/ }),
@@ -2578,9 +2581,9 @@ NavbarComponent.ɵfac = function NavbarComponent_Factory(t) {
 NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵdefineComponent"]({
   type: NavbarComponent,
   selectors: [["app-navbar"]],
-  decls: 46,
-  vars: 6,
-  consts: [[1, "navbar", 3, "ngClass"], [1, "items-container"], [1, "title"], [1, "right"], [1, "item", 3, "click"], ["src", "./assets/bank-victoria/svg/ic-notification.svg", "alt", "Notification icon"], [1, "item"], [1, "profile-user", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/images/avatar.png", "alt", "Avatar Illust"], [1, "profile-user-information"], [1, "profile-user-information-name"], [1, "profile-user-information-email"], [1, "profile-user-responsive", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/svg/burger-menu.svg", "alt", "Burger menu icon"], ["eventMenu", "matMenu"], ["mat-menu-item", ""], ["mat-menu-item", "", 3, "click"], ["eventNotification", "matMenu"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
+  decls: 48,
+  vars: 7,
+  consts: [[1, "navbar", 3, "ngClass"], [1, "items-container"], [1, "title"], [1, "right"], [1, "item", "mobile", 3, "click"], ["src", "./assets/bank-victoria/svg/ic-notification.svg", "alt", "Notification icon"], [1, "item", "desktop", 3, "matMenuTriggerFor"], [1, "item"], [1, "profile-user", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/images/avatar.png", "alt", "Avatar Illust"], [1, "profile-user-information"], [1, "profile-user-information-name"], [1, "profile-user-information-email"], [1, "profile-user-responsive", 3, "matMenuTriggerFor"], ["src", "./assets/bank-victoria/svg/burger-menu.svg", "alt", "Burger menu icon"], ["eventMenu", "matMenu"], ["mat-menu-item", ""], ["mat-menu-item", "", 3, "click"], ["eventNotification", "matMenu"], [1, "notification-item"], ["src", "./assets/bank-victoria/svg/clock.svg", "alt", "Clock Icon"], [1, "notification-item-content"], [1, "desc"], [1, "link"], [1, "notification-item-divider"], ["src", "./assets/bank-victoria/svg/sidebar/book.svg", "alt", "Clock Icon"]],
   template: function NavbarComponent_Template(rf, ctx) {
     if (rf & 1) {
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](0, "nav", 0)(1, "div", 1)(2, "div", 2);
@@ -2592,61 +2595,67 @@ NavbarComponent.ɵcmp = /*@__PURE__*/_angular_core__WEBPACK_IMPORTED_MODULE_6__[
       });
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](6, "img", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](7, "div", 6)(8, "div", 7);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](9, "img", 8);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](10, "div", 9)(11, "span", 10);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](12, "User Dummy");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](7, "div", 6);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](8, "img", 5);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](13, "span", 11);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](14, "lms@victoria.com");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](9, "div", 7)(10, "div", 8);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](11, "img", 9);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](12, "div", 10)(13, "span", 11);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](14, "User Dummy");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](15, "span", 12);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](16, "lms@victoria.com");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](15, "div", 12);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](16, "img", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](17, "div", 13);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](18, "img", 14);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](17, "mat-menu", null, 14)(19, "button", 15)(20, "span");
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](21, "Profil");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](19, "mat-menu", null, 15)(21, "button", 16)(22, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](23, "Profil");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](22, "button", 16);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function NavbarComponent_Template_button_click_22_listener() {
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](24, "button", 17);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵlistener"]("click", function NavbarComponent_Template_button_click_24_listener() {
         return ctx.logout();
       });
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](23, "span");
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](24, "Keluar");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](25, "span");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](26, "Keluar");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](25, "mat-menu", null, 17)(27, "button", 15)(28, "div", 18);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](29, "img", 19);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](30, "div", 20)(31, "span", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](32, "Pengingat");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](27, "mat-menu", null, 18)(29, "button", 16)(30, "div", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](31, "img", 20);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](32, "div", 21)(33, "span", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](34, "Pengingat");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](33, "span", 21);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](34, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](35, "span", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](36, " Kursus aktif Anda akan segera berakhir, periksa email terdaftar Anda atau klik kursus aktif Anda untuk melanjutkan kursus Anda. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](35, "a", 22);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](36, "Kunjungi Program");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](37, "a", 23);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](38, "Kunjungi Program");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](37, "div", 23);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](38, "div", 15)(39, "div", 18);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](40, "img", 24);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](41, "div", 20)(42, "span", 2);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](43, "Setifikasi kamu sudah siap!");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](39, "div", 24);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](40, "div", 16)(41, "div", 19);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelement"](42, "img", 25);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](43, "div", 21)(44, "span", 2);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](45, "Setifikasi kamu sudah siap!");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]();
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](44, "span", 21);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](45, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementStart"](46, "span", 22);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtext"](47, " Merupakan suatu kehormatan bagi kami untuk mempersembahkan sertifikasi atas pencapaian Anda. Terima kasih, teruslah belajar. ");
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵelementEnd"]()()()()();
     }
     if (rf & 2) {
-      const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵreference"](18);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction1"](4, _c0, ctx.isExpanded));
+      const _r0 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵreference"](20);
+      const _r1 = _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵreference"](28);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("ngClass", _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵpureFunction1"](5, _c0, ctx.isExpanded));
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵtextInterpolate"](ctx.navTitle);
-      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](5);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](4);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("matMenuTriggerFor", _r1);
+      _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](3);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("matMenuTriggerFor", _r0);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵadvance"](7);
       _angular_core__WEBPACK_IMPORTED_MODULE_6__["ɵɵproperty"]("matMenuTriggerFor", _r0);
     }
   },
   dependencies: [_angular_common__WEBPACK_IMPORTED_MODULE_8__.NgClass, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenu, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenuItem, _angular_material_menu__WEBPACK_IMPORTED_MODULE_9__.MatMenuTrigger],
-  styles: ["@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400[_ngcontent-%COMP%];500[_ngcontent-%COMP%];550[_ngcontent-%COMP%];600[_ngcontent-%COMP%];700&display=swap)[_ngcontent-%COMP%];*[_ngcontent-%COMP%] {\n  font-family: \"Poppins\";\n}\n\n.navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  background-color: #ffffff;\n  color: black;\n  padding: 20px 30px;\n  z-index: 999;\n  display: block;\n  width: calc(100% - 332px);\n}\n.navbar.expanded[_ngcontent-%COMP%] {\n  width: calc(100% - 140px);\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%] {\n    width: calc(100% - 60px);\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-weight: 400;\n  font-size: 20px;\n  margin-left: 20px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  border-left: 1px solid #E6E6E6;\n  padding-left: 18px;\n  cursor: pointer;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 30px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-name[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #191919;\n  font-weight: 600;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-email[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #949494;\n  font-weight: 400;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n\n.notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0Usc0JBQUE7QUFBRjs7QUFHQTtFQUNJLGVBQUE7RUFDQSxNQUFBO0VBQ0EseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0FBQUo7QUFFSTtFQUNJLHlCQUFBO0FBQVI7QUFHSTtFQWRKO0lBZVEsd0JBQUE7RUFBTjtBQUNGO0FBRUk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtFQUNBLFNBQUE7QUFBUjtBQUVRO0VBQ0ksZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUFBWjtBQUdRO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtBQURaO0FBSWdCO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsUUFBQTtFQUNBLDhCQUFBO0VBQ0Esa0JBQUE7RUFDQSxlQUFBO0FBRnBCO0FBSW9CO0VBQ0ksV0FBQTtBQUZ4QjtBQUtvQjtFQUNJLGFBQUE7RUFDQSxzQkFBQTtBQUh4QjtBQUt3QjtFQUNJLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUFINUI7QUFNd0I7RUFDSSxlQUFBO0VBQ0EsY0FBQTtFQUNBLGdCQUFBO0FBSjVCO0FBUW9CO0VBN0JKO0lBOEJRLGFBQUE7RUFMdEI7QUFDRjtBQU9vQjtFQUNJLGFBQUE7QUFMeEI7QUFPd0I7RUFISjtJQUlRLGNBQUE7RUFKMUI7QUFDRjs7QUFhQTtFQUNJLGVBQUE7RUFDQSxhQUFBO0VBQ0EsdUJBQUE7RUFDQSxTQUFBO0FBVko7QUFZSTtFQUNJLGFBQUE7RUFDQSxzQkFBQTtFQUNBLFFBQUE7RUFDQSxtQkFBQTtBQVZSO0FBV1E7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFUWjtBQVlRO0VBQ0ksZUFBQTtFQUNBLGdCQUFBO0FBVlo7QUFhUTtFQUNJLGNBQUE7RUFDQSxlQUFBO0VBQ0EsZ0JBQUE7QUFYWjtBQWVJO0VBQ0ksV0FBQTtFQUNBLFdBQUE7RUFDQSx5QkFBQTtBQWJSIiwic291cmNlc0NvbnRlbnQiOlsiQGltcG9ydCB1cmwoXCJodHRwczovL2ZvbnRzLmdvb2dsZWFwaXMuY29tL2NzczI/ZmFtaWx5PVBvcHBpbnM6d2dodEAzMDA7NDAwOzUwMDs1NTA7NjAwOzcwMCZkaXNwbGF5PXN3YXBcIik7XG5cbioge1xuICBmb250LWZhbWlseTogXCJQb3BwaW5zXCI7XG59XG5cbi5uYXZiYXIge1xuICAgIHBvc2l0aW9uOiBmaXhlZDtcbiAgICB0b3A6IDA7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogI2ZmZmZmZjtcbiAgICBjb2xvcjogYmxhY2s7XG4gICAgcGFkZGluZzogMjBweCAzMHB4O1xuICAgIHotaW5kZXg6IDk5OTtcbiAgICBkaXNwbGF5OiBibG9jaztcbiAgICB3aWR0aDogY2FsYygxMDAlIC0gMzMycHgpO1xuXG4gICAgJi5leHBhbmRlZCB7XG4gICAgICAgIHdpZHRoOiBjYWxjKDEwMCUgLSAxNDBweCk7XG4gICAgfVxuXG4gICAgQG1lZGlhIG9ubHkgc2NyZWVuIGFuZCAobWF4LXdpZHRoOiA3NjhweCkge1xuICAgICAgICB3aWR0aDogY2FsYygxMDAlIC0gNjBweCk7XG4gICAgfVxuXG4gICAgLml0ZW1zLWNvbnRhaW5lciB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgIGp1c3RpZnktY29udGVudDogc3BhY2UtYmV0d2VlbjtcbiAgICAgICAgZ2FwOiAxOHB4O1xuXG4gICAgICAgIC50aXRsZSB7XG4gICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICAgICAgZm9udC1zaXplOiAyMHB4O1xuICAgICAgICAgICAgbWFyZ2luLWxlZnQ6IDIwcHg7XG4gICAgICAgIH1cblxuICAgICAgICAucmlnaHQge1xuICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgIGFsaWduLWl0ZW1zOiBjZW50ZXI7XG4gICAgICAgICAgICBnYXA6IDE4cHg7XG5cbiAgICAgICAgICAgIC5pdGVtIHtcbiAgICAgICAgICAgICAgICAucHJvZmlsZS11c2VyIHtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgZ2FwOiA4cHg7XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI0U2RTZFNjtcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAxOHB4O1xuICAgICAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG5cbiAgICAgICAgICAgICAgICAgICAgaW1nIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1pbmZvcm1hdGlvbiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1uYW1lIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICMxOTE5MTk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1lbWFpbCB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjOTQ5NDk0O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1yZXNwb25zaXZlIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxufVxuXG4ubm90aWZpY2F0aW9uLWl0ZW0ge1xuICAgIHBhZGRpbmc6IDE0cHggMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICAgIGdhcDogMTJweDtcblxuICAgICYtY29udGVudCB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGdhcDogOHB4O1xuICAgICAgICBsaW5lLWhlaWdodDogMS4ycmVtO1xuICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgZm9udC1zaXplOiAxNHB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDUwMDtcbiAgICAgICAgfVxuICAgIFxuICAgICAgICAuZGVzYyB7XG4gICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICBmb250LXdlaWdodDogNDAwO1xuICAgICAgICB9XG4gICAgXG4gICAgICAgIC5saW5rIHtcbiAgICAgICAgICAgIGNvbG9yOiAjRTM0MjQzO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgfVxuICAgIH1cblxuICAgICYtZGl2aWRlciB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IDFweDtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0U2RTRFNDtcbiAgICB9XG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
+  styles: ["@import url(https://fonts.googleapis.com/css2?family=Poppins:wght@300;400[_ngcontent-%COMP%];500[_ngcontent-%COMP%];550[_ngcontent-%COMP%];600[_ngcontent-%COMP%];700&display=swap)[_ngcontent-%COMP%];*[_ngcontent-%COMP%] {\n  font-family: \"Poppins\";\n}\n\n.navbar[_ngcontent-%COMP%] {\n  position: fixed;\n  top: 0;\n  background-color: #ffffff;\n  color: black;\n  padding: 20px 30px;\n  z-index: 999;\n  display: block;\n  width: calc(100% - 332px);\n}\n.navbar.expanded[_ngcontent-%COMP%] {\n  width: calc(100% - 140px);\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%] {\n    width: calc(100% - 60px);\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  justify-content: space-between;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-weight: 400;\n  font-size: 20px;\n  margin-left: 20px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 18px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item.mobile[_ngcontent-%COMP%] {\n  cursor: pointer;\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item.mobile[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item.desktop[_ngcontent-%COMP%] {\n  cursor: pointer;\n  display: block;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item.desktop[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n  display: flex;\n  align-items: center;\n  gap: 8px;\n  border-left: 1px solid #E6E6E6;\n  padding-left: 18px;\n  cursor: pointer;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%]   img[_ngcontent-%COMP%] {\n  width: 30px;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-name[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #191919;\n  font-weight: 600;\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-information-email[_ngcontent-%COMP%] {\n  font-size: 12px;\n  color: #949494;\n  font-weight: 400;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user[_ngcontent-%COMP%] {\n    display: none;\n  }\n}\n.navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n  display: none;\n}\n@media only screen and (max-width: 768px) {\n  .navbar[_ngcontent-%COMP%]   .items-container[_ngcontent-%COMP%]   .right[_ngcontent-%COMP%]   .item[_ngcontent-%COMP%]   .profile-user-responsive[_ngcontent-%COMP%] {\n    display: block;\n  }\n}\n\n.notification-item[_ngcontent-%COMP%] {\n  padding: 14px 0;\n  display: flex;\n  align-items: flex-start;\n  gap: 12px;\n}\n.notification-item-content[_ngcontent-%COMP%] {\n  display: flex;\n  flex-direction: column;\n  gap: 8px;\n  line-height: 1.2rem;\n}\n.notification-item-content[_ngcontent-%COMP%]   .title[_ngcontent-%COMP%] {\n  font-size: 14px;\n  font-weight: 500;\n}\n.notification-item-content[_ngcontent-%COMP%]   .desc[_ngcontent-%COMP%] {\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-content[_ngcontent-%COMP%]   .link[_ngcontent-%COMP%] {\n  color: #E34243;\n  font-size: 12px;\n  font-weight: 400;\n}\n.notification-item-divider[_ngcontent-%COMP%] {\n  width: 100%;\n  height: 1px;\n  background-color: #E6E4E4;\n}\n/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly8uL3NyYy9hcHAvbGF5b3V0cy9uYXZiYXIvbmF2YmFyLmNvbXBvbmVudC5zY3NzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUVBO0VBQ0ksc0JBQUE7QUFBSjs7QUFHQTtFQUNJLGVBQUE7RUFDQSxNQUFBO0VBQ0EseUJBQUE7RUFDQSxZQUFBO0VBQ0Esa0JBQUE7RUFDQSxZQUFBO0VBQ0EsY0FBQTtFQUNBLHlCQUFBO0FBQUo7QUFFSTtFQUNJLHlCQUFBO0FBQVI7QUFHSTtFQWRKO0lBZVEsd0JBQUE7RUFBTjtBQUNGO0FBRUk7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSw4QkFBQTtFQUNBLFNBQUE7QUFBUjtBQUVRO0VBQ0ksZ0JBQUE7RUFDQSxlQUFBO0VBQ0EsaUJBQUE7QUFBWjtBQUdRO0VBQ0ksYUFBQTtFQUNBLG1CQUFBO0VBQ0EsU0FBQTtBQURaO0FBSWdCO0VBQ0ksZUFBQTtFQUNBLGFBQUE7QUFGcEI7QUFHb0I7RUFISjtJQUlRLGNBQUE7RUFBdEI7QUFDRjtBQUVnQjtFQUNJLGVBQUE7RUFDQSxjQUFBO0FBQXBCO0FBQ29CO0VBSEo7SUFJUSxhQUFBO0VBRXRCO0FBQ0Y7QUFDZ0I7RUFDSSxhQUFBO0VBQ0EsbUJBQUE7RUFDQSxRQUFBO0VBQ0EsOEJBQUE7RUFDQSxrQkFBQTtFQUNBLGVBQUE7QUFDcEI7QUFDb0I7RUFDSSxXQUFBO0FBQ3hCO0FBRW9CO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0FBQXhCO0FBRXdCO0VBQ0ksZUFBQTtFQUNBLGNBQUE7RUFDQSxnQkFBQTtBQUE1QjtBQUd3QjtFQUNJLGVBQUE7RUFDQSxjQUFBO0VBQ0EsZ0JBQUE7QUFENUI7QUFLb0I7RUE3Qko7SUE4QlEsYUFBQTtFQUZ0QjtBQUNGO0FBSW9CO0VBQ0ksYUFBQTtBQUZ4QjtBQUl3QjtFQUhKO0lBSVEsY0FBQTtFQUQxQjtBQUNGOztBQVVBO0VBQ0ksZUFBQTtFQUNBLGFBQUE7RUFDQSx1QkFBQTtFQUNBLFNBQUE7QUFQSjtBQVNJO0VBQ0ksYUFBQTtFQUNBLHNCQUFBO0VBQ0EsUUFBQTtFQUNBLG1CQUFBO0FBUFI7QUFTUTtFQUNJLGVBQUE7RUFDQSxnQkFBQTtBQVBaO0FBVVE7RUFDSSxlQUFBO0VBQ0EsZ0JBQUE7QUFSWjtBQVdRO0VBQ0ksY0FBQTtFQUNBLGVBQUE7RUFDQSxnQkFBQTtBQVRaO0FBYUk7RUFDSSxXQUFBO0VBQ0EsV0FBQTtFQUNBLHlCQUFBO0FBWFIiLCJzb3VyY2VzQ29udGVudCI6WyJAaW1wb3J0IHVybChcImh0dHBzOi8vZm9udHMuZ29vZ2xlYXBpcy5jb20vY3NzMj9mYW1pbHk9UG9wcGluczp3Z2h0QDMwMDs0MDA7NTAwOzU1MDs2MDA7NzAwJmRpc3BsYXk9c3dhcFwiKTtcblxuKiB7XG4gICAgZm9udC1mYW1pbHk6IFwiUG9wcGluc1wiO1xufVxuXG4ubmF2YmFyIHtcbiAgICBwb3NpdGlvbjogZml4ZWQ7XG4gICAgdG9wOiAwO1xuICAgIGJhY2tncm91bmQtY29sb3I6ICNmZmZmZmY7XG4gICAgY29sb3I6IGJsYWNrO1xuICAgIHBhZGRpbmc6IDIwcHggMzBweDtcbiAgICB6LWluZGV4OiA5OTk7XG4gICAgZGlzcGxheTogYmxvY2s7XG4gICAgd2lkdGg6IGNhbGMoMTAwJSAtIDMzMnB4KTtcblxuICAgICYuZXhwYW5kZWQge1xuICAgICAgICB3aWR0aDogY2FsYygxMDAlIC0gMTQwcHgpO1xuICAgIH1cblxuICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgd2lkdGg6IGNhbGMoMTAwJSAtIDYwcHgpO1xuICAgIH1cblxuICAgIC5pdGVtcy1jb250YWluZXIge1xuICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICBqdXN0aWZ5LWNvbnRlbnQ6IHNwYWNlLWJldHdlZW47XG4gICAgICAgIGdhcDogMThweDtcblxuICAgICAgICAudGl0bGUge1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgICAgIGZvbnQtc2l6ZTogMjBweDtcbiAgICAgICAgICAgIG1hcmdpbi1sZWZ0OiAyMHB4O1xuICAgICAgICB9XG5cbiAgICAgICAgLnJpZ2h0IHtcbiAgICAgICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgICAgICBhbGlnbi1pdGVtczogY2VudGVyO1xuICAgICAgICAgICAgZ2FwOiAxOHB4O1xuXG4gICAgICAgICAgICAuaXRlbSB7XG4gICAgICAgICAgICAgICAgJi5tb2JpbGUge1xuICAgICAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG4gICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IGJsb2NrO1xuICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgICYuZGVza3RvcCB7XG4gICAgICAgICAgICAgICAgICAgIGN1cnNvcjogcG9pbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG4gICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAucHJvZmlsZS11c2VyIHtcbiAgICAgICAgICAgICAgICAgICAgZGlzcGxheTogZmxleDtcbiAgICAgICAgICAgICAgICAgICAgYWxpZ24taXRlbXM6IGNlbnRlcjtcbiAgICAgICAgICAgICAgICAgICAgZ2FwOiA4cHg7XG4gICAgICAgICAgICAgICAgICAgIGJvcmRlci1sZWZ0OiAxcHggc29saWQgI0U2RTZFNjtcbiAgICAgICAgICAgICAgICAgICAgcGFkZGluZy1sZWZ0OiAxOHB4O1xuICAgICAgICAgICAgICAgICAgICBjdXJzb3I6IHBvaW50ZXI7XG5cbiAgICAgICAgICAgICAgICAgICAgaW1nIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIHdpZHRoOiAzMHB4O1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1pbmZvcm1hdGlvbiB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBmbGV4O1xuICAgICAgICAgICAgICAgICAgICAgICAgZmxleC1kaXJlY3Rpb246IGNvbHVtbjtcblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1uYW1lIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBmb250LXNpemU6IDEycHg7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgY29sb3I6ICMxOTE5MTk7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDYwMDtcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICAgICAgJi1lbWFpbCB7XG4gICAgICAgICAgICAgICAgICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGNvbG9yOiAjOTQ5NDk0O1xuICAgICAgICAgICAgICAgICAgICAgICAgICAgIGZvbnQtd2VpZ2h0OiA0MDA7XG4gICAgICAgICAgICAgICAgICAgICAgICB9XG4gICAgICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgICAgICAgICBAbWVkaWEgb25seSBzY3JlZW4gYW5kIChtYXgtd2lkdGg6IDc2OHB4KSB7XG4gICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBub25lO1xuICAgICAgICAgICAgICAgICAgICB9XG5cbiAgICAgICAgICAgICAgICAgICAgJi1yZXNwb25zaXZlIHtcbiAgICAgICAgICAgICAgICAgICAgICAgIGRpc3BsYXk6IG5vbmU7XG5cbiAgICAgICAgICAgICAgICAgICAgICAgIEBtZWRpYSBvbmx5IHNjcmVlbiBhbmQgKG1heC13aWR0aDogNzY4cHgpIHtcbiAgICAgICAgICAgICAgICAgICAgICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgICAgICAgICAgICAgICAgIH1cbiAgICAgICAgICAgICAgICAgICAgfVxuICAgICAgICAgICAgICAgIH1cblxuICAgICAgICAgICAgfVxuICAgICAgICB9XG4gICAgfVxufVxuXG4ubm90aWZpY2F0aW9uLWl0ZW0ge1xuICAgIHBhZGRpbmc6IDE0cHggMDtcbiAgICBkaXNwbGF5OiBmbGV4O1xuICAgIGFsaWduLWl0ZW1zOiBmbGV4LXN0YXJ0O1xuICAgIGdhcDogMTJweDtcblxuICAgICYtY29udGVudCB7XG4gICAgICAgIGRpc3BsYXk6IGZsZXg7XG4gICAgICAgIGZsZXgtZGlyZWN0aW9uOiBjb2x1bW47XG4gICAgICAgIGdhcDogOHB4O1xuICAgICAgICBsaW5lLWhlaWdodDogMS4ycmVtO1xuXG4gICAgICAgIC50aXRsZSB7XG4gICAgICAgICAgICBmb250LXNpemU6IDE0cHg7XG4gICAgICAgICAgICBmb250LXdlaWdodDogNTAwO1xuICAgICAgICB9XG5cbiAgICAgICAgLmRlc2Mge1xuICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgfVxuXG4gICAgICAgIC5saW5rIHtcbiAgICAgICAgICAgIGNvbG9yOiAjRTM0MjQzO1xuICAgICAgICAgICAgZm9udC1zaXplOiAxMnB4O1xuICAgICAgICAgICAgZm9udC13ZWlnaHQ6IDQwMDtcbiAgICAgICAgfVxuICAgIH1cblxuICAgICYtZGl2aWRlciB7XG4gICAgICAgIHdpZHRoOiAxMDAlO1xuICAgICAgICBoZWlnaHQ6IDFweDtcbiAgICAgICAgYmFja2dyb3VuZC1jb2xvcjogI0U2RTRFNDtcbiAgICB9XG5cbn0iXSwic291cmNlUm9vdCI6IiJ9 */"]
 });
 
 /***/ }),

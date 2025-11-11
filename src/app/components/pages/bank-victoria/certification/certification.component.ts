@@ -8,4 +8,7 @@ import { SERTIFIKAT_LIST } from '../program/program.collection';
 })
 export class CertificationComponent {
   coursesList = structuredClone(SERTIFIKAT_LIST);
+  openSertif(url: string) {
+    window.open(url, '_blank');
+  }
 }
