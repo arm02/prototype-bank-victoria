@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;550;600;700&display=swap");
 
 * {
-  font-family: "Poppins";
+    font-family: "Poppins";
 }
 
 .navbar {
@@ -40,6 +40,21 @@
             gap: 18px;
 
             .item {
+                &.mobile {
+                    cursor: pointer;
+                    display: none;
+                    @media only screen and (max-width: 768px) {
+                        display: block;
+                    }
+                }
+                &.desktop {
+                    cursor: pointer;
+                    display: block;
+                    @media only screen and (max-width: 768px) {
+                        display: none;
+                    }
+                }
+
                 .profile-user {
                     display: flex;
                     align-items: center;
@@ -98,16 +113,17 @@
         flex-direction: column;
         gap: 8px;
         line-height: 1.2rem;
+
         .title {
             font-size: 14px;
             font-weight: 500;
         }
-    
+
         .desc {
             font-size: 12px;
             font-weight: 400;
         }
-    
+
         .link {
             color: #E34243;
             font-size: 12px;
